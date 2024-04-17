@@ -1,5 +1,6 @@
 {
   "excludeTests": true,
+  "hideGenerationTimestamp": false,
   "packageName": "toggl",
   "projectName": "toggl-py"
 }

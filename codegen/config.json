@@ -1,4 +1,5 @@
 {
+  "excludeTests": true,
   "packageName": "toggl",
   "projectName": "toggl-py"
 }

@@ -8,4 +8,5 @@ docker run --rm -u 1000:1000 -v ${PWD}:/dist -w /dist swaggerapi/swagger-codegen
     --http-user-agent compilerla/toggl-py \
     --input-spec codegen/spec.json \
     --lang python \
-    --output toggl_py
+    --output toggl_py \
+    --template-dir codegen/templates

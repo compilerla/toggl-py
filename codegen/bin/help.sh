@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -eux
 
-docker run --rm -u 1000:1000 -v ${PWD}:/dist -w /dist swaggerapi/swagger-codegen-cli help generate
-docker run --rm -u 1000:1000 -v ${PWD}:/dist -w /dist swaggerapi/swagger-codegen-cli config-help -l python
+java -cp ~/swagger-codegen-cli.jar:codegen/TogglPythonClientCodegen/target/* io.swagger.codegen.SwaggerCodegen help generate
+java -cp ~/swagger-codegen-cli.jar:codegen/TogglPythonClientCodegen/target/* io.swagger.codegen.SwaggerCodegen config-help -l TogglPythonClientCodegen

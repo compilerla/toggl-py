@@ -79,7 +79,7 @@ class {{classname}}:
         for key, val in params["kwargs"].items():
             if key not in all_params:
                 raise TypeError(
-                    "Got an unexpected keyword argument "%s""
+                    "Got an unexpected keyword argument '%s'"
                     " to method {{operationId}}" % key
                 )
             params[key] = val

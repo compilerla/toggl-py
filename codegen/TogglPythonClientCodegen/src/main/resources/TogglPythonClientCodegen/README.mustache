@@ -39,8 +39,6 @@ import time
 import {{{packageName}}}
 from {{{packageName}}}.rest import ApiException
 from pprint import pprint
-
-
 {{#apiInfo}}{{#apis}}{{#-first}}{{#operations}}{{#operation}}{{#-first}}{{#hasAuthMethods}}{{#authMethods}}
 {{#isBasic}}
 # Configure HTTP basic authorization: {{{name}}}
@@ -48,7 +46,6 @@ configuration = {{{packageName}}}.Configuration()
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'
 {{/isBasic}}
-
 {{#isApiKey}}
 # Configure API key authorization: {{{name}}}
 configuration = {{{packageName}}}.Configuration()
@@ -57,7 +54,6 @@ configuration.api_key['{{{keyParamName}}}'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['{{{keyParamName}}}'] = 'Bearer'
 {{/isApiKey}}
-
 {{#isOAuth}}
 # Configure OAuth2 access token for authorization: {{{name}}}
 configuration = {{{packageName}}}.Configuration()

@@ -16,6 +16,8 @@ java -cp ~/swagger-codegen-cli.jar:codegen/TogglPythonClientCodegen/target/* \
     --output $TARGET \
     --template-dir codegen/TogglPythonClientCodegen/src/main/resources/TogglPythonClientCodegen
 
+rm -rf $TARGET/test
+
 black $TARGET
 
 pip install -e $TARGET

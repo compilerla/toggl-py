@@ -1,6 +1,6 @@
 # toggl.WorkspaceslogoApi
 
-All URIs are relative to *https://localhost:8080/api/v9*
+All URIs are relative to `https://https://api.track.toggl.com/api/v9`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

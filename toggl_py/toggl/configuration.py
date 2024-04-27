@@ -29,7 +29,7 @@ class Configuration:
             return
 
         # Default Base url
-        self.host = "https://localhost:8080/api/v9"
+        self.host = "https://https://api.track.toggl.com/api/v9"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 

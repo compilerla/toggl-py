@@ -59,6 +59,7 @@ public class TogglPythonClientCodegen extends PythonClientCodegen {
                 "__init__.py"));
 
         supportingFiles.add(new SupportingFile("mkdocs.mustache", "", "mkdocs.yml"));
+        supportingFiles.add(new SupportingFile("README.mustache", docPath, "README.md"));
         supportingFiles.add(new SupportingFile("docs-requirements.mustache", docPath, "requirements.txt"));
 
         modelPackage = packageName + "." + modelPackage;

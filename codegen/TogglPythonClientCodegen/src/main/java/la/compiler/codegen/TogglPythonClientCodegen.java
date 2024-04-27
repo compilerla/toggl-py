@@ -22,8 +22,14 @@ public class TogglPythonClientCodegen extends PythonClientCodegen {
     public void processOpts() {
         super.processOpts();
 
-        modelPackage = "models";
+        final String docPath = "docs/";
+
+        apiDocPath = docPath + "api/";
         apiPackage = "api";
+
+        modelDocPath = docPath + "model/";
+        modelPackage = "models";
+
         final String packageFolder = packageName.replace('.', File.separatorChar);
 
         supportingFiles.clear();

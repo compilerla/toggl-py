@@ -10,7 +10,7 @@
     },
     "version": "9"
   },
-  "host": "localhost:8080",
+  "host": "https://api.track.toggl.com",
   "basePath": "/api/v9",
   "paths": {
     "/auth/saml2/login": {

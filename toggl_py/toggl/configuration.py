@@ -15,6 +15,8 @@ import multiprocessing
 import sys
 import urllib3
 
+from toggl.version import __version__
+
 
 class Configuration:
 
@@ -230,8 +232,8 @@ class Configuration:
         """
         return (
             "Python SDK Debug Report:\n"
-            "OS: {env}\n"
-            "Python Version: {pyversion}\n"
+            f"OS: {sys.platform}\n"
+            f"Python Version: {sys.version}\n"
             "Version of the API: 9\n"
-            "SDK Package Version: 1.0.0".format(env=sys.platform, pyversion=sys.version)
+            f"SDK Package Version: {__version__}"
         )

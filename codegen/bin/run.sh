@@ -1,23 +1,17 @@
 #!/usr/bin/env bash
 set -eux
 
-TARGET=toggl_py
-
-rm -rf $TARGET
-
-java -cp ~/swagger-codegen-cli.jar:codegen/TogglPythonClientCodegen/target/* \
+java -cp $CODEGEN_JAR:$CODEGEN_DIR/$CODEGEN_LANG/target/* \
     io.swagger.codegen.SwaggerCodegen generate \
-    --config codegen/config.json \
+    --config $CODEGEN_DIR/config.json \
     --git-repo-id toggl-py \
     --git-user-id compilerla \
     --http-user-agent compilerla/toggl-py \
-    --input-spec codegen/spec.json \
-    --lang TogglPythonClientCodegen \
-    --output $TARGET \
-    --template-dir codegen/TogglPythonClientCodegen/src/main/resources/TogglPythonClientCodegen
+    --input-spec $CODEGEN_DIR/spec.json \
+    --lang $CODEGEN_LANG \
+    --output $CODEGEN_TARGET \
+    --template-dir $CODEGEN_DIR/$CODEGEN_LANG/src/main/resources/$CODEGEN_LANG
 
-rm -rf $TARGET/test
+rm -rf $CODEGEN_TARGET/test
 
-black $TARGET
-
-pip install -e $TARGET
+black $CODEGEN_TARGET

@@ -5,6 +5,7 @@
   "service": "dev",
   "runServices": ["dev"],
   "workspaceFolder": "/home/compiler/toggl-py",
+  "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {
     "vscode": {
       // Set *default* container specific settings.json values on container create.

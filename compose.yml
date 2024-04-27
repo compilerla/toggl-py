@@ -6,5 +6,18 @@ services:
     image: toggl_py:dev
     # https://code.visualstudio.com/docs/remote/create-dev-container#_use-docker-compose
     entrypoint: sleep infinity
+    env_file:
+      - .env
     volumes:
       - ./:/home/compiler/toggl-py
+      - ./toggl_py:$CODEGEN_TARGET
+
+  codegen:
+    image: toggl_py:dev
+    entrypoint: /bin/bash
+    env_file:
+      - .env
+    command: codegen/bin/run.sh
+    volumes:
+      - ./:/home/compiler/toggl-py
+      - ./toggl_py:$CODEGEN_TARGET

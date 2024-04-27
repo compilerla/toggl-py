@@ -30,6 +30,9 @@ public class TogglPythonClientCodegen extends PythonClientCodegen {
         modelDocPath = docPath + "model/";
         modelPackage = "models";
 
+        additionalProperties.put("apiDocPath", apiDocPath);
+        additionalProperties.put("modelDocPath", modelDocPath);
+
         final String packageFolder = packageName.replace('.', File.separatorChar);
 
         supportingFiles.clear();

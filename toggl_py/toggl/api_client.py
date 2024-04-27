@@ -18,6 +18,7 @@ import tempfile
 from urllib.parse import quote
 
 from toggl.configuration import Configuration
+from toggl.version import __version__
 import toggl.models
 from toggl import rest
 
@@ -63,7 +64,7 @@ class ApiClient:
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = "compilerla/toggl-py/1.0.0"
+        self.user_agent = f"compilerla/toggl-py/{__version__}"
         self.client_side_validation = configuration.client_side_validation
 
     def __del__(self):

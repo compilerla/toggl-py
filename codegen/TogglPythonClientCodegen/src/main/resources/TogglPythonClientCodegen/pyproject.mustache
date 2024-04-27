@@ -1,6 +1,6 @@
 [project]
 name = "{{{projectName}}}"
-version = "{{packageVersion}}"
+dynamic = ["version"]
 description = "{{appDescription}}"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -17,7 +17,7 @@ Code = "{{packageUrl}}"
 Issues = "{{packageUrl}}/issues"
 
 [build-system]
-requires = ["setuptools>=65", "wheel"]
+requires = ["setuptools>=65", "setuptools-scm>=8", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.black]
@@ -30,3 +30,6 @@ include = ["{{packageName}}"]
 
 [tool.setuptools]
 packages = ["{{packageName}}"]
+
+[tool.setuptools_scm]
+root = ".."

@@ -29,14 +29,16 @@ public class TogglPythonClientCodegen extends PythonClientCodegen {
         supportingFiles.add(new SupportingFile("pyproject.mustache", "", "pyproject.toml"));
         supportingFiles.add(new SupportingFile("README.mustache", "", "README.md"));
 
-        supportingFiles.add(new SupportingFile("configuration.mustache", packageFolder, "configuration.py"));
         supportingFiles.add(new SupportingFile("__init__package.mustache", packageFolder, "__init__.py"));
         supportingFiles.add(new SupportingFile("api_client.mustache", packageFolder, "api_client.py"));
+        supportingFiles.add(new SupportingFile("configuration.mustache", packageFolder, "configuration.py"));
+        supportingFiles.add(new SupportingFile("rest.mustache", packageFolder, "rest.py"));
+        supportingFiles.add(new SupportingFile("version.mustache", packageFolder, "version.py"));
+
         supportingFiles.add(new SupportingFile("__init__model.mustache",
                 packageFolder + File.separatorChar + modelPackage, "__init__.py"));
         supportingFiles.add(new SupportingFile("__init__api.mustache", packageFolder + File.separatorChar + apiPackage,
                 "__init__.py"));
-        supportingFiles.add(new SupportingFile("rest.mustache", packageFolder, "rest.py"));
 
         modelPackage = packageName + "." + modelPackage;
         apiPackage = packageName + "." + apiPackage;

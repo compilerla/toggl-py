@@ -9,6 +9,7 @@ import tempfile
 from urllib.parse import quote
 
 from {{packageName}}.configuration import Configuration
+from {{packageName}}.version import __version__
 import {{modelPackage}}
 from {{packageName}} import rest
 
@@ -55,7 +56,7 @@ class ApiClient:
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = "{{#httpUserAgent}}{{{.}}}/{{{packageVersion}}}{{/httpUserAgent}}{{^httpUserAgent}}Swagger-Codegen/{{{packageVersion}}}/python{{/httpUserAgent}}"
+        self.user_agent = f"{{#httpUserAgent}}{{{.}}}/{__version__}{{/httpUserAgent}}{{^httpUserAgent}}Swagger-Codegen/{__version__}/python{{/httpUserAgent}}"
         self.client_side_validation = configuration.client_side_validation
 
     def __del__(self):

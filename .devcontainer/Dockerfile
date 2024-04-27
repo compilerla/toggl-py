@@ -25,8 +25,11 @@ RUN wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.19/sw
 ENV PATH "/home/$USER/.local/bin:$PATH"
 WORKDIR /home/$USER/toggl-py
 
+COPY toggl_py/docs/requirements.txt toggl_py/docs/requirements.txt
+
 RUN python -m pip install --upgrade pip && \
-    pip install black pre-commit
+    pip install black pre-commit && \
+    pip install -r toggl_py/docs/requirements.txt
 
 COPY LICENSE LICENSE
 COPY codegen/ codegen/

@@ -12,6 +12,18 @@ services:
       - ./:/home/compiler/toggl-py
       - ./toggl_py:$CODEGEN_TARGET
 
+  docs:
+    image: toggl_py:dev
+    entrypoint: mkdocs
+    command: serve --dev-addr "0.0.0.0:8001"
+    env_file:
+      - .env
+    ports:
+      - "8001"
+    volumes:
+      - ./toggl_py:/docs
+    working_dir: /docs
+
   codegen:
     image: toggl_py:dev
     entrypoint: /bin/bash

@@ -3,7 +3,7 @@
   "name": "compiler/toggl-py",
   "dockerComposeFile": ["../compose.yml"],
   "service": "dev",
-  "runServices": ["dev"],
+  "runServices": ["dev", "docs"],
   "workspaceFolder": "/home/compiler/toggl-py",
   "postAttachCommand": ["/bin/bash", ".devcontainer/postAttach.sh"],
   "customizations": {

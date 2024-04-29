@@ -12,6 +12,14 @@ dependencies = [
     "urllib3>=2.2.1"
 ]
 
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-mock",
+    "pytest-socket",
+]
+
 [project.urls]
 Code = "{{packageUrl}}"
 Issues = "{{packageUrl}}/issues"
@@ -25,8 +33,14 @@ line-length = 127
 target-version = ['py311']
 include = '\.pyi?$'
 
+[tool.coverage.run]
+branch = true
+data_file = ".coverage"
+relative_files = true
+source = ["{{packageName}}"]
+
 [tool.pyright]
-include = ["{{packageName}}"]
+include = ["{{packageName}}", "tests"]
 
 [tool.setuptools]
 packages = ["{{packageName}}"]

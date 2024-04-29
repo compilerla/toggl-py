@@ -1,6 +1,7 @@
 *.egg-info
 *.pye
 .classpath
+.coverage
 .env
 .project
 .settings/

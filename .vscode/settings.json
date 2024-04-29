@@ -15,7 +15,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "python.languageServer": "Pylance",
-  "python.testing.pytestArgs": ["tests"],
+  "python.testing.pytestArgs": ["toggl_py/tests"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false
 }

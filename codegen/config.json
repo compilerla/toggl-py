@@ -1,5 +1,4 @@
 {
-  "excludeTests": true,
   "hideGenerationTimestamp": true,
   "packageName": "toggl",
   "packageUrl": "https://github.com/compilerla/toggl-py",

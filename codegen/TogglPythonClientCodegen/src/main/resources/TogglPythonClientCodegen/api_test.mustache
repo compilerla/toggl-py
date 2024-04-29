@@ -1,0 +1,25 @@
+{{>partial_header}}
+import pytest
+
+import {{packageName}}  # noqa: F401
+from {{apiPackage}}.{{classVarName}} import {{classname}}
+from {{packageName}}.rest import ApiException  # noqa: F401
+
+
+@pytest.fixture
+def api():
+    return {{classname}}()
+
+{{#operations}}
+{{#operation}}
+def test_{{classname}}_{{{operationId}}}(api):
+    """Test case for {{{operationId}}}
+{{#summary}}
+
+        {{{summary}}}  # noqa: E501
+{{/summary}}
+    """
+    pass
+
+   {{/operation}}
+{{/operations}}

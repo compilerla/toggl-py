@@ -21,3 +21,12 @@ services:
     volumes:
       - ./:/home/compiler/toggl-py
       - ./toggl_py:$CODEGEN_TARGET
+
+  package:
+    image: toggl_py:dev
+    entrypoint: /bin/bash
+    env_file:
+      - .env
+    command: codegen/bin/package.sh
+    volumes:
+      - ./:/home/compiler/toggl-py

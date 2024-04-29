@@ -6,7 +6,6 @@ Public Toggl API. Note: We use BasicAuth in a specific way. By the standard you 
 >
 > - API version: 9
 > - Package version: 1.0.0
-> - Build date: 2024-04-26T22:13:16.785Z
 > - Build package: la.compiler.codegen.TogglPythonClientCodegen
 
 ## Installation & Usage

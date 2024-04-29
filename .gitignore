@@ -1,5 +1,6 @@
 *.egg-info
 .classpath
+.env
 .project
 .settings/
 target/

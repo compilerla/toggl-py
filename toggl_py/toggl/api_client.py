@@ -39,7 +39,7 @@ class ApiClient:
         to the API
     """
 
-    PRIMITIVE_TYPES = (float, bool, bytes, str) + int
+    PRIMITIVE_TYPES = (float, bool, bytes, str, int)
     NATIVE_TYPES_MAPPING = {
         "int": int,
         "long": int,

@@ -12,6 +12,4 @@ java -cp $CODEGEN_JAR:$CODEGEN_DIR/$CODEGEN_LANG/target/* \
     --output $CODEGEN_TARGET \
     --template-dir $CODEGEN_DIR/$CODEGEN_LANG/src/main/resources/$CODEGEN_LANG
 
-rm -rf $CODEGEN_TARGET/test
-
 black $CODEGEN_TARGET

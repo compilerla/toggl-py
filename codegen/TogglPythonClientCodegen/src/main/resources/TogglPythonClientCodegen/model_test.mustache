@@ -1,0 +1,15 @@
+{{>partial_header}}
+import pytest  # noqa: F401
+{{#models}}
+{{#model}}
+import {{packageName}}  # noqa: F401
+from {{modelPackage}}.{{classFilename}} import {{classname}}  # noqa: E501
+
+
+def test_{{classname}}():
+    model = {{classname}}()  # noqa: E501
+
+    assert model
+
+{{/model}}
+{{/models}}

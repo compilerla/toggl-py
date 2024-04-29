@@ -14,6 +14,6 @@ from toggl.models.subscription_payload import SubscriptionPayload  # noqa: E501
 
 
 def test_SubscriptionPayload():
-    model = SubscriptionPayload()  # noqa: E501
+    model = SubscriptionPayload(pricing_plan_id="123")  # noqa: E501
 
     assert model

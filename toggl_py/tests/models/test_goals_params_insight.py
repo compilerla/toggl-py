@@ -14,6 +14,6 @@ from toggl.models.goals_params_insight import GoalsParamsInsight  # noqa: E501
 
 
 def test_GoalsParamsInsight():
-    model = GoalsParamsInsight()  # noqa: E501
+    model = GoalsParamsInsight(cadence_period=1, goal_type="goal", user_id="123", workspace_id="123")
 
     assert model

@@ -14,6 +14,6 @@ from toggl.models.requests_project_profitability import RequestsProjectProfitabi
 
 
 def test_RequestsProjectProfitability():
-    model = RequestsProjectProfitability()  # noqa: E501
+    model = RequestsProjectProfitability(currency="USD")  # noqa: E501
 
     assert model

@@ -14,6 +14,6 @@ from toggl.models.subscription_calculate_request import SubscriptionCalculateReq
 
 
 def test_SubscriptionCalculateRequest():
-    model = SubscriptionCalculateRequest()  # noqa: E501
+    model = SubscriptionCalculateRequest(period=1, pricing_plan_id="123", user_count=1)  # noqa: E501
 
     assert model

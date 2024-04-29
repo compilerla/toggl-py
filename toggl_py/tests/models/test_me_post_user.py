@@ -14,6 +14,6 @@ from toggl.models.me_post_user import MePostUser  # noqa: E501
 
 
 def test_MePostUser():
-    model = MePostUser()  # noqa: E501
+    model = MePostUser(email="test@email.com", password="password", tos_accepted=True)  # noqa: E501
 
     assert model

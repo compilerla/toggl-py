@@ -14,6 +14,6 @@ from toggl.models.dto_creation_request import DtoCreationRequest  # noqa: E501
 
 
 def test_DtoCreationRequest():
-    model = DtoCreationRequest()  # noqa: E501
+    model = DtoCreationRequest(name="name", organization_id="123", query="query", type="type")  # noqa: E501
 
     assert model

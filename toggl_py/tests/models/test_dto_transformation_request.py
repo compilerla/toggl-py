@@ -14,6 +14,6 @@ from toggl.models.dto_transformation_request import DtoTransformationRequest  # 
 
 
 def test_DtoTransformationRequest():
-    model = DtoTransformationRequest()  # noqa: E501
+    model = DtoTransformationRequest(name="name", parameters={})  # noqa: E501
 
     assert model

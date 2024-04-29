@@ -14,6 +14,6 @@ from toggl.models.calculate_calculate_request import CalculateCalculateRequest  
 
 
 def test_CalculateCalculateRequest():
-    model = CalculateCalculateRequest()  # noqa: E501
+    model = CalculateCalculateRequest(period=1, pricing_plan_id="123", user_count=1)  # noqa: E501
 
     assert model

@@ -14,6 +14,6 @@ from toggl.models.dto_grouping_request import DtoGroupingRequest  # noqa: E501
 
 
 def test_DtoGroupingRequest():
-    model = DtoGroupingRequest()  # noqa: E501
+    model = DtoGroupingRequest(_property="prop")  # noqa: E501
 
     assert model

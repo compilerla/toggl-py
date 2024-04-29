@@ -14,6 +14,14 @@ from toggl.models.goals_params_create import GoalsParamsCreate  # noqa: E501
 
 
 def test_GoalsParamsCreate():
-    model = GoalsParamsCreate()  # noqa: E501
+    model = GoalsParamsCreate(
+        cadence_period=1,
+        comparing="comparing",
+        goal_type="goal",
+        name="name",
+        start="start",
+        target_value=1,
+        workspace_id="123",
+    )
 
     assert model

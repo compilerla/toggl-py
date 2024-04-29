@@ -14,6 +14,6 @@ from toggl.models.dto_ordination_request import DtoOrdinationRequest  # noqa: E5
 
 
 def test_DtoOrdinationRequest():
-    model = DtoOrdinationRequest()  # noqa: E501
+    model = DtoOrdinationRequest(_property="prop")  # noqa: E501
 
     assert model

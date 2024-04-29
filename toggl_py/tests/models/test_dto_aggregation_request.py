@@ -14,6 +14,6 @@ from toggl.models.dto_aggregation_request import DtoAggregationRequest  # noqa: 
 
 
 def test_DtoAggregationRequest():
-    model = DtoAggregationRequest()  # noqa: E501
+    model = DtoAggregationRequest(alias="alias", function="func", _property="prop")  # noqa: E501
 
     assert model

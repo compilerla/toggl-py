@@ -14,6 +14,8 @@ from toggl.models.subscription_contact_detail_request import SubscriptionContact
 
 
 def test_SubscriptionContactDetailRequest():
-    model = SubscriptionContactDetailRequest()  # noqa: E501
+    model = SubscriptionContactDetailRequest(
+        company_address="1234 Main Street", company_name="Compiler LLC", contact_email="test@email.com", country_id="USA"
+    )  # noqa: E501
 
     assert model

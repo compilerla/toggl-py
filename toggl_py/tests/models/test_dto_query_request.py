@@ -14,6 +14,6 @@ from toggl.models.dto_query_request import DtoQueryRequest  # noqa: E501
 
 
 def test_DtoQueryRequest():
-    model = DtoQueryRequest()  # noqa: E501
+    model = DtoQueryRequest(period=1)  # noqa: E501
 
     assert model

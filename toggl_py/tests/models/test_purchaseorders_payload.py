@@ -14,6 +14,6 @@ from toggl.models.purchaseorders_payload import PurchaseordersPayload  # noqa: E
 
 
 def test_PurchaseordersPayload():
-    model = PurchaseordersPayload()  # noqa: E501
+    model = PurchaseordersPayload(user_count=1)  # noqa: E501
 
     assert model

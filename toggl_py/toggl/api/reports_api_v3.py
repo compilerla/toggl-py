@@ -13,20 +13,20 @@ import re  # noqa: F401
 from toggl.api_client import ApiClient
 
 
-class DefaultApi:
+class ReportsApiv3:
 
     def __init__(self, api_client=None):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def reports_api_v3_workspace_workspace_id_comparative_post(self, workspace_id, **kwargs):  # noqa: E501
+    def comparative_post(self, workspace_id, **kwargs):  # noqa: E501
         """Load comparative report  # noqa: E501
 
         Returns comparative report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_comparative_post(workspace_id, async_req=True)
+        >>> thread = api.comparative_post(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -38,22 +38,18 @@ class DefaultApi:
         """
         kwargs["_return_http_data_only"] = True
         if kwargs.get("async_req"):
-            return self.reports_api_v3_workspace_workspace_id_comparative_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            return self.comparative_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.reports_api_v3_workspace_workspace_id_comparative_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            (data) = self.comparative_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
             return data
 
-    def reports_api_v3_workspace_workspace_id_comparative_post_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
+    def comparative_post_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
         """Load comparative report  # noqa: E501
 
         Returns comparative report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_comparative_post_with_http_info(workspace_id, async_req=True)
+        >>> thread = api.comparative_post_with_http_info(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -73,19 +69,14 @@ class DefaultApi:
         params = locals()
         for key, val in params["kwargs"].items():
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reports_api_v3_workspace_workspace_id_comparative_post" % key
-                )
+                raise TypeError("Got an unexpected keyword argument '%s'" " to method comparative_post" % key)
             params[key] = val
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
             "workspace_id" not in params or params["workspace_id"] is None
         ):  # noqa: E501
-            raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_comparative_post`"
-            )  # noqa: E501
+            raise ValueError("Missing the required parameter `workspace_id` when calling `comparative_post`")  # noqa: E501
 
         collection_formats = {}
 
@@ -127,15 +118,13 @@ class DefaultApi:
             collection_formats=collection_formats,
         )
 
-    def reports_api_v3_workspace_workspace_id_data_trends_clients_post(
-        self, workspace_id, data_trends_post, **kwargs
-    ):  # noqa: E501
+    def data_trends_clients_post(self, workspace_id, data_trends_post, **kwargs):  # noqa: E501
         """Load clients' data trends  # noqa: E501
 
         Returns the clients' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_clients_post(workspace_id, data_trends_post, async_req=True)
+        >>> thread = api.data_trends_clients_post(workspace_id, data_trends_post, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,24 +136,18 @@ class DefaultApi:
         """
         kwargs["_return_http_data_only"] = True
         if kwargs.get("async_req"):
-            return self.reports_api_v3_workspace_workspace_id_data_trends_clients_post_with_http_info(
-                workspace_id, data_trends_post, **kwargs
-            )  # noqa: E501
+            return self.data_trends_clients_post_with_http_info(workspace_id, data_trends_post, **kwargs)  # noqa: E501
         else:
-            (data) = self.reports_api_v3_workspace_workspace_id_data_trends_clients_post_with_http_info(
-                workspace_id, data_trends_post, **kwargs
-            )  # noqa: E501
+            (data) = self.data_trends_clients_post_with_http_info(workspace_id, data_trends_post, **kwargs)  # noqa: E501
             return data
 
-    def reports_api_v3_workspace_workspace_id_data_trends_clients_post_with_http_info(
-        self, workspace_id, data_trends_post, **kwargs
-    ):  # noqa: E501
+    def data_trends_clients_post_with_http_info(self, workspace_id, data_trends_post, **kwargs):  # noqa: E501
         """Load clients' data trends  # noqa: E501
 
         Returns the clients' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_clients_post_with_http_info(workspace_id, data_trends_post, async_req=True)
+        >>> thread = api.data_trends_clients_post_with_http_info(workspace_id, data_trends_post, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -184,10 +167,7 @@ class DefaultApi:
         params = locals()
         for key, val in params["kwargs"].items():
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reports_api_v3_workspace_workspace_id_data_trends_clients_post" % key
-                )
+                raise TypeError("Got an unexpected keyword argument '%s'" " to method data_trends_clients_post" % key)
             params[key] = val
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
@@ -195,14 +175,14 @@ class DefaultApi:
             "workspace_id" not in params or params["workspace_id"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_data_trends_clients_post`"
+                "Missing the required parameter `workspace_id` when calling `data_trends_clients_post`"
             )  # noqa: E501
         # verify the required parameter "data_trends_post" is set
         if self.api_client.client_side_validation and (
             "data_trends_post" not in params or params["data_trends_post"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `data_trends_post` when calling `reports_api_v3_workspace_workspace_id_data_trends_clients_post`"
+                "Missing the required parameter `data_trends_post` when calling `data_trends_clients_post`"
             )  # noqa: E501
 
         collection_formats = {}
@@ -245,13 +225,13 @@ class DefaultApi:
             collection_formats=collection_formats,
         )
 
-    def reports_api_v3_workspace_workspace_id_data_trends_projects_post(self, workspace_id, **kwargs):  # noqa: E501
+    def data_trends_projects_post(self, workspace_id, **kwargs):  # noqa: E501
         """Load projects' data trends  # noqa: E501
 
         Returns projects' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_projects_post(workspace_id, async_req=True)
+        >>> thread = api.data_trends_projects_post(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -263,24 +243,18 @@ class DefaultApi:
         """
         kwargs["_return_http_data_only"] = True
         if kwargs.get("async_req"):
-            return self.reports_api_v3_workspace_workspace_id_data_trends_projects_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            return self.data_trends_projects_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.reports_api_v3_workspace_workspace_id_data_trends_projects_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            (data) = self.data_trends_projects_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
             return data
 
-    def reports_api_v3_workspace_workspace_id_data_trends_projects_post_with_http_info(
-        self, workspace_id, **kwargs
-    ):  # noqa: E501
+    def data_trends_projects_post_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
         """Load projects' data trends  # noqa: E501
 
         Returns projects' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_projects_post_with_http_info(workspace_id, async_req=True)
+        >>> thread = api.data_trends_projects_post_with_http_info(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -300,10 +274,7 @@ class DefaultApi:
         params = locals()
         for key, val in params["kwargs"].items():
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reports_api_v3_workspace_workspace_id_data_trends_projects_post" % key
-                )
+                raise TypeError("Got an unexpected keyword argument '%s'" " to method data_trends_projects_post" % key)
             params[key] = val
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
@@ -311,7 +282,7 @@ class DefaultApi:
             "workspace_id" not in params or params["workspace_id"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_data_trends_projects_post`"
+                "Missing the required parameter `workspace_id` when calling `data_trends_projects_post`"
             )  # noqa: E501
 
         collection_formats = {}
@@ -354,15 +325,13 @@ class DefaultApi:
             collection_formats=collection_formats,
         )
 
-    def reports_api_v3_workspace_workspace_id_data_trends_users_post(
-        self, workspace_id, data_trends_post, **kwargs
-    ):  # noqa: E501
+    def data_trends_users_post(self, workspace_id, data_trends_post, **kwargs):  # noqa: E501
         """Load users' data trends  # noqa: E501
 
         Returns users' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_users_post(workspace_id, data_trends_post, async_req=True)
+        >>> thread = api.data_trends_users_post(workspace_id, data_trends_post, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -374,24 +343,18 @@ class DefaultApi:
         """
         kwargs["_return_http_data_only"] = True
         if kwargs.get("async_req"):
-            return self.reports_api_v3_workspace_workspace_id_data_trends_users_post_with_http_info(
-                workspace_id, data_trends_post, **kwargs
-            )  # noqa: E501
+            return self.data_trends_users_post_with_http_info(workspace_id, data_trends_post, **kwargs)  # noqa: E501
         else:
-            (data) = self.reports_api_v3_workspace_workspace_id_data_trends_users_post_with_http_info(
-                workspace_id, data_trends_post, **kwargs
-            )  # noqa: E501
+            (data) = self.data_trends_users_post_with_http_info(workspace_id, data_trends_post, **kwargs)  # noqa: E501
             return data
 
-    def reports_api_v3_workspace_workspace_id_data_trends_users_post_with_http_info(
-        self, workspace_id, data_trends_post, **kwargs
-    ):  # noqa: E501
+    def data_trends_users_post_with_http_info(self, workspace_id, data_trends_post, **kwargs):  # noqa: E501
         """Load users' data trends  # noqa: E501
 
         Returns users' data trends.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_data_trends_users_post_with_http_info(workspace_id, data_trends_post, async_req=True)
+        >>> thread = api.data_trends_users_post_with_http_info(workspace_id, data_trends_post, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -411,10 +374,7 @@ class DefaultApi:
         params = locals()
         for key, val in params["kwargs"].items():
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reports_api_v3_workspace_workspace_id_data_trends_users_post" % key
-                )
+                raise TypeError("Got an unexpected keyword argument '%s'" " to method data_trends_users_post" % key)
             params[key] = val
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
@@ -422,14 +382,14 @@ class DefaultApi:
             "workspace_id" not in params or params["workspace_id"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_data_trends_users_post`"
+                "Missing the required parameter `workspace_id` when calling `data_trends_users_post`"
             )  # noqa: E501
         # verify the required parameter "data_trends_post" is set
         if self.api_client.client_side_validation and (
             "data_trends_post" not in params or params["data_trends_post"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `data_trends_post` when calling `reports_api_v3_workspace_workspace_id_data_trends_users_post`"
+                "Missing the required parameter `data_trends_post` when calling `data_trends_users_post`"
             )  # noqa: E501
 
         collection_formats = {}
@@ -472,13 +432,13 @@ class DefaultApi:
             collection_formats=collection_formats,
         )
 
-    def reports_api_v3_workspace_workspace_id_profitability_projects_post(self, workspace_id, **kwargs):  # noqa: E501
+    def profitability_projects_post(self, workspace_id, **kwargs):  # noqa: E501
         """Load profitability projects report  # noqa: E501
 
         Returns profitability projects report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_profitability_projects_post(workspace_id, async_req=True)
+        >>> thread = api.profitability_projects_post(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -490,24 +450,18 @@ class DefaultApi:
         """
         kwargs["_return_http_data_only"] = True
         if kwargs.get("async_req"):
-            return self.reports_api_v3_workspace_workspace_id_profitability_projects_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            return self.profitability_projects_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
         else:
-            (data) = self.reports_api_v3_workspace_workspace_id_profitability_projects_post_with_http_info(
-                workspace_id, **kwargs
-            )  # noqa: E501
+            (data) = self.profitability_projects_post_with_http_info(workspace_id, **kwargs)  # noqa: E501
             return data
 
-    def reports_api_v3_workspace_workspace_id_profitability_projects_post_with_http_info(
-        self, workspace_id, **kwargs
-    ):  # noqa: E501
+    def profitability_projects_post_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
         """Load profitability projects report  # noqa: E501
 
         Returns profitability projects report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.reports_api_v3_workspace_workspace_id_profitability_projects_post_with_http_info(workspace_id, async_req=True)
+        >>> thread = api.profitability_projects_post_with_http_info(workspace_id, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -527,10 +481,7 @@ class DefaultApi:
         params = locals()
         for key, val in params["kwargs"].items():
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reports_api_v3_workspace_workspace_id_profitability_projects_post" % key
-                )
+                raise TypeError("Got an unexpected keyword argument '%s'" " to method profitability_projects_post" % key)
             params[key] = val
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
@@ -538,7 +489,7 @@ class DefaultApi:
             "workspace_id" not in params or params["workspace_id"] is None
         ):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_profitability_projects_post`"
+                "Missing the required parameter `workspace_id` when calling `profitability_projects_post`"
             )  # noqa: E501
 
         collection_formats = {}

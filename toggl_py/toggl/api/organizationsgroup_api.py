@@ -13,7 +13,7 @@ import re  # noqa: F401
 from toggl.api_client import ApiClient
 
 
-class DefaultApi:
+class OrganizationsgroupApi:
 
     def __init__(self, api_client=None):
         if api_client is None:

@@ -1,4 +1,5 @@
 *.egg-info
+*.pye
 .classpath
 .env
 .project

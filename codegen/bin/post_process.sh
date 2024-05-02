@@ -10,7 +10,7 @@ CODEGEN_TESTS="$CODEGEN_TARGET/tests"
 #   dict(str, ModelClass)
 # to:
 #   dict[str, ModelClass]
-find $CODEGEN_PKG/api/*.py -type f -exec \
+find $CODEGEN_PKG/**/*.py -type f -exec \
     sed -Ei "s/([^\"])dict\((\w+), (\w+)\)/\1dict[\2, \3]/g" {} \;
 
 # generation produces 2 api files, both defining a DefaultApi class, with endpoints represented elsewhere
@@ -38,8 +38,17 @@ IMPORT_LINE="from toggl.api.reports_api_v3 import ReportsApiv3  # noqa: F401"
 echo $IMPORT_LINE >> $CODEGEN_PKG/__init__.py
 echo $IMPORT_LINE >> $CODEGEN_PKG/api/__init__.py
 
+# generation produces a class for the JSON Schema type utils.Int64Slice
+# which is just an alias for list[int], so overwrite it
+echo "UtilsInt64Slice = list[int]" > $CODEGEN_PKG/models/utils_int64_slice.py
+
+# the spec has a reference to, but no definition for, #/definitions/summary.GroupData
+# make it an alias for Any
+echo "from typing import Any" > $CODEGEN_PKG/models/summary_group_data.py
+echo "SummaryGroupData = Any" >> $CODEGEN_PKG/models/summary_group_data.py
+
 # reformat all python files
 black $CODEGEN_TARGET
 
 # remove strange .pye files
-rm -f $CODEGEN_PKG/api/*.pye
+rm -f $CODEGEN_PKG/**/*.pye

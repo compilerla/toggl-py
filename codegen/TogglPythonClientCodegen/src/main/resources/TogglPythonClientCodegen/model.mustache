@@ -1,8 +1,10 @@
-{{>partial_header}}
-import pprint
+{{>partial_header}}import pprint
 import re  # noqa: F401
+from datetime import datetime  # noqa: F401
+from typing import Any
 
-from {{packageName}}.configuration import Configuration
+from {{packageName}}.configuration import Configuration{{#imports}}{{#import}}
+{{import}}  # noqa: F401{{/import}}{{/imports}}
 
 
 {{#models}}
@@ -15,9 +17,9 @@ class {{classname}}:
 {{/-last}}
 {{/enumVars}}{{/allowableValues}}
     Attributes:
-      swagger_types (dict): The key is attribute name
-                            and the value is attribute type.
-      attribute_map (dict): The key is attribute name
+      swagger_types (dict): The key is attr name
+                            and the value is attr type.
+      attribute_map (dict): The key is attr name
                             and the value is json key in definition.
     """
 
@@ -40,8 +42,17 @@ class {{classname}}:
     }
 {{/discriminator}}
 
-    def __init__(self{{#vars}}, {{name}}={{#defaultValue}}{{{defaultValue}}}{{/defaultValue}}{{^defaultValue}}None{{/defaultValue}}{{/vars}}, _configuration=None):  # noqa: E501
-        """{{classname}} - a model defined in Swagger"""  # noqa: E501
+    def __init__(
+        self{{#vars}}, {{name}}: {{datatype}} = {{#defaultValue}}{{{defaultValue}}}{{/defaultValue}}{{^defaultValue}}None{{/defaultValue}}{{/vars}}, _configuration: Configuration = None  # noqa: E501
+    ):
+        """
+        {{classname}} - a model defined in Swagger
+
+        Parameters:
+        {{#vars}}
+          {{name}} ({{datatype}}): {{#required}}Required{{/required}}{{^required}}Optional{{/required}}
+        {{/vars}}
+        """
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
@@ -63,7 +74,7 @@ class {{classname}}:
 
 {{#vars}}
     @property
-    def {{name}}(self):
+    def {{name}}(self) -> {{datatype}}:
         """Gets the {{name}} of this {{classname}}.  # noqa: E501
 
 {{#description}}
@@ -76,7 +87,7 @@ class {{classname}}:
         return self._{{name}}
 
     @{{name}}.setter
-    def {{name}}(self, {{name}}):
+    def {{name}}(self, {{name}}: {{datatype}}):
         """Sets the {{name}} of this {{classname}}.
 
 {{#description}}
@@ -172,7 +183,7 @@ class {{classname}}:
         return self.discriminator_value_class_map.get(discriminator_value)
 
 {{/discriminator}}
-    def to_dict(self):
+    def to_dict(self) -> dict[str, Any]:
         """Returns the model properties as a dict"""
         result = {}
 
@@ -199,7 +210,7 @@ class {{classname}}:
 
         return result
 
-    def to_str(self):
+    def to_str(self) -> str:
         """Returns the string representation of the model"""
         return pprint.pformat(self.to_dict())
 

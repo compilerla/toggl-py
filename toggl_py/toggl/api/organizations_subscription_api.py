@@ -20,7 +20,9 @@ class OrganizationsSubscriptionApi:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_organization_purchase_order_pdf(self, organization_id, purchase_order_uid, **kwargs):  # noqa: E501
+    def get_organization_purchase_order_pdf(
+        self, organization_id: int, purchase_order_uid: str, **kwargs
+    ) -> str:  # noqa: E501
         """PurchaseOrderPdf  # noqa: E501
 
         Returns a Purchase Order document in PDF form.  # noqa: E501
@@ -47,7 +49,9 @@ class OrganizationsSubscriptionApi:
             )  # noqa: E501
             return data
 
-    def get_organization_purchase_order_pdf_with_http_info(self, organization_id, purchase_order_uid, **kwargs):  # noqa: E501
+    def get_organization_purchase_order_pdf_with_http_info(
+        self, organization_id: int, purchase_order_uid: str, **kwargs
+    ) -> str:  # noqa: E501
         """PurchaseOrderPdf  # noqa: E501
 
         Returns a Purchase Order document in PDF form.  # noqa: E501

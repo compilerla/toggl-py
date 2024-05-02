@@ -105,7 +105,7 @@ class IcalApi:
             collection_formats=collection_formats,
         )
 
-    def post_workspace_ical_reset(self, workspace_id, **kwargs):  # noqa: E501
+    def post_workspace_ical_reset(self, workspace_id: int, **kwargs) -> str:  # noqa: E501
         """Reset iCal token  # noqa: E501
 
         Reset the iCal token for a given workspace.  # noqa: E501
@@ -127,7 +127,7 @@ class IcalApi:
             (data) = self.post_workspace_ical_reset_with_http_info(workspace_id, **kwargs)  # noqa: E501
             return data
 
-    def post_workspace_ical_reset_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
+    def post_workspace_ical_reset_with_http_info(self, workspace_id: int, **kwargs) -> str:  # noqa: E501
         """Reset iCal token  # noqa: E501
 
         Reset the iCal token for a given workspace.  # noqa: E501
@@ -201,7 +201,7 @@ class IcalApi:
             collection_formats=collection_formats,
         )
 
-    def post_workspace_ical_toggle(self, workspace_id, **kwargs):  # noqa: E501
+    def post_workspace_ical_toggle(self, workspace_id: int, **kwargs) -> str:  # noqa: E501
         """Toggle the iCal token  # noqa: E501
 
         Toggle the iCal token on/off for a given workspace.  # noqa: E501
@@ -223,7 +223,7 @@ class IcalApi:
             (data) = self.post_workspace_ical_toggle_with_http_info(workspace_id, **kwargs)  # noqa: E501
             return data
 
-    def post_workspace_ical_toggle_with_http_info(self, workspace_id, **kwargs):  # noqa: E501
+    def post_workspace_ical_toggle_with_http_info(self, workspace_id: int, **kwargs) -> str:  # noqa: E501
         """Toggle the iCal token  # noqa: E501
 
         Toggle the iCal token on/off for a given workspace.  # noqa: E501

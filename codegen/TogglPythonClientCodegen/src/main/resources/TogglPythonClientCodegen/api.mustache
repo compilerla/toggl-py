@@ -1,7 +1,7 @@
-{{>partial_header}}
-import re  # noqa: F401
+{{>partial_header}}import re  # noqa: F401
 
-from {{packageName}}.api_client import ApiClient
+from {{packageName}}.api_client import ApiClient{{#imports}}{{#import}}
+{{import}}  # noqa: F401{{/import}}{{/imports}}
 
 
 {{#operations}}
@@ -13,7 +13,7 @@ class {{classname}}:
         self.api_client = api_client
 {{#operation}}
 
-    def {{operationId}}(self, {{#sortParamsByRequiredFlag}}{{#allParams}}{{#required}}{{paramName}}, {{/required}}{{/allParams}}{{/sortParamsByRequiredFlag}}**kwargs):  # noqa: E501
+    def {{operationId}}(self, {{#sortParamsByRequiredFlag}}{{#allParams}}{{#required}}{{paramName}}: {{dataType}}, {{/required}}{{/allParams}}{{/sortParamsByRequiredFlag}}**kwargs){{#returnType}} -> {{returnType}}{{/returnType}}:  # noqa: E501
         """{{#summary}}{{{.}}}{{/summary}}{{^summary}}{{operationId}}{{/summary}}  # noqa: E501
 
 {{#notes}}
@@ -44,7 +44,7 @@ class {{classname}}:
             (data) = self.{{operationId}}_with_http_info({{#sortParamsByRequiredFlag}}{{#allParams}}{{#required}}{{paramName}}, {{/required}}{{/allParams}}{{/sortParamsByRequiredFlag}}**kwargs)  # noqa: E501
             return data
 
-    def {{operationId}}_with_http_info(self, {{#sortParamsByRequiredFlag}}{{#allParams}}{{#required}}{{paramName}}, {{/required}}{{/allParams}}{{/sortParamsByRequiredFlag}}**kwargs):  # noqa: E501
+    def {{operationId}}_with_http_info(self, {{#sortParamsByRequiredFlag}}{{#allParams}}{{#required}}{{paramName}}: {{dataType}}, {{/required}}{{/allParams}}{{/sortParamsByRequiredFlag}}**kwargs){{#returnType}} -> {{returnType}}{{/returnType}}:  # noqa: E501
         """{{#summary}}{{{.}}}{{/summary}}{{^summary}}{{operationId}}{{/summary}}  # noqa: E501
 
 {{#notes}}

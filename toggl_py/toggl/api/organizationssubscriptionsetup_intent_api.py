@@ -20,7 +20,7 @@ class OrganizationssubscriptionsetupIntentApi:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def create_setup_intent(self, organization_id, **kwargs):  # noqa: E501
+    def create_setup_intent(self, organization_id: int, **kwargs):  # noqa: E501
         """Create a setup intent for collecting customer's payment method  # noqa: E501
 
         Create a setup intent for collecting customer's payment method for future payments  # noqa: E501
@@ -42,7 +42,7 @@ class OrganizationssubscriptionsetupIntentApi:
             (data) = self.create_setup_intent_with_http_info(organization_id, **kwargs)  # noqa: E501
             return data
 
-    def create_setup_intent_with_http_info(self, organization_id, **kwargs):  # noqa: E501
+    def create_setup_intent_with_http_info(self, organization_id: int, **kwargs):  # noqa: E501
         """Create a setup intent for collecting customer's payment method  # noqa: E501
 
         Create a setup intent for collecting customer's payment method for future payments  # noqa: E501

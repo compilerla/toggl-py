@@ -20,7 +20,7 @@ class OrganizationssubscriptionpromocodeApi:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def delete_promotion_code(self, organization_id, **kwargs):  # noqa: E501
+    def delete_promotion_code(self, organization_id: int, **kwargs):  # noqa: E501
         """Removes any discount (promotion code) applied to the organization's customer  # noqa: E501
 
         Removes any discount (promotion code) applied to the organization's customer  # noqa: E501
@@ -42,7 +42,7 @@ class OrganizationssubscriptionpromocodeApi:
             (data) = self.delete_promotion_code_with_http_info(organization_id, **kwargs)  # noqa: E501
             return data
 
-    def delete_promotion_code_with_http_info(self, organization_id, **kwargs):  # noqa: E501
+    def delete_promotion_code_with_http_info(self, organization_id: int, **kwargs):  # noqa: E501
         """Removes any discount (promotion code) applied to the organization's customer  # noqa: E501
 
         Removes any discount (promotion code) applied to the organization's customer  # noqa: E501
@@ -116,7 +116,7 @@ class OrganizationssubscriptionpromocodeApi:
             collection_formats=collection_formats,
         )
 
-    def post_promotion_code(self, organization_id, **kwargs):  # noqa: E501
+    def post_promotion_code(self, organization_id: int, **kwargs):  # noqa: E501
         """Applies the given promotion code to organization's customer  # noqa: E501
 
         Applies the given promotion code to organization's customer If the customer already has the promotion code, then it will be overridden  # noqa: E501
@@ -138,7 +138,7 @@ class OrganizationssubscriptionpromocodeApi:
             (data) = self.post_promotion_code_with_http_info(organization_id, **kwargs)  # noqa: E501
             return data
 
-    def post_promotion_code_with_http_info(self, organization_id, **kwargs):  # noqa: E501
+    def post_promotion_code_with_http_info(self, organization_id: int, **kwargs):  # noqa: E501
         """Applies the given promotion code to organization's customer  # noqa: E501
 
         Applies the given promotion code to organization's customer If the customer already has the promotion code, then it will be overridden  # noqa: E501

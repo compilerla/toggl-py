@@ -16,6 +16,14 @@ java -cp $CODEGEN_JAR:$CODEGEN_DIR/$CODEGEN_LANG/target/* \
     --output $CODEGEN_TARGET \
     --template-dir $CODEGEN_DIR/$CODEGEN_LANG/src/main/resources/$CODEGEN_LANG
 
+# replaces invalid generated type hint syntax for dictionaries
+# from:
+#   dict(str, ModelClass)
+# to:
+#   dict[str, ModelClass]
+find $CODEGEN_PKG/api/*.py -type f -exec \
+    sed -Ei "s/([^\"])dict\((\w+), (\w+)\)/\1dict[\2, \3]/g" {} \;
+
 # generation produces 2 api files, both defining a DefaultApi class, with endpoints represented elsewhere
 
 # the first one is named api/_api.py and contains OrganizationApi endpoints, it can be removed

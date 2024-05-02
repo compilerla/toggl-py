@@ -20,7 +20,7 @@ class StatusApi:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_status(self, **kwargs):  # noqa: E501
+    def get_status(self, **kwargs) -> str:  # noqa: E501
         """Status  # noqa: E501
 
         Returns API status.  # noqa: E501
@@ -41,7 +41,7 @@ class StatusApi:
             (data) = self.get_status_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_status_with_http_info(self, **kwargs):  # noqa: E501
+    def get_status_with_http_info(self, **kwargs) -> str:  # noqa: E501
         """Status  # noqa: E501
 
         Returns API status.  # noqa: E501

@@ -20,7 +20,7 @@ class TimeEntriesNotesApi:
             api_client = ApiClient()
         self.api_client = api_client
 
-    def delete_time_entry_notes_by_id(self, time_entry_id, **kwargs):  # noqa: E501
+    def delete_time_entry_notes_by_id(self, time_entry_id: int, **kwargs) -> str:  # noqa: E501
         """delete a time entry note by ID.  # noqa: E501
 
         Delete time entry notes by ID that is accessible by the current user.  # noqa: E501
@@ -42,7 +42,7 @@ class TimeEntriesNotesApi:
             (data) = self.delete_time_entry_notes_by_id_with_http_info(time_entry_id, **kwargs)  # noqa: E501
             return data
 
-    def delete_time_entry_notes_by_id_with_http_info(self, time_entry_id, **kwargs):  # noqa: E501
+    def delete_time_entry_notes_by_id_with_http_info(self, time_entry_id: int, **kwargs) -> str:  # noqa: E501
         """delete a time entry note by ID.  # noqa: E501
 
         Delete time entry notes by ID that is accessible by the current user.  # noqa: E501

@@ -74,8 +74,8 @@ class RatesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `create_rate`")  # noqa: E501
         # verify the required parameter "rate_post" is set
         if self.api_client.client_side_validation and ("rate_post" not in params or params["rate_post"] is None):  # noqa: E501
@@ -175,8 +175,8 @@ class RatesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `delete_rate`")  # noqa: E501
         # verify the required parameter "rate_id" is set
         if self.api_client.client_side_validation and ("rate_id" not in params or params["rate_id"] is None):  # noqa: E501
@@ -278,8 +278,8 @@ class RatesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_rates_by_level`")  # noqa: E501
         # verify the required parameter "level" is set
         if self.api_client.client_side_validation and ("level" not in params or params["level"] is None):  # noqa: E501

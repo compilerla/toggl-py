@@ -74,16 +74,16 @@ class OrganizationssubscriptionbillingApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `create_billing_portal_session`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `create_billing_portal_session`"  # noqa: E501
+            )
         # verify the required parameter "params" is set
         if self.api_client.client_side_validation and ("params" not in params or params["params"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `params` when calling `create_billing_portal_session`"
-            )  # noqa: E501
+                "Missing the required parameter `params` when calling `create_billing_portal_session`"  # noqa: E501
+            )
 
         collection_formats = {}
 

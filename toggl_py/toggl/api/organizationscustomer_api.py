@@ -72,11 +72,11 @@ class OrganizationscustomerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -168,11 +168,11 @@ class OrganizationscustomerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_unified_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_unified_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -270,18 +270,18 @@ class OrganizationscustomerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_customer`"  # noqa: E501
+            )
         # verify the required parameter "contact_detail_request" is set
         if self.api_client.client_side_validation and (
-            "contact_detail_request" not in params or params["contact_detail_request"] is None
-        ):  # noqa: E501
+            "contact_detail_request" not in params or params["contact_detail_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `contact_detail_request` when calling `post_organization_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `contact_detail_request` when calling `post_organization_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -375,11 +375,11 @@ class OrganizationscustomerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_unified_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_unified_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -471,11 +471,11 @@ class OrganizationscustomerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_unified_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_unified_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 

@@ -85,16 +85,16 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_action_tasks_auth_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_action_tasks_auth_post`"  # noqa: E501
+            )
         # verify the required parameter "action" is set
         if self.api_client.client_side_validation and ("action" not in params or params["action"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `action` when calling `reports_api_v3_workspace_workspace_id_action_tasks_auth_post`"
-            )  # noqa: E501
+                "Missing the required parameter `action` when calling `reports_api_v3_workspace_workspace_id_action_tasks_auth_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -203,16 +203,16 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_action_tasks_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_action_tasks_post`"  # noqa: E501
+            )
         # verify the required parameter "action" is set
         if self.api_client.client_side_validation and ("action" not in params or params["action"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `action` when calling `reports_api_v3_workspace_workspace_id_action_tasks_post`"
-            )  # noqa: E501
+                "Missing the required parameter `action` when calling `reports_api_v3_workspace_workspace_id_action_tasks_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -317,11 +317,11 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_clients_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_clients_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -426,11 +426,11 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_project_groups_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_project_groups_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -537,18 +537,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_project_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_project_users_post`"  # noqa: E501
+            )
         # verify the required parameter "status_post" is set
         if self.api_client.client_side_validation and (
-            "status_post" not in params or params["status_post"] is None
-        ):  # noqa: E501
+            "status_post" not in params or params["status_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `status_post` when calling `reports_api_v3_workspace_workspace_id_filters_project_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `status_post` when calling `reports_api_v3_workspace_workspace_id_filters_project_users_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -651,11 +651,11 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_projects_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -760,11 +760,11 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_projects_status_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_projects_status_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -871,18 +871,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_auth_status_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_auth_status_post`"  # noqa: E501
+            )
         # verify the required parameter "tasks_status_post" is set
         if self.api_client.client_side_validation and (
-            "tasks_status_post" not in params or params["tasks_status_post"] is None
-        ):  # noqa: E501
+            "tasks_status_post" not in params or params["tasks_status_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `tasks_status_post` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_auth_status_post`"
-            )  # noqa: E501
+                "Missing the required parameter `tasks_status_post` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_auth_status_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -989,18 +989,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_status_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_status_post`"  # noqa: E501
+            )
         # verify the required parameter "tasks_status_post" is set
         if self.api_client.client_side_validation and (
-            "tasks_status_post" not in params or params["tasks_status_post"] is None
-        ):  # noqa: E501
+            "tasks_status_post" not in params or params["tasks_status_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `tasks_status_post` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_status_post`"
-            )  # noqa: E501
+                "Missing the required parameter `tasks_status_post` when calling `reports_api_v3_workspace_workspace_id_filters_tasks_status_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1103,11 +1103,11 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_filters_users_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1212,18 +1212,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_clients_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_clients_post`"  # noqa: E501
+            )
         # verify the required parameter "clients_post" is set
         if self.api_client.client_side_validation and (
-            "clients_post" not in params or params["clients_post"] is None
-        ):  # noqa: E501
+            "clients_post" not in params or params["clients_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `clients_post` when calling `reports_api_v3_workspace_workspace_id_search_clients_post`"
-            )  # noqa: E501
+                "Missing the required parameter `clients_post` when calling `reports_api_v3_workspace_workspace_id_search_clients_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1328,18 +1328,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_projects_post`"  # noqa: E501
+            )
         # verify the required parameter "projects_post" is set
         if self.api_client.client_side_validation and (
-            "projects_post" not in params or params["projects_post"] is None
-        ):  # noqa: E501
+            "projects_post" not in params or params["projects_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `projects_post` when calling `reports_api_v3_workspace_workspace_id_search_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `projects_post` when calling `reports_api_v3_workspace_workspace_id_search_projects_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1444,18 +1444,18 @@ class UtilsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_users_post`"  # noqa: E501
+            )
         # verify the required parameter "users_filter" is set
         if self.api_client.client_side_validation and (
-            "users_filter" not in params or params["users_filter"] is None
-        ):  # noqa: E501
+            "users_filter" not in params or params["users_filter"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `users_filter` when calling `reports_api_v3_workspace_workspace_id_search_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `users_filter` when calling `reports_api_v3_workspace_workspace_id_search_users_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 

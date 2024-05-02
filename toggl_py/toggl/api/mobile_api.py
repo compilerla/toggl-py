@@ -72,11 +72,11 @@ class MobileApi:
         del params["kwargs"]
         # verify the required parameter "mobile_feedback_post" is set
         if self.api_client.client_side_validation and (
-            "mobile_feedback_post" not in params or params["mobile_feedback_post"] is None
-        ):  # noqa: E501
+            "mobile_feedback_post" not in params or params["mobile_feedback_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `mobile_feedback_post` when calling `post_mobile_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `mobile_feedback_post` when calling `post_mobile_feedback`"  # noqa: E501
+            )
 
         collection_formats = {}
 

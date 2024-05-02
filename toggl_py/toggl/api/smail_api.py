@@ -72,8 +72,8 @@ class SmailApi:
         del params["kwargs"]
         # verify the required parameter "email_info" is set
         if self.api_client.client_side_validation and (
-            "email_info" not in params or params["email_info"] is None
-        ):  # noqa: E501
+            "email_info" not in params or params["email_info"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `email_info` when calling `post_smail_contact`")  # noqa: E501
 
         collection_formats = {}
@@ -166,8 +166,8 @@ class SmailApi:
         del params["kwargs"]
         # verify the required parameter "email_info" is set
         if self.api_client.client_side_validation and (
-            "email_info" not in params or params["email_info"] is None
-        ):  # noqa: E501
+            "email_info" not in params or params["email_info"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `email_info` when calling `post_smail_demo`")  # noqa: E501
 
         collection_formats = {}
@@ -260,8 +260,8 @@ class SmailApi:
         del params["kwargs"]
         # verify the required parameter "email_location" is set
         if self.api_client.client_side_validation and (
-            "email_location" not in params or params["email_location"] is None
-        ):  # noqa: E501
+            "email_location" not in params or params["email_location"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `email_location` when calling `post_smail_meet`")  # noqa: E501
 
         collection_formats = {}

@@ -78,11 +78,11 @@ class SavedReportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_csv_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_csv_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -187,11 +187,11 @@ class SavedReportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_pdf_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -340,11 +340,11 @@ class SavedReportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -447,11 +447,11 @@ class SavedReportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_xlsx_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_xlsx_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 

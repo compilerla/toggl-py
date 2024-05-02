@@ -80,18 +80,18 @@ class OrganizationsSubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_purchase_order_pdf`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_purchase_order_pdf`"  # noqa: E501
+            )
         # verify the required parameter "purchase_order_uid" is set
         if self.api_client.client_side_validation and (
-            "purchase_order_uid" not in params or params["purchase_order_uid"] is None
-        ):  # noqa: E501
+            "purchase_order_uid" not in params or params["purchase_order_uid"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `purchase_order_uid` when calling `get_organization_purchase_order_pdf`"
-            )  # noqa: E501
+                "Missing the required parameter `purchase_order_uid` when calling `get_organization_purchase_order_pdf`"  # noqa: E501
+            )
 
         collection_formats = {}
 

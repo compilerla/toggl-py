@@ -159,11 +159,11 @@ class CountriesApi:
         del params["kwargs"]
         # verify the required parameter "country_id" is set
         if self.api_client.client_side_validation and (
-            "country_id" not in params or params["country_id"] is None
-        ):  # noqa: E501
+            "country_id" not in params or params["country_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `country_id` when calling `get_countries_country_id_subdivisions`"
-            )  # noqa: E501
+                "Missing the required parameter `country_id` when calling `get_countries_country_id_subdivisions`"  # noqa: E501
+            )
 
         collection_formats = {}
 

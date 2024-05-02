@@ -72,11 +72,12 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "delete_push_services_unsubscribe" is set
         if self.api_client.client_side_validation and (
-            "delete_push_services_unsubscribe" not in params or params["delete_push_services_unsubscribe"] is None
-        ):  # noqa: E501
+            "delete_push_services_unsubscribe" not in params
+            or params["delete_push_services_unsubscribe"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `delete_push_services_unsubscribe` when calling `delete_push_services`"
-            )  # noqa: E501
+                "Missing the required parameter `delete_push_services_unsubscribe` when calling `delete_push_services`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -257,8 +258,8 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "token_code" is set
         if self.api_client.client_side_validation and (
-            "token_code" not in params or params["token_code"] is None
-        ):  # noqa: E501
+            "token_code" not in params or params["token_code"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `token_code` when calling `get_lost_password`")  # noqa: E501
 
         collection_formats = {}
@@ -1833,11 +1834,11 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "post_lost_password" is set
         if self.api_client.client_side_validation and (
-            "post_lost_password" not in params or params["post_lost_password"] is None
-        ):  # noqa: E501
+            "post_lost_password" not in params or params["post_lost_password"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_lost_password` when calling `post_lost_password`"
-            )  # noqa: E501
+                "Missing the required parameter `post_lost_password` when calling `post_lost_password`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1929,11 +1930,11 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "post_new_password" is set
         if self.api_client.client_side_validation and (
-            "post_new_password" not in params or params["post_new_password"] is None
-        ):  # noqa: E501
+            "post_new_password" not in params or params["post_new_password"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_new_password` when calling `post_lost_password_confirm`"
-            )  # noqa: E501
+                "Missing the required parameter `post_new_password` when calling `post_lost_password_confirm`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2110,11 +2111,11 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "disable_code" is set
         if self.api_client.client_side_validation and (
-            "disable_code" not in params or params["disable_code"] is None
-        ):  # noqa: E501
+            "disable_code" not in params or params["disable_code"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `disable_code` when calling `post_me_disable_product_emails`"
-            )  # noqa: E501
+                "Missing the required parameter `disable_code` when calling `post_me_disable_product_emails`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2206,11 +2207,11 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "weekly_report_code" is set
         if self.api_client.client_side_validation and (
-            "weekly_report_code" not in params or params["weekly_report_code"] is None
-        ):  # noqa: E501
+            "weekly_report_code" not in params or params["weekly_report_code"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `weekly_report_code` when calling `post_me_disable_weekly_report`"
-            )  # noqa: E501
+                "Missing the required parameter `weekly_report_code` when calling `post_me_disable_weekly_report`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2302,8 +2303,8 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "post_flags" is set
         if self.api_client.client_side_validation and (
-            "post_flags" not in params or params["post_flags"] is None
-        ):  # noqa: E501
+            "post_flags" not in params or params["post_flags"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `post_flags` when calling `post_me_flags`")  # noqa: E501
 
         collection_formats = {}
@@ -2396,11 +2397,11 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "post_push_services_subscribe" is set
         if self.api_client.client_side_validation and (
-            "post_push_services_subscribe" not in params or params["post_push_services_subscribe"] is None
-        ):  # noqa: E501
+            "post_push_services_subscribe" not in params or params["post_push_services_subscribe"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_push_services_subscribe` when calling `post_push_services`"
-            )  # noqa: E501
+                "Missing the required parameter `post_push_services_subscribe` when calling `post_push_services`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2589,8 +2590,8 @@ class MeApi:
         del params["kwargs"]
         # verify the required parameter "notification_id" is set
         if self.api_client.client_side_validation and (
-            "notification_id" not in params or params["notification_id"] is None
-        ):  # noqa: E501
+            "notification_id" not in params or params["notification_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `notification_id` when calling `put_notifications`")  # noqa: E501
 
         collection_formats = {}

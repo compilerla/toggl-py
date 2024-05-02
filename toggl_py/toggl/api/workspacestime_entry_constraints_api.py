@@ -82,18 +82,18 @@ class WorkspacestimeEntryConstraintsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entry_constraints`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entry_constraints`"  # noqa: E501
+            )
         # verify the required parameter "time_entry_constraints" is set
         if self.api_client.client_side_validation and (
-            "time_entry_constraints" not in params or params["time_entry_constraints"] is None
-        ):  # noqa: E501
+            "time_entry_constraints" not in params or params["time_entry_constraints"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_constraints` when calling `post_workspace_time_entry_constraints`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_constraints` when calling `post_workspace_time_entry_constraints`"  # noqa: E501
+            )
 
         collection_formats = {}
 

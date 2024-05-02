@@ -72,8 +72,8 @@ class InvitationsApi:
         del params["kwargs"]
         # verify the required parameter "invitation_code" is set
         if self.api_client.client_side_validation and (
-            "invitation_code" not in params or params["invitation_code"] is None
-        ):  # noqa: E501
+            "invitation_code" not in params or params["invitation_code"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `invitation_code` when calling `get_invitations`")  # noqa: E501
 
         collection_formats = {}
@@ -168,11 +168,11 @@ class InvitationsApi:
         del params["kwargs"]
         # verify the required parameter "inviutation_code" is set
         if self.api_client.client_side_validation and (
-            "inviutation_code" not in params or params["inviutation_code"] is None
-        ):  # noqa: E501
+            "inviutation_code" not in params or params["inviutation_code"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `inviutation_code` when calling `post_organization_accept_invitation`"
-            )  # noqa: E501
+                "Missing the required parameter `inviutation_code` when calling `post_organization_accept_invitation`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -270,18 +270,18 @@ class InvitationsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_invitation`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_invitation`"  # noqa: E501
+            )
         # verify the required parameter "post_invitation_request" is set
         if self.api_client.client_side_validation and (
-            "post_invitation_request" not in params or params["post_invitation_request"] is None
-        ):  # noqa: E501
+            "post_invitation_request" not in params or params["post_invitation_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_invitation_request` when calling `post_organization_invitation`"
-            )  # noqa: E501
+                "Missing the required parameter `post_invitation_request` when calling `post_organization_invitation`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -375,11 +375,11 @@ class InvitationsApi:
         del params["kwargs"]
         # verify the required parameter "inviutation_code" is set
         if self.api_client.client_side_validation and (
-            "inviutation_code" not in params or params["inviutation_code"] is None
-        ):  # noqa: E501
+            "inviutation_code" not in params or params["inviutation_code"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `inviutation_code` when calling `post_reject_invitation`"
-            )  # noqa: E501
+                "Missing the required parameter `inviutation_code` when calling `post_reject_invitation`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -473,13 +473,13 @@ class InvitationsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `organization_id` when calling `put_invitation`")  # noqa: E501
         # verify the required parameter "invitation_code" is set
         if self.api_client.client_side_validation and (
-            "invitation_code" not in params or params["invitation_code"] is None
-        ):  # noqa: E501
+            "invitation_code" not in params or params["invitation_code"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `invitation_code` when calling `put_invitation`")  # noqa: E501
 
         collection_formats = {}

@@ -72,18 +72,18 @@ class OrganizationsOwnerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_ownership_transfer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_ownership_transfer`"  # noqa: E501
+            )
         # verify the required parameter "transfer_id" is set
         if self.api_client.client_side_validation and (
-            "transfer_id" not in params or params["transfer_id"] is None
-        ):  # noqa: E501
+            "transfer_id" not in params or params["transfer_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `transfer_id` when calling `get_ownership_transfer`"
-            )  # noqa: E501
+                "Missing the required parameter `transfer_id` when calling `get_ownership_transfer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -177,11 +177,11 @@ class OrganizationsOwnerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_ownership_transfers`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_ownership_transfers`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -275,11 +275,11 @@ class OrganizationsOwnerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_ownership_transfer`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_ownership_transfer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -379,23 +379,23 @@ class OrganizationsOwnerApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_ownership_transfer_actions`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_ownership_transfer_actions`"  # noqa: E501
+            )
         # verify the required parameter "transfer_id" is set
         if self.api_client.client_side_validation and (
-            "transfer_id" not in params or params["transfer_id"] is None
-        ):  # noqa: E501
+            "transfer_id" not in params or params["transfer_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `transfer_id` when calling `post_ownership_transfer_actions`"
-            )  # noqa: E501
+                "Missing the required parameter `transfer_id` when calling `post_ownership_transfer_actions`"  # noqa: E501
+            )
         # verify the required parameter "action" is set
         if self.api_client.client_side_validation and ("action" not in params or params["action"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `action` when calling `post_ownership_transfer_actions`"
-            )  # noqa: E501
+                "Missing the required parameter `action` when calling `post_ownership_transfer_actions`"  # noqa: E501
+            )
 
         collection_formats = {}
 

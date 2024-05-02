@@ -72,11 +72,11 @@ class TimeEntriesNotesApi:
         del params["kwargs"]
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `delete_time_entry_notes_by_id`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `delete_time_entry_notes_by_id`"  # noqa: E501
+            )
 
         collection_formats = {}
 

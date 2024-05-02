@@ -74,8 +74,8 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `archive_client`")  # noqa: E501
         # verify the required parameter "client_id" is set
         if self.api_client.client_side_validation and ("client_id" not in params or params["client_id"] is None):  # noqa: E501
@@ -175,16 +175,16 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_clients`"  # noqa: E501
+            )
         # verify the required parameter "client_id" is set
         if self.api_client.client_side_validation and ("client_id" not in params or params["client_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `client_id` when calling `delete_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `client_id` when calling `delete_workspace_clients`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -280,8 +280,8 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_workspace_client`")  # noqa: E501
         # verify the required parameter "client_id" is set
         if self.api_client.client_side_validation and ("client_id" not in params or params["client_id"] is None):  # noqa: E501
@@ -383,11 +383,11 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_clients`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -485,18 +485,18 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_clients`"  # noqa: E501
+            )
         # verify the required parameter "posted_client" is set
         if self.api_client.client_side_validation and (
-            "posted_client" not in params or params["posted_client"] is None
-        ):  # noqa: E501
+            "posted_client" not in params or params["posted_client"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `posted_client` when calling `post_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `posted_client` when calling `post_workspace_clients`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -594,21 +594,21 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_clients`"  # noqa: E501
+            )
         # verify the required parameter "client_id" is set
         if self.api_client.client_side_validation and ("client_id" not in params or params["client_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `client_id` when calling `put_workspace_clients`")  # noqa: E501
         # verify the required parameter "posted_client" is set
         if self.api_client.client_side_validation and (
-            "posted_client" not in params or params["posted_client"] is None
-        ):  # noqa: E501
+            "posted_client" not in params or params["posted_client"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `posted_client` when calling `put_workspace_clients`"
-            )  # noqa: E501
+                "Missing the required parameter `posted_client` when calling `put_workspace_clients`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -708,8 +708,8 @@ class ClientsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `restore_client`")  # noqa: E501
         # verify the required parameter "client_id" is set
         if self.api_client.client_side_validation and ("client_id" not in params or params["client_id"] is None):  # noqa: E501

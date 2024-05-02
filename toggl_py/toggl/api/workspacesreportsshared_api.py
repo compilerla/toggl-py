@@ -74,18 +74,18 @@ class WorkspacesreportssharedApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `bulk_delete_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `bulk_delete_saved_report_resource`"  # noqa: E501
+            )
         # verify the required parameter "input_data" is set
         if self.api_client.client_side_validation and (
-            "input_data" not in params or params["input_data"] is None
-        ):  # noqa: E501
+            "input_data" not in params or params["input_data"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `input_data` when calling `bulk_delete_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `input_data` when calling `bulk_delete_saved_report_resource`"  # noqa: E501
+            )
 
         collection_formats = {}
 

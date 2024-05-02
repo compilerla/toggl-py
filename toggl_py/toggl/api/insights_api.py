@@ -85,18 +85,18 @@ class InsightsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_data_trends_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_data_trends_projects_post`"  # noqa: E501
+            )
         # verify the required parameter "project_trend_post" is set
         if self.api_client.client_side_validation and (
-            "project_trend_post" not in params or params["project_trend_post"] is None
-        ):  # noqa: E501
+            "project_trend_post" not in params or params["project_trend_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_trend_post` when calling `insights_api_v1_workspace_workspace_id_data_trends_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `project_trend_post` when calling `insights_api_v1_workspace_workspace_id_data_trends_projects_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -201,11 +201,11 @@ class InsightsApi:
         del params["kwargs"]
         # verify the required parameter "parameters" is set
         if self.api_client.client_side_validation and (
-            "parameters" not in params or params["parameters"] is None
-        ):  # noqa: E501
+            "parameters" not in params or params["parameters"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_employees_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_employees_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -310,16 +310,16 @@ class InsightsApi:
         del params["kwargs"]
         # verify the required parameter "parameters" is set
         if self.api_client.client_side_validation and (
-            "parameters" not in params or params["parameters"] is None
-        ):  # noqa: E501
+            "parameters" not in params or params["parameters"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -428,16 +428,16 @@ class InsightsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 

@@ -74,18 +74,18 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_time_entries`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_time_entries`"  # noqa: E501
+            )
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `delete_workspace_time_entries`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `delete_workspace_time_entries`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -377,11 +377,11 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `get_time_entry_by_id`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `get_time_entry_by_id`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -477,11 +477,11 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `get_time_notes_entry_notes_by_id`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `get_time_notes_entry_notes_by_id`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -575,11 +575,11 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_time_entry_invitations`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_time_entry_invitations`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -677,18 +677,18 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `patch_time_entries`")  # noqa: E501
         # verify the required parameter "time_entry_ids" is set
         if self.api_client.client_side_validation and (
-            "time_entry_ids" not in params or params["time_entry_ids"] is None
-        ):  # noqa: E501
+            "time_entry_ids" not in params or params["time_entry_ids"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `time_entry_ids` when calling `patch_time_entries`")  # noqa: E501
         # verify the required parameter "patch_input" is set
         if self.api_client.client_side_validation and (
-            "patch_input" not in params or params["patch_input"] is None
-        ):  # noqa: E501
+            "patch_input" not in params or params["patch_input"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `patch_input` when calling `patch_time_entries`")  # noqa: E501
 
         collection_formats = {}
@@ -795,18 +795,18 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `patch_workspace_stop_time_entry_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `patch_workspace_stop_time_entry_handler`"  # noqa: E501
+            )
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `patch_workspace_stop_time_entry_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `patch_workspace_stop_time_entry_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -908,18 +908,18 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entries`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entries`"  # noqa: E501
+            )
         # verify the required parameter "workspace_time_entry_post" is set
         if self.api_client.client_side_validation and (
-            "workspace_time_entry_post" not in params or params["workspace_time_entry_post"] is None
-        ):  # noqa: E501
+            "workspace_time_entry_post" not in params or params["workspace_time_entry_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_time_entry_post` when calling `post_workspace_time_entries`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_time_entry_post` when calling `post_workspace_time_entries`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1025,18 +1025,18 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entry_invitation_action`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_time_entry_invitation_action`"  # noqa: E501
+            )
         # verify the required parameter "time_entry_invitation_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_invitation_id" not in params or params["time_entry_invitation_id"] is None
-        ):  # noqa: E501
+            "time_entry_invitation_id" not in params or params["time_entry_invitation_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_invitation_id` when calling `post_workspace_time_entry_invitation_action`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_invitation_id` when calling `post_workspace_time_entry_invitation_action`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1130,11 +1130,11 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `put_time_entry_notes_by_id`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `put_time_entry_notes_by_id`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1240,25 +1240,25 @@ class TimeEntriesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_time_entry_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_time_entry_handler`"  # noqa: E501
+            )
         # verify the required parameter "time_entry_id" is set
         if self.api_client.client_side_validation and (
-            "time_entry_id" not in params or params["time_entry_id"] is None
-        ):  # noqa: E501
+            "time_entry_id" not in params or params["time_entry_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `time_entry_id` when calling `put_workspace_time_entry_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `time_entry_id` when calling `put_workspace_time_entry_handler`"  # noqa: E501
+            )
         # verify the required parameter "workspace_time_entry_post" is set
         if self.api_client.client_side_validation and (
-            "workspace_time_entry_post" not in params or params["workspace_time_entry_post"] is None
-        ):  # noqa: E501
+            "workspace_time_entry_post" not in params or params["workspace_time_entry_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_time_entry_post` when calling `put_workspace_time_entry_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_time_entry_post` when calling `put_workspace_time_entry_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 

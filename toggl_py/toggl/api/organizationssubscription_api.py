@@ -82,18 +82,18 @@ class OrganizationssubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_subscription_calculate`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_subscription_calculate`"  # noqa: E501
+            )
         # verify the required parameter "calculation_data_request" is set
         if self.api_client.client_side_validation and (
-            "calculation_data_request" not in params or params["calculation_data_request"] is None
-        ):  # noqa: E501
+            "calculation_data_request" not in params or params["calculation_data_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `calculation_data_request` when calling `post_organization_subscription_calculate`"
-            )  # noqa: E501
+                "Missing the required parameter `calculation_data_request` when calling `post_organization_subscription_calculate`"  # noqa: E501
+            )
 
         collection_formats = {}
 

@@ -74,16 +74,16 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `delete_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `delete_organization_group`"  # noqa: E501
+            )
         # verify the required parameter "group_id" is set
         if self.api_client.client_side_validation and ("group_id" not in params or params["group_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `group_id` when calling `delete_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `group_id` when calling `delete_organization_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -179,16 +179,16 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `delete_project_group`")  # noqa: E501
         # verify the required parameter "project_group_id" is set
         if self.api_client.client_side_validation and (
-            "project_group_id" not in params or params["project_group_id"] is None
-        ):  # noqa: E501
+            "project_group_id" not in params or params["project_group_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_group_id` when calling `delete_project_group`"
-            )  # noqa: E501
+                "Missing the required parameter `project_group_id` when calling `delete_project_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -284,11 +284,11 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_group`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_group`"  # noqa: E501
+            )
         # verify the required parameter "group_id" is set
         if self.api_client.client_side_validation and ("group_id" not in params or params["group_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `group_id` when calling `delete_workspace_group`")  # noqa: E501
@@ -389,11 +389,11 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_groups`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_groups`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -497,18 +497,18 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_workspaces_groups`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_workspaces_groups`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_organization_workspaces_groups`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_organization_workspaces_groups`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -604,13 +604,13 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_project_groups`")  # noqa: E501
         # verify the required parameter "project_ids" is set
         if self.api_client.client_side_validation and (
-            "project_ids" not in params or params["project_ids"] is None
-        ):  # noqa: E501
+            "project_ids" not in params or params["project_ids"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `project_ids` when calling `get_project_groups`")  # noqa: E501
 
         collection_formats = {}
@@ -705,8 +705,8 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_workspace_groups`")  # noqa: E501
 
         collection_formats = {}
@@ -807,21 +807,21 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `patch_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `patch_organization_group`"  # noqa: E501
+            )
         # verify the required parameter "group_id" is set
         if self.api_client.client_side_validation and ("group_id" not in params or params["group_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `group_id` when calling `patch_organization_group`")  # noqa: E501
         # verify the required parameter "patch_group_request" is set
         if self.api_client.client_side_validation and (
-            "patch_group_request" not in params or params["patch_group_request"] is None
-        ):  # noqa: E501
+            "patch_group_request" not in params or params["patch_group_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `patch_group_request` when calling `patch_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `patch_group_request` when calling `patch_organization_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -919,18 +919,18 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_group`"  # noqa: E501
+            )
         # verify the required parameter "post_group_request" is set
         if self.api_client.client_side_validation and (
-            "post_group_request" not in params or params["post_group_request"] is None
-        ):  # noqa: E501
+            "post_group_request" not in params or params["post_group_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_group_request` when calling `post_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `post_group_request` when calling `post_organization_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1026,16 +1026,16 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `post_project_group`")  # noqa: E501
         # verify the required parameter "project_group_post" is set
         if self.api_client.client_side_validation and (
-            "project_group_post" not in params or params["project_group_post"] is None
-        ):  # noqa: E501
+            "project_group_post" not in params or params["project_group_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_group_post` when calling `post_project_group`"
-            )  # noqa: E501
+                "Missing the required parameter `project_group_post` when calling `post_project_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1131,16 +1131,16 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `post_workspace_group`")  # noqa: E501
         # verify the required parameter "post_group_request" is set
         if self.api_client.client_side_validation and (
-            "post_group_request" not in params or params["post_group_request"] is None
-        ):  # noqa: E501
+            "post_group_request" not in params or params["post_group_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_group_request` when calling `post_workspace_group`"
-            )  # noqa: E501
+                "Missing the required parameter `post_group_request` when calling `post_workspace_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1236,18 +1236,18 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_organization_group`"  # noqa: E501
+            )
         # verify the required parameter "put_group_request" is set
         if self.api_client.client_side_validation and (
-            "put_group_request" not in params or params["put_group_request"] is None
-        ):  # noqa: E501
+            "put_group_request" not in params or params["put_group_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `put_group_request` when calling `put_organization_group`"
-            )  # noqa: E501
+                "Missing the required parameter `put_group_request` when calling `put_organization_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1353,23 +1353,23 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
         # verify the required parameter "post" is set
         if self.api_client.client_side_validation and ("post" not in params or params["post"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `post` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `post` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1469,19 +1469,19 @@ class GroupsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `put_workspace_group`")  # noqa: E501
         # verify the required parameter "group_id" is set
         if self.api_client.client_side_validation and ("group_id" not in params or params["group_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `group_id` when calling `put_workspace_group`")  # noqa: E501
         # verify the required parameter "put_group_request" is set
         if self.api_client.client_side_validation and (
-            "put_group_request" not in params or params["put_group_request"] is None
-        ):  # noqa: E501
+            "put_group_request" not in params or params["put_group_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `put_group_request` when calling `put_workspace_group`"
-            )  # noqa: E501
+                "Missing the required parameter `put_group_request` when calling `put_workspace_group`"  # noqa: E501
+            )
 
         collection_formats = {}
 

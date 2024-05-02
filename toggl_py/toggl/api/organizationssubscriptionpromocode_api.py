@@ -72,11 +72,11 @@ class OrganizationssubscriptionpromocodeApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `delete_promotion_code`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `delete_promotion_code`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -168,11 +168,11 @@ class OrganizationssubscriptionpromocodeApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_promotion_code`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_promotion_code`"  # noqa: E501
+            )
 
         collection_formats = {}
 

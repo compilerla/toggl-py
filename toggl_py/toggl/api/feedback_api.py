@@ -84,8 +84,8 @@ class FeedbackApi:
         del params["kwargs"]
         # verify the required parameter "toggl_version" is set
         if self.api_client.client_side_validation and (
-            "toggl_version" not in params or params["toggl_version"] is None
-        ):  # noqa: E501
+            "toggl_version" not in params or params["toggl_version"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `toggl_version` when calling `post_feedback_web`")  # noqa: E501
         # verify the required parameter "_date" is set
         if self.api_client.client_side_validation and ("_date" not in params or params["_date"] is None):  # noqa: E501
@@ -225,11 +225,11 @@ class FeedbackApi:
         del params["kwargs"]
         # verify the required parameter "toggl_version" is set
         if self.api_client.client_side_validation and (
-            "toggl_version" not in params or params["toggl_version"] is None
-        ):  # noqa: E501
+            "toggl_version" not in params or params["toggl_version"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `toggl_version` when calling `post_unified_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `toggl_version` when calling `post_unified_feedback`"  # noqa: E501
+            )
         # verify the required parameter "_date" is set
         if self.api_client.client_side_validation and ("_date" not in params or params["_date"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `_date` when calling `post_unified_feedback`")  # noqa: E501

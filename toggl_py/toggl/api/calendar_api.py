@@ -178,18 +178,18 @@ class CalendarApi:
         # verify the required parameter "provider" is set
         if self.api_client.client_side_validation and ("provider" not in params or params["provider"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `provider` when calling `integrations_calendar_callback_provider_get`"
-            )  # noqa: E501
+                "Missing the required parameter `provider` when calling `integrations_calendar_callback_provider_get`"  # noqa: E501
+            )
         # verify the required parameter "state" is set
         if self.api_client.client_side_validation and ("state" not in params or params["state"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `state` when calling `integrations_calendar_callback_provider_get`"
-            )  # noqa: E501
+                "Missing the required parameter `state` when calling `integrations_calendar_callback_provider_get`"  # noqa: E501
+            )
         # verify the required parameter "code" is set
         if self.api_client.client_side_validation and ("code" not in params or params["code"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `code` when calling `integrations_calendar_callback_provider_get`"
-            )  # noqa: E501
+                "Missing the required parameter `code` when calling `integrations_calendar_callback_provider_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -289,8 +289,8 @@ class CalendarApi:
         # verify the required parameter "request" is set
         if self.api_client.client_side_validation and ("request" not in params or params["request"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `request` when calling `integrations_calendar_events_details_suggestion_post`"
-            )  # noqa: E501
+                "Missing the required parameter `request` when calling `integrations_calendar_events_details_suggestion_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -390,8 +390,8 @@ class CalendarApi:
         # verify the required parameter "event_id" is set
         if self.api_client.client_side_validation and ("event_id" not in params or params["event_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `event_id` when calling `integrations_calendar_events_event_id_details_suggestion_get`"
-            )  # noqa: E501
+                "Missing the required parameter `event_id` when calling `integrations_calendar_events_event_id_details_suggestion_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -489,16 +489,16 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "start_date" is set
         if self.api_client.client_side_validation and (
-            "start_date" not in params or params["start_date"] is None
-        ):  # noqa: E501
+            "start_date" not in params or params["start_date"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `start_date` when calling `integrations_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `start_date` when calling `integrations_calendar_events_get`"  # noqa: E501
+            )
         # verify the required parameter "end_date" is set
         if self.api_client.client_side_validation and ("end_date" not in params or params["end_date"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `end_date` when calling `integrations_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `end_date` when calling `integrations_calendar_events_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -783,18 +783,18 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "integration_id" is set
         if self.api_client.client_side_validation and (
-            "integration_id" not in params or params["integration_id"] is None
-        ):  # noqa: E501
+            "integration_id" not in params or params["integration_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_calendar_id_patch`"
-            )  # noqa: E501
+                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_calendar_id_patch`"  # noqa: E501
+            )
         # verify the required parameter "calendar_id" is set
         if self.api_client.client_side_validation and (
-            "calendar_id" not in params or params["calendar_id"] is None
-        ):  # noqa: E501
+            "calendar_id" not in params or params["calendar_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `calendar_id` when calling `integrations_calendar_integration_id_calendars_calendar_id_patch`"
-            )  # noqa: E501
+                "Missing the required parameter `calendar_id` when calling `integrations_calendar_integration_id_calendars_calendar_id_patch`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -903,11 +903,11 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "integration_id" is set
         if self.api_client.client_side_validation and (
-            "integration_id" not in params or params["integration_id"] is None
-        ):  # noqa: E501
+            "integration_id" not in params or params["integration_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_get`"
-            )  # noqa: E501
+                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1026,30 +1026,30 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "integration_id" is set
         if self.api_client.client_side_validation and (
-            "integration_id" not in params or params["integration_id"] is None
-        ):  # noqa: E501
+            "integration_id" not in params or params["integration_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"  # noqa: E501
+            )
         # verify the required parameter "id_calendar" is set
         if self.api_client.client_side_validation and (
-            "id_calendar" not in params or params["id_calendar"] is None
-        ):  # noqa: E501
+            "id_calendar" not in params or params["id_calendar"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `id_calendar` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `id_calendar` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"  # noqa: E501
+            )
         # verify the required parameter "start_date" is set
         if self.api_client.client_side_validation and (
-            "start_date" not in params or params["start_date"] is None
-        ):  # noqa: E501
+            "start_date" not in params or params["start_date"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `start_date` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `start_date` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"  # noqa: E501
+            )
         # verify the required parameter "end_date" is set
         if self.api_client.client_side_validation and ("end_date" not in params or params["end_date"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `end_date` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"
-            )  # noqa: E501
+                "Missing the required parameter `end_date` when calling `integrations_calendar_integration_id_calendars_id_calendar_events_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1160,11 +1160,11 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "integration_id" is set
         if self.api_client.client_side_validation and (
-            "integration_id" not in params or params["integration_id"] is None
-        ):  # noqa: E501
+            "integration_id" not in params or params["integration_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_update_post`"
-            )  # noqa: E501
+                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_calendars_update_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1258,11 +1258,11 @@ class CalendarApi:
         del params["kwargs"]
         # verify the required parameter "integration_id" is set
         if self.api_client.client_side_validation and (
-            "integration_id" not in params or params["integration_id"] is None
-        ):  # noqa: E501
+            "integration_id" not in params or params["integration_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_delete`"
-            )  # noqa: E501
+                "Missing the required parameter `integration_id` when calling `integrations_calendar_integration_id_delete`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1357,8 +1357,8 @@ class CalendarApi:
         # verify the required parameter "provider" is set
         if self.api_client.client_side_validation and ("provider" not in params or params["provider"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `provider` when calling `integrations_calendar_setup_get`"
-            )  # noqa: E501
+                "Missing the required parameter `provider` when calling `integrations_calendar_setup_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 

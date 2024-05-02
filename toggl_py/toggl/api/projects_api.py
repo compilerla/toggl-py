@@ -76,18 +76,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_project`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_project`"  # noqa: E501
+            )
         # verify the required parameter "project_id" is set
         if self.api_client.client_side_validation and (
-            "project_id" not in params or params["project_id"] is None
-        ):  # noqa: E501
+            "project_id" not in params or params["project_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_id` when calling `delete_workspace_project`"
-            )  # noqa: E501
+                "Missing the required parameter `project_id` when calling `delete_workspace_project`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -185,18 +185,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_project_users`"  # noqa: E501
+            )
         # verify the required parameter "project_user_id" is set
         if self.api_client.client_side_validation and (
-            "project_user_id" not in params or params["project_user_id"] is None
-        ):  # noqa: E501
+            "project_user_id" not in params or params["project_user_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_user_id` when calling `delete_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `project_user_id` when calling `delete_workspace_project_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -337,8 +337,8 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_projects`")  # noqa: E501
         # verify the required parameter "name" is set
         if self.api_client.client_side_validation and ("name" not in params or params["name"] is None):  # noqa: E501
@@ -348,18 +348,18 @@ class ProjectsApi:
             raise ValueError("Missing the required parameter `page` when calling `get_projects`")  # noqa: E501
         # verify the required parameter "sort_field" is set
         if self.api_client.client_side_validation and (
-            "sort_field" not in params or params["sort_field"] is None
-        ):  # noqa: E501
+            "sort_field" not in params or params["sort_field"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `sort_field` when calling `get_projects`")  # noqa: E501
         # verify the required parameter "sort_order" is set
         if self.api_client.client_side_validation and (
-            "sort_order" not in params or params["sort_order"] is None
-        ):  # noqa: E501
+            "sort_order" not in params or params["sort_order"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `sort_order` when calling `get_projects`")  # noqa: E501
         # verify the required parameter "only_templates" is set
         if self.api_client.client_side_validation and (
-            "only_templates" not in params or params["only_templates"] is None
-        ):  # noqa: E501
+            "only_templates" not in params or params["only_templates"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `only_templates` when calling `get_projects`")  # noqa: E501
 
         collection_formats = {}
@@ -482,11 +482,11 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_projects_templates`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_projects_templates`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -584,18 +584,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_project_periods`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_project_periods`"  # noqa: E501
+            )
         # verify the required parameter "project_id" is set
         if self.api_client.client_side_validation and (
-            "project_id" not in params or params["project_id"] is None
-        ):  # noqa: E501
+            "project_id" not in params or params["project_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_id` when calling `get_workspace_project_periods`"
-            )  # noqa: E501
+                "Missing the required parameter `project_id` when calling `get_workspace_project_periods`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -697,11 +697,11 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_project_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -803,18 +803,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `patch_workspace_project_users_ids`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `patch_workspace_project_users_ids`"  # noqa: E501
+            )
         # verify the required parameter "project_user_ids" is set
         if self.api_client.client_side_validation and (
-            "project_user_ids" not in params or params["project_user_ids"] is None
-        ):  # noqa: E501
+            "project_user_ids" not in params or params["project_user_ids"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_user_ids` when calling `patch_workspace_project_users_ids`"
-            )  # noqa: E501
+                "Missing the required parameter `project_user_ids` when calling `patch_workspace_project_users_ids`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -915,25 +915,25 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `patch_workspace_projects`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `patch_workspace_projects`"  # noqa: E501
+            )
         # verify the required parameter "project_ids" is set
         if self.api_client.client_side_validation and (
-            "project_ids" not in params or params["project_ids"] is None
-        ):  # noqa: E501
+            "project_ids" not in params or params["project_ids"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_ids` when calling `patch_workspace_projects`"
-            )  # noqa: E501
+                "Missing the required parameter `project_ids` when calling `patch_workspace_projects`"  # noqa: E501
+            )
         # verify the required parameter "patch_input" is set
         if self.api_client.client_side_validation and (
-            "patch_input" not in params or params["patch_input"] is None
-        ):  # noqa: E501
+            "patch_input" not in params or params["patch_input"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `patch_input` when calling `patch_workspace_projects`"
-            )  # noqa: E501
+                "Missing the required parameter `patch_input` when calling `patch_workspace_projects`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1031,18 +1031,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_project_create`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_project_create`"  # noqa: E501
+            )
         # verify the required parameter "post_input" is set
         if self.api_client.client_side_validation and (
-            "post_input" not in params or params["post_input"] is None
-        ):  # noqa: E501
+            "post_input" not in params or params["post_input"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_input` when calling `post_workspace_project_create`"
-            )  # noqa: E501
+                "Missing the required parameter `post_input` when calling `post_workspace_project_create`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1138,18 +1138,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_project_users`"  # noqa: E501
+            )
         # verify the required parameter "project_user" is set
         if self.api_client.client_side_validation and (
-            "project_user" not in params or params["project_user"] is None
-        ):  # noqa: E501
+            "project_user" not in params or params["project_user"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_user` when calling `post_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `project_user` when calling `post_workspace_project_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1247,20 +1247,20 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_project`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_project`"  # noqa: E501
+            )
         # verify the required parameter "project_id" is set
         if self.api_client.client_side_validation and (
-            "project_id" not in params or params["project_id"] is None
-        ):  # noqa: E501
+            "project_id" not in params or params["project_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `project_id` when calling `put_workspace_project`")  # noqa: E501
         # verify the required parameter "post_input" is set
         if self.api_client.client_side_validation and (
-            "post_input" not in params or params["post_input"] is None
-        ):  # noqa: E501
+            "post_input" not in params or params["post_input"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `post_input` when calling `put_workspace_project`")  # noqa: E501
 
         collection_formats = {}
@@ -1365,25 +1365,25 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_project_users`"  # noqa: E501
+            )
         # verify the required parameter "project_user_id" is set
         if self.api_client.client_side_validation and (
-            "project_user_id" not in params or params["project_user_id"] is None
-        ):  # noqa: E501
+            "project_user_id" not in params or params["project_user_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_user_id` when calling `put_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `project_user_id` when calling `put_workspace_project_users`"  # noqa: E501
+            )
         # verify the required parameter "project_user" is set
         if self.api_client.client_side_validation and (
-            "project_user" not in params or params["project_user"] is None
-        ):  # noqa: E501
+            "project_user" not in params or params["project_user"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_user` when calling `put_workspace_project_users`"
-            )  # noqa: E501
+                "Missing the required parameter `project_user` when calling `put_workspace_project_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1490,18 +1490,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_billable_amounts_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_billable_amounts_post`"  # noqa: E501
+            )
         # verify the required parameter "post_input" is set
         if self.api_client.client_side_validation and (
-            "post_input" not in params or params["post_input"] is None
-        ):  # noqa: E501
+            "post_input" not in params or params["post_input"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `post_input` when calling `workspaces_workspace_id_projects_billable_amounts_post`"
-            )  # noqa: E501
+                "Missing the required parameter `post_input` when calling `workspaces_workspace_id_projects_billable_amounts_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1604,18 +1604,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_project_id_get`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_project_id_get`"  # noqa: E501
+            )
         # verify the required parameter "project_id" is set
         if self.api_client.client_side_validation and (
-            "project_id" not in params or params["project_id"] is None
-        ):  # noqa: E501
+            "project_id" not in params or params["project_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_id` when calling `workspaces_workspace_id_projects_project_id_get`"
-            )  # noqa: E501
+                "Missing the required parameter `project_id` when calling `workspaces_workspace_id_projects_project_id_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1720,18 +1720,18 @@ class ProjectsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_project_id_statistics_get`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `workspaces_workspace_id_projects_project_id_statistics_get`"  # noqa: E501
+            )
         # verify the required parameter "project_id" is set
         if self.api_client.client_side_validation and (
-            "project_id" not in params or params["project_id"] is None
-        ):  # noqa: E501
+            "project_id" not in params or params["project_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `project_id` when calling `workspaces_workspace_id_projects_project_id_statistics_get`"
-            )  # noqa: E501
+                "Missing the required parameter `project_id` when calling `workspaces_workspace_id_projects_project_id_statistics_get`"  # noqa: E501
+            )
 
         collection_formats = {}
 

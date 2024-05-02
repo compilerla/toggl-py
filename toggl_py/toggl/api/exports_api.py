@@ -242,11 +242,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_exports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_exports`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -340,11 +340,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_exports_data_uuid_zip`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_exports_data_uuid_zip`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -447,11 +447,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "parameters" is set
         if self.api_client.client_side_validation and (
-            "parameters" not in params or params["parameters"] is None
-        ):  # noqa: E501
+            "parameters" not in params or params["parameters"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_employees_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_employees_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -556,16 +556,16 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "parameters" is set
         if self.api_client.client_side_validation and (
-            "parameters" not in params or params["parameters"] is None
-        ):  # noqa: E501
+            "parameters" not in params or params["parameters"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `parameters` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_profitability_projects_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -674,16 +674,16 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `insights_api_v1_workspace_workspace_id_trends_projects_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -779,8 +779,8 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "data_export_object" is set
         if self.api_client.client_side_validation and (
-            "data_export_object" not in params or params["data_export_object"] is None
-        ):  # noqa: E501
+            "data_export_object" not in params or params["data_export_object"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `data_export_object` when calling `post_me_export`")  # noqa: E501
 
         collection_formats = {}
@@ -875,18 +875,18 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_exports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_exports`"  # noqa: E501
+            )
         # verify the required parameter "tokens_list" is set
         if self.api_client.client_side_validation and (
-            "tokens_list" not in params or params["tokens_list"] is None
-        ):  # noqa: E501
+            "tokens_list" not in params or params["tokens_list"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `tokens_list` when calling `post_workspace_exports`"
-            )  # noqa: E501
+                "Missing the required parameter `tokens_list` when calling `post_workspace_exports`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -986,11 +986,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_csv_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_csv_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1095,11 +1095,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_pdf_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1202,11 +1202,11 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "report_token" is set
         if self.api_client.client_side_validation and (
-            "report_token" not in params or params["report_token"] is None
-        ):  # noqa: E501
+            "report_token" not in params or params["report_token"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_xlsx_post`"
-            )  # noqa: E501
+                "Missing the required parameter `report_token` when calling `reports_api_v3_shared_report_token_xlsx_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1318,23 +1318,23 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "detailed_export_post" is set
         if self.api_client.client_side_validation and (
-            "detailed_export_post" not in params or params["detailed_export_post"] is None
-        ):  # noqa: E501
+            "detailed_export_post" not in params or params["detailed_export_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `detailed_export_post` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `detailed_export_post` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1443,18 +1443,18 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post`"  # noqa: E501
+            )
         # verify the required parameter "detailed_export_pdf_post" is set
         if self.api_client.client_side_validation and (
-            "detailed_export_pdf_post" not in params or params["detailed_export_pdf_post"] is None
-        ):  # noqa: E501
+            "detailed_export_pdf_post" not in params or params["detailed_export_pdf_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `detailed_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `detailed_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1563,23 +1563,23 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "extension" is set
         if self.api_client.client_side_validation and ("extension" not in params or params["extension"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `extension` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `extension` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"  # noqa: E501
+            )
         # verify the required parameter "summary_export_post" is set
         if self.api_client.client_side_validation and (
-            "summary_export_post" not in params or params["summary_export_post"] is None
-        ):  # noqa: E501
+            "summary_export_post" not in params or params["summary_export_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `summary_export_post` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"
-            )  # noqa: E501
+                "Missing the required parameter `summary_export_post` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1688,18 +1688,18 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post`"  # noqa: E501
+            )
         # verify the required parameter "summary_export_pdf_post" is set
         if self.api_client.client_side_validation and (
-            "summary_export_pdf_post" not in params or params["summary_export_pdf_post"] is None
-        ):  # noqa: E501
+            "summary_export_pdf_post" not in params or params["summary_export_pdf_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `summary_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `summary_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1806,18 +1806,18 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post`"  # noqa: E501
+            )
         # verify the required parameter "weekly_export_post" is set
         if self.api_client.client_side_validation and (
-            "weekly_export_post" not in params or params["weekly_export_post"] is None
-        ):  # noqa: E501
+            "weekly_export_post" not in params or params["weekly_export_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `weekly_export_post` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post`"
-            )  # noqa: E501
+                "Missing the required parameter `weekly_export_post` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1924,18 +1924,18 @@ class ExportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post`"  # noqa: E501
+            )
         # verify the required parameter "weekly_export_pdf_post" is set
         if self.api_client.client_side_validation and (
-            "weekly_export_pdf_post" not in params or params["weekly_export_pdf_post"] is None
-        ):  # noqa: E501
+            "weekly_export_pdf_post" not in params or params["weekly_export_pdf_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `weekly_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post`"
-            )  # noqa: E501
+                "Missing the required parameter `weekly_export_pdf_post` when calling `reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 

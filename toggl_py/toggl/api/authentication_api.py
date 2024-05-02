@@ -72,8 +72,8 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `delete_workspace_sso`")  # noqa: E501
 
         collection_formats = {}
@@ -266,8 +266,8 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_workspace_sso`")  # noqa: E501
 
         collection_formats = {}
@@ -536,8 +536,8 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `patch_workspace_sso`")  # noqa: E501
         # verify the required parameter "settings" is set
         if self.api_client.client_side_validation and ("settings" not in params or params["settings"] is None):  # noqa: E501
@@ -635,8 +635,8 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "enable_sso_post" is set
         if self.api_client.client_side_validation and (
-            "enable_sso_post" not in params or params["enable_sso_post"] is None
-        ):  # noqa: E501
+            "enable_sso_post" not in params or params["enable_sso_post"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `enable_sso_post` when calling `post_enable_sso`")  # noqa: E501
 
         collection_formats = {}
@@ -815,13 +815,13 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `post_saml2_callback`")  # noqa: E501
         # verify the required parameter "saml_response" is set
         if self.api_client.client_side_validation and (
-            "saml_response" not in params or params["saml_response"] is None
-        ):  # noqa: E501
+            "saml_response" not in params or params["saml_response"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `saml_response` when calling `post_saml2_callback`")  # noqa: E501
 
         collection_formats = {}
@@ -1009,8 +1009,8 @@ class AuthenticationApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `post_workspace_sso`")  # noqa: E501
         # verify the required parameter "settings" is set
         if self.api_client.client_side_validation and ("settings" not in params or params["settings"] is None):  # noqa: E501

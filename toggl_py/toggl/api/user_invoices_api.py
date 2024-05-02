@@ -74,18 +74,18 @@ class UserInvoicesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_invoice`"  # noqa: E501
+            )
         # verify the required parameter "user_invoice_id" is set
         if self.api_client.client_side_validation and (
-            "user_invoice_id" not in params or params["user_invoice_id"] is None
-        ):  # noqa: E501
+            "user_invoice_id" not in params or params["user_invoice_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `user_invoice_id` when calling `delete_workspace_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `user_invoice_id` when calling `delete_workspace_invoice`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -282,16 +282,16 @@ class UserInvoicesApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_user_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_user_invoice`"  # noqa: E501
+            )
         # verify the required parameter "tag_post" is set
         if self.api_client.client_side_validation and ("tag_post" not in params or params["tag_post"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `tag_post` when calling `post_workspace_user_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `tag_post` when calling `post_workspace_user_invoice`"  # noqa: E501
+            )
 
         collection_formats = {}
 

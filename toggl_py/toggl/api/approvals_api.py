@@ -74,11 +74,11 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_timesheet_setups`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_timesheet_setups`"  # noqa: E501
+            )
         # verify the required parameter "setup_id" is set
         if self.api_client.client_side_validation and ("setup_id" not in params or params["setup_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `setup_id` when calling `delete_timesheet_setups`")  # noqa: E501
@@ -183,8 +183,8 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_timesheet_setups`")  # noqa: E501
 
         collection_formats = {}
@@ -289,16 +289,16 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheet_hours_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheet_hours_handler`"  # noqa: E501
+            )
         # verify the required parameter "payload" is set
         if self.api_client.client_side_validation and ("payload" not in params or params["payload"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `payload` when calling `get_workspace_timesheet_hours_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `payload` when calling `get_workspace_timesheet_hours_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -404,23 +404,23 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheet_time_entries_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheet_time_entries_handler`"  # noqa: E501
+            )
         # verify the required parameter "setup_id" is set
         if self.api_client.client_side_validation and ("setup_id" not in params or params["setup_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `setup_id` when calling `get_workspace_timesheet_time_entries_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `setup_id` when calling `get_workspace_timesheet_time_entries_handler`"  # noqa: E501
+            )
         # verify the required parameter "start_date" is set
         if self.api_client.client_side_validation and (
-            "start_date" not in params or params["start_date"] is None
-        ):  # noqa: E501
+            "start_date" not in params or params["start_date"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `start_date` when calling `get_workspace_timesheet_time_entries_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `start_date` when calling `get_workspace_timesheet_time_entries_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -548,11 +548,11 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheets_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_timesheets_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -666,11 +666,11 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_timesheet_setups`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_timesheet_setups`"  # noqa: E501
+            )
         # verify the required parameter "payload" is set
         if self.api_client.client_side_validation and ("payload" not in params or params["payload"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `payload` when calling `post_timesheet_setups`")  # noqa: E501
@@ -771,8 +771,8 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `put_timesheet_setups`")  # noqa: E501
         # verify the required parameter "setup_id" is set
         if self.api_client.client_side_validation and ("setup_id" not in params or params["setup_id"] is None):  # noqa: E501
@@ -887,28 +887,28 @@ class ApprovalsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_timesheets_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_timesheets_handler`"  # noqa: E501
+            )
         # verify the required parameter "setup_id" is set
         if self.api_client.client_side_validation and ("setup_id" not in params or params["setup_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `setup_id` when calling `put_workspace_timesheets_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `setup_id` when calling `put_workspace_timesheets_handler`"  # noqa: E501
+            )
         # verify the required parameter "start_date" is set
         if self.api_client.client_side_validation and (
-            "start_date" not in params or params["start_date"] is None
-        ):  # noqa: E501
+            "start_date" not in params or params["start_date"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `start_date` when calling `put_workspace_timesheets_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `start_date` when calling `put_workspace_timesheets_handler`"  # noqa: E501
+            )
         # verify the required parameter "payload" is set
         if self.api_client.client_side_validation and ("payload" not in params or params["payload"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `payload` when calling `put_workspace_timesheets_handler`"
-            )  # noqa: E501
+                "Missing the required parameter `payload` when calling `put_workspace_timesheets_handler`"  # noqa: E501
+            )
 
         collection_formats = {}
 

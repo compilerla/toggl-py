@@ -74,11 +74,11 @@ class DashboardApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_all_activities`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_all_activities`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -174,11 +174,11 @@ class DashboardApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_most_active`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_most_active`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -274,11 +274,11 @@ class DashboardApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_top_activity`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_top_activity`"  # noqa: E501
+            )
 
         collection_formats = {}
 

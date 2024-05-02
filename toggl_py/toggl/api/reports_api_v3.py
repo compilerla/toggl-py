@@ -74,8 +74,8 @@ class ReportsApiv3:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `comparative_post`")  # noqa: E501
 
         collection_formats = {}
@@ -172,18 +172,18 @@ class ReportsApiv3:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `data_trends_clients_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `data_trends_clients_post`"  # noqa: E501
+            )
         # verify the required parameter "data_trends_post" is set
         if self.api_client.client_side_validation and (
-            "data_trends_post" not in params or params["data_trends_post"] is None
-        ):  # noqa: E501
+            "data_trends_post" not in params or params["data_trends_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `data_trends_post` when calling `data_trends_clients_post`"
-            )  # noqa: E501
+                "Missing the required parameter `data_trends_post` when calling `data_trends_clients_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -279,11 +279,11 @@ class ReportsApiv3:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `data_trends_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `data_trends_projects_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -379,18 +379,18 @@ class ReportsApiv3:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `data_trends_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `data_trends_users_post`"  # noqa: E501
+            )
         # verify the required parameter "data_trends_post" is set
         if self.api_client.client_side_validation and (
-            "data_trends_post" not in params or params["data_trends_post"] is None
-        ):  # noqa: E501
+            "data_trends_post" not in params or params["data_trends_post"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `data_trends_post` when calling `data_trends_users_post`"
-            )  # noqa: E501
+                "Missing the required parameter `data_trends_post` when calling `data_trends_users_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -486,11 +486,11 @@ class ReportsApiv3:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `profitability_projects_post`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `profitability_projects_post`"  # noqa: E501
+            )
 
         collection_formats = {}
 

@@ -74,16 +74,16 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_saved_report_resource`"  # noqa: E501
+            )
         # verify the required parameter "report_id" is set
         if self.api_client.client_side_validation and ("report_id" not in params or params["report_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `report_id` when calling `delete_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `report_id` when calling `delete_saved_report_resource`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -181,16 +181,16 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_scheduled_reports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_scheduled_reports`"  # noqa: E501
+            )
         # verify the required parameter "report_id" is set
         if self.api_client.client_side_validation and ("report_id" not in params or params["report_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `report_id` when calling `delete_workspace_scheduled_reports`"
-            )  # noqa: E501
+                "Missing the required parameter `report_id` when calling `delete_workspace_scheduled_reports`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -286,16 +286,16 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_saved_report_resource`"  # noqa: E501
+            )
         # verify the required parameter "report_id" is set
         if self.api_client.client_side_validation and ("report_id" not in params or params["report_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `report_id` when calling `get_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `report_id` when calling `get_saved_report_resource`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -415,8 +415,8 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_shared_report`")  # noqa: E501
 
         collection_formats = {}
@@ -525,11 +525,11 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_scheduled_reports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_scheduled_reports`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -623,16 +623,16 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `post_shared_report`")  # noqa: E501
         # verify the required parameter "saved_report_payload" is set
         if self.api_client.client_side_validation and (
-            "saved_report_payload" not in params or params["saved_report_payload"] is None
-        ):  # noqa: E501
+            "saved_report_payload" not in params or params["saved_report_payload"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `saved_report_payload` when calling `post_shared_report`"
-            )  # noqa: E501
+                "Missing the required parameter `saved_report_payload` when calling `post_shared_report`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -728,18 +728,18 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_scheduled_reports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_scheduled_reports`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id2" is set
         if self.api_client.client_side_validation and (
-            "workspace_id2" not in params or params["workspace_id2"] is None
-        ):  # noqa: E501
+            "workspace_id2" not in params or params["workspace_id2"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id2` when calling `post_workspace_scheduled_reports`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id2` when calling `post_workspace_scheduled_reports`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -841,23 +841,23 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_saved_report_resource`"  # noqa: E501
+            )
         # verify the required parameter "report_id" is set
         if self.api_client.client_side_validation and ("report_id" not in params or params["report_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `report_id` when calling `put_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `report_id` when calling `put_saved_report_resource`"  # noqa: E501
+            )
         # verify the required parameter "saved_report_payload" is set
         if self.api_client.client_side_validation and (
-            "saved_report_payload" not in params or params["saved_report_payload"] is None
-        ):  # noqa: E501
+            "saved_report_payload" not in params or params["saved_report_payload"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `saved_report_payload` when calling `put_saved_report_resource`"
-            )  # noqa: E501
+                "Missing the required parameter `saved_report_payload` when calling `put_saved_report_resource`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -959,19 +959,19 @@ class ReportsApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `put_shared_report`")  # noqa: E501
         # verify the required parameter "report_id" is set
         if self.api_client.client_side_validation and ("report_id" not in params or params["report_id"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `report_id` when calling `put_shared_report`")  # noqa: E501
         # verify the required parameter "saved_report_payload" is set
         if self.api_client.client_side_validation and (
-            "saved_report_payload" not in params or params["saved_report_payload"] is None
-        ):  # noqa: E501
+            "saved_report_payload" not in params or params["saved_report_payload"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `saved_report_payload` when calling `put_shared_report`"
-            )  # noqa: E501
+                "Missing the required parameter `saved_report_payload` when calling `put_shared_report`"  # noqa: E501
+            )
 
         collection_formats = {}
 

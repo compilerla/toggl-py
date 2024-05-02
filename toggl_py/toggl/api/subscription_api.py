@@ -78,18 +78,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `delete_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `delete_organization_subscription`"  # noqa: E501
+            )
         # verify the required parameter "immediate_cancel" is set
         if self.api_client.client_side_validation and (
-            "immediate_cancel" not in params or params["immediate_cancel"] is None
-        ):  # noqa: E501
+            "immediate_cancel" not in params or params["immediate_cancel"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `immediate_cancel` when calling `delete_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `immediate_cancel` when calling `delete_organization_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -193,25 +193,25 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_subscription`"  # noqa: E501
+            )
         # verify the required parameter "subscription_id" is set
         if self.api_client.client_side_validation and (
-            "subscription_id" not in params or params["subscription_id"] is None
-        ):  # noqa: E501
+            "subscription_id" not in params or params["subscription_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `subscription_id` when calling `delete_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `subscription_id` when calling `delete_workspace_subscription`"  # noqa: E501
+            )
         # verify the required parameter "feedback_data" is set
         if self.api_client.client_side_validation and (
-            "feedback_data" not in params or params["feedback_data"] is None
-        ):  # noqa: E501
+            "feedback_data" not in params or params["feedback_data"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `feedback_data` when calling `delete_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `feedback_data` when calling `delete_workspace_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -394,18 +394,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_invoice`"  # noqa: E501
+            )
         # verify the required parameter "invoice_uid" is set
         if self.api_client.client_side_validation and (
-            "invoice_uid" not in params or params["invoice_uid"] is None
-        ):  # noqa: E501
+            "invoice_uid" not in params or params["invoice_uid"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `invoice_uid` when calling `get_organization_invoice`"
-            )  # noqa: E501
+                "Missing the required parameter `invoice_uid` when calling `get_organization_invoice`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -503,11 +503,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_invoice_summary`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_invoice_summary`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -603,11 +603,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -784,11 +784,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_currencies`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_currencies`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -880,11 +880,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -976,11 +976,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_features`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_features`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1072,11 +1072,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_features_selected`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_features_selected`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1170,15 +1170,15 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_invoices`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_invoices`"  # noqa: E501
+            )
         # verify the required parameter "invoice_id" is set
         if self.api_client.client_side_validation and (
-            "invoice_id" not in params or params["invoice_id"] is None
-        ):  # noqa: E501
+            "invoice_id" not in params or params["invoice_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `invoice_id` when calling `get_workspace_invoices`")  # noqa: E501
 
         collection_formats = {}
@@ -1275,18 +1275,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_payment_receipts`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_payment_receipts`"  # noqa: E501
+            )
         # verify the required parameter "payment_id" is set
         if self.api_client.client_side_validation and (
-            "payment_id" not in params or params["payment_id"] is None
-        ):  # noqa: E501
+            "payment_id" not in params or params["payment_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `payment_id` when calling `get_workspace_payment_receipts`"
-            )  # noqa: E501
+                "Missing the required parameter `payment_id` when calling `get_workspace_payment_receipts`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1380,11 +1380,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_payment_records`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_payment_records`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1476,8 +1476,8 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_workspace_plans`")  # noqa: E501
 
         collection_formats = {}
@@ -1572,16 +1572,16 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_plans_pricing`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_plans_pricing`"  # noqa: E501
+            )
         # verify the required parameter "plan_id" is set
         if self.api_client.client_side_validation and ("plan_id" not in params or params["plan_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `plan_id` when calling `get_workspace_plans_pricing`"
-            )  # noqa: E501
+                "Missing the required parameter `plan_id` when calling `get_workspace_plans_pricing`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1681,18 +1681,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_purchase_order_pdf`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_purchase_order_pdf`"  # noqa: E501
+            )
         # verify the required parameter "purchase_order_id" is set
         if self.api_client.client_side_validation and (
-            "purchase_order_id" not in params or params["purchase_order_id"] is None
-        ):  # noqa: E501
+            "purchase_order_id" not in params or params["purchase_order_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `purchase_order_id` when calling `get_workspace_purchase_order_pdf`"
-            )  # noqa: E501
+                "Missing the required parameter `purchase_order_id` when calling `get_workspace_purchase_order_pdf`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1786,11 +1786,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1894,18 +1894,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_plans_pricing_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_plans_pricing_feedback`"  # noqa: E501
+            )
         # verify the required parameter "pricing_plan_id" is set
         if self.api_client.client_side_validation and (
-            "pricing_plan_id" not in params or params["pricing_plan_id"] is None
-        ):  # noqa: E501
+            "pricing_plan_id" not in params or params["pricing_plan_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `pricing_plan_id` when calling `post_organization_plans_pricing_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `pricing_plan_id` when calling `post_organization_plans_pricing_feedback`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2009,18 +2009,19 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_purchase_order`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_purchase_order`"  # noqa: E501
+            )
         # verify the required parameter "organization_purchase_order_request" is set
         if self.api_client.client_side_validation and (
-            "organization_purchase_order_request" not in params or params["organization_purchase_order_request"] is None
-        ):  # noqa: E501
+            "organization_purchase_order_request" not in params
+            or params["organization_purchase_order_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_purchase_order_request` when calling `post_organization_purchase_order`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_purchase_order_request` when calling `post_organization_purchase_order`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2122,18 +2123,19 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_subscription`"  # noqa: E501
+            )
         # verify the required parameter "organization_subscription_request" is set
         if self.api_client.client_side_validation and (
-            "organization_subscription_request" not in params or params["organization_subscription_request"] is None
-        ):  # noqa: E501
+            "organization_subscription_request" not in params
+            or params["organization_subscription_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_subscription_request` when calling `post_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_subscription_request` when calling `post_organization_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2227,11 +2229,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `post_organization_subscription_0`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `post_organization_subscription_0`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2325,18 +2327,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_customer`"  # noqa: E501
+            )
         # verify the required parameter "contact_detail_request" is set
         if self.api_client.client_side_validation and (
-            "contact_detail_request" not in params or params["contact_detail_request"] is None
-        ):  # noqa: E501
+            "contact_detail_request" not in params or params["contact_detail_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `contact_detail_request` when calling `post_workspace_customer`"
-            )  # noqa: E501
+                "Missing the required parameter `contact_detail_request` when calling `post_workspace_customer`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2440,18 +2442,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_plans_pricing_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_plans_pricing_feedback`"  # noqa: E501
+            )
         # verify the required parameter "pricing_plan_id" is set
         if self.api_client.client_side_validation and (
-            "pricing_plan_id" not in params or params["pricing_plan_id"] is None
-        ):  # noqa: E501
+            "pricing_plan_id" not in params or params["pricing_plan_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `pricing_plan_id` when calling `post_workspace_plans_pricing_feedback`"
-            )  # noqa: E501
+                "Missing the required parameter `pricing_plan_id` when calling `post_workspace_plans_pricing_feedback`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2555,18 +2557,19 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_purchase_order`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_purchase_order`"  # noqa: E501
+            )
         # verify the required parameter "workspace_purchase_order_request" is set
         if self.api_client.client_side_validation and (
-            "workspace_purchase_order_request" not in params or params["workspace_purchase_order_request"] is None
-        ):  # noqa: E501
+            "workspace_purchase_order_request" not in params
+            or params["workspace_purchase_order_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_purchase_order_request` when calling `post_workspace_purchase_order`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_purchase_order_request` when calling `post_workspace_purchase_order`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2666,18 +2669,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription`"  # noqa: E501
+            )
         # verify the required parameter "workspace_subscription_request" is set
         if self.api_client.client_side_validation and (
-            "workspace_subscription_request" not in params or params["workspace_subscription_request"] is None
-        ):  # noqa: E501
+            "workspace_subscription_request" not in params or params["workspace_subscription_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_subscription_request` when calling `post_workspace_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_subscription_request` when calling `post_workspace_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2781,18 +2784,18 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription_calculate`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription_calculate`"  # noqa: E501
+            )
         # verify the required parameter "calculation_data_request" is set
         if self.api_client.client_side_validation and (
-            "calculation_data_request" not in params or params["calculation_data_request"] is None
-        ):  # noqa: E501
+            "calculation_data_request" not in params or params["calculation_data_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `calculation_data_request` when calling `post_workspace_subscription_calculate`"
-            )  # noqa: E501
+                "Missing the required parameter `calculation_data_request` when calling `post_workspace_subscription_calculate`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2888,11 +2891,11 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription_inc_accept`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_subscription_inc_accept`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -2992,18 +2995,19 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_organization_subscription`"  # noqa: E501
+            )
         # verify the required parameter "organization_subscription_request" is set
         if self.api_client.client_side_validation and (
-            "organization_subscription_request" not in params or params["organization_subscription_request"] is None
-        ):  # noqa: E501
+            "organization_subscription_request" not in params
+            or params["organization_subscription_request"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_subscription_request` when calling `put_organization_subscription`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_subscription_request` when calling `put_organization_subscription`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -3101,15 +3105,15 @@ class SubscriptionApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_profile`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_profile`"  # noqa: E501
+            )
         # verify the required parameter "profile_id" is set
         if self.api_client.client_side_validation and (
-            "profile_id" not in params or params["profile_id"] is None
-        ):  # noqa: E501
+            "profile_id" not in params or params["profile_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `profile_id` when calling `put_workspace_profile`")  # noqa: E501
 
         collection_formats = {}

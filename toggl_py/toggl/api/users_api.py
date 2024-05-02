@@ -72,11 +72,11 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `delete_organization_users_leave`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `delete_organization_users_leave`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -170,18 +170,18 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `delete_workspace_user`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `delete_workspace_user`"  # noqa: E501
+            )
         # verify the required parameter "workspace_user_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_user_id" not in params or params["workspace_user_id"] is None
-        ):  # noqa: E501
+            "workspace_user_id" not in params or params["workspace_user_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_user_id` when calling `delete_workspace_user`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_user_id` when calling `delete_workspace_user`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -301,11 +301,11 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_users`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -439,11 +439,11 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_users_detailed`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_users_detailed`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -563,23 +563,23 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `get_organization_workspaces_workspaceusers`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `get_organization_workspaces_workspaceusers`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_organization_workspaces_workspaceusers`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_organization_workspaces_workspaceusers`"  # noqa: E501
+            )
         # verify the required parameter "name" is set
         if self.api_client.client_side_validation and ("name" not in params or params["name"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `name` when calling `get_organization_workspaces_workspaceusers`"
-            )  # noqa: E501
+                "Missing the required parameter `name` when calling `get_organization_workspaces_workspaceusers`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -675,8 +675,8 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `get_workspace_users`")  # noqa: E501
 
         collection_formats = {}
@@ -771,18 +771,18 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `get_workspace_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `get_workspace_workspace_users`"  # noqa: E501
+            )
         # verify the required parameter "include_indirect" is set
         if self.api_client.client_side_validation and (
-            "include_indirect" not in params or params["include_indirect"] is None
-        ):  # noqa: E501
+            "include_indirect" not in params or params["include_indirect"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `include_indirect` when calling `get_workspace_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `include_indirect` when calling `get_workspace_workspace_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -878,11 +878,11 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `patch_organization_users`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `patch_organization_users`"  # noqa: E501
+            )
         # verify the required parameter "params" is set
         if self.api_client.client_side_validation and ("params" not in params or params["params"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `params` when calling `patch_organization_users`")  # noqa: E501
@@ -989,23 +989,23 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `patch_organization_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `patch_organization_workspace_users`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `patch_organization_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `patch_organization_workspace_users`"  # noqa: E501
+            )
         # verify the required parameter "params" is set
         if self.api_client.client_side_validation and ("params" not in params or params["params"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `params` when calling `patch_organization_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `params` when calling `patch_organization_workspace_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1105,16 +1105,16 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `post_workspace_users_lost_password`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `post_workspace_users_lost_password`"  # noqa: E501
+            )
         # verify the required parameter "user_id" is set
         if self.api_client.client_side_validation and ("user_id" not in params or params["user_id"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `user_id` when calling `post_workspace_users_lost_password`"
-            )  # noqa: E501
+                "Missing the required parameter `user_id` when calling `post_workspace_users_lost_password`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1210,11 +1210,11 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_organization_users`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_organization_users`"  # noqa: E501
+            )
         # verify the required parameter "params" is set
         if self.api_client.client_side_validation and ("params" not in params or params["params"] is None):  # noqa: E501
             raise ValueError("Missing the required parameter `params` when calling `put_organization_users`")  # noqa: E501
@@ -1323,23 +1323,23 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "organization_id" is set
         if self.api_client.client_side_validation and (
-            "organization_id" not in params or params["organization_id"] is None
-        ):  # noqa: E501
+            "organization_id" not in params or params["organization_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `organization_id` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `organization_id` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
         # verify the required parameter "post" is set
         if self.api_client.client_side_validation and ("post" not in params or params["post"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `post` when calling `put_organization_workspaces_assignments`"
-            )  # noqa: E501
+                "Missing the required parameter `post` when calling `put_organization_workspaces_assignments`"  # noqa: E501
+            )
 
         collection_formats = {}
 
@@ -1437,8 +1437,8 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError("Missing the required parameter `workspace_id` when calling `put_workspace_users`")  # noqa: E501
         # verify the required parameter "user_id" is set
         if self.api_client.client_side_validation and ("user_id" not in params or params["user_id"] is None):  # noqa: E501
@@ -1544,23 +1544,23 @@ class UsersApi:
         del params["kwargs"]
         # verify the required parameter "workspace_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_id" not in params or params["workspace_id"] is None
-        ):  # noqa: E501
+            "workspace_id" not in params or params["workspace_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_id` when calling `put_workspace_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_id` when calling `put_workspace_workspace_users`"  # noqa: E501
+            )
         # verify the required parameter "workspace_user_id" is set
         if self.api_client.client_side_validation and (
-            "workspace_user_id" not in params or params["workspace_user_id"] is None
-        ):  # noqa: E501
+            "workspace_user_id" not in params or params["workspace_user_id"] is None  # noqa: E501
+        ):
             raise ValueError(
-                "Missing the required parameter `workspace_user_id` when calling `put_workspace_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `workspace_user_id` when calling `put_workspace_workspace_users`"  # noqa: E501
+            )
         # verify the required parameter "post" is set
         if self.api_client.client_side_validation and ("post" not in params or params["post"] is None):  # noqa: E501
             raise ValueError(
-                "Missing the required parameter `post` when calling `put_workspace_workspace_users`"
-            )  # noqa: E501
+                "Missing the required parameter `post` when calling `put_workspace_workspace_users`"  # noqa: E501
+            )
 
         collection_formats = {}
 

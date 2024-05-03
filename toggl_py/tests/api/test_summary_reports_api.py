@@ -25,7 +25,9 @@ def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_projects_projec
 
     Load project summary  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_projects_project_id_summary_post()
+
+    assert response
 
 
 def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_projects_summary_post(api):
@@ -33,7 +35,9 @@ def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_projects_summar
 
     List project users  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_projects_summary_post()
+
+    assert response
 
 
 def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post(api):
@@ -41,7 +45,9 @@ def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_en
 
     Export summary report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post()
+
+    assert response
 
 
 def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post(api):
@@ -49,7 +55,9 @@ def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_en
 
     Export summary report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post()
+
+    assert response
 
 
 def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_post(api):
@@ -57,4 +65,6 @@ def test_SummaryReportsApi_reports_api_v3_workspace_workspace_id_summary_time_en
 
     Search time entries  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_summary_time_entries_post()
+
+    assert response

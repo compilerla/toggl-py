@@ -25,7 +25,9 @@ def test_CalendarApi_integrations_calendar_calendars_selected_get(api):
 
     Get all selected calendars for a given user.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_calendars_selected_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_callback_provider_get(api):
@@ -33,7 +35,9 @@ def test_CalendarApi_integrations_calendar_callback_provider_get(api):
 
     Callback for provider OAuth setup.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_callback_provider_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_events_details_suggestion_post(api):
@@ -41,7 +45,9 @@ def test_CalendarApi_integrations_calendar_events_details_suggestion_post(api):
 
     Get details suggestion for given events.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_events_details_suggestion_post()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_events_event_id_details_suggestion_get(api):
@@ -49,7 +55,9 @@ def test_CalendarApi_integrations_calendar_events_event_id_details_suggestion_ge
 
     Get details suggestion for a given event.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_events_event_id_details_suggestion_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_events_get(api):
@@ -57,7 +65,9 @@ def test_CalendarApi_integrations_calendar_events_get(api):
 
     Get all events for the caller user.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_events_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_events_update_post(api):
@@ -65,7 +75,9 @@ def test_CalendarApi_integrations_calendar_events_update_post(api):
 
     Update all events from selected calendars for a user.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_events_update_post()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_get(api):
@@ -73,7 +85,9 @@ def test_CalendarApi_integrations_calendar_get(api):
 
     Get all integrations a user has.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_integration_id_calendars_calendar_id_patch(api):
@@ -81,7 +95,9 @@ def test_CalendarApi_integrations_calendar_integration_id_calendars_calendar_id_
 
     Sets whether a calendar is or not selected by the user.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_integration_id_calendars_calendar_id_patch()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_integration_id_calendars_get(api):
@@ -89,7 +105,9 @@ def test_CalendarApi_integrations_calendar_integration_id_calendars_get(api):
 
     Get all calendars for a given integration.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_integration_id_calendars_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_integration_id_calendars_id_calendar_events_get(api):
@@ -97,7 +115,9 @@ def test_CalendarApi_integrations_calendar_integration_id_calendars_id_calendar_
 
     (DEPRECATED) Get all events for a given calendar in a given integration.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_integration_id_calendars_id_calendar_events_get()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_integration_id_calendars_update_post(api):
@@ -105,7 +125,9 @@ def test_CalendarApi_integrations_calendar_integration_id_calendars_update_post(
 
     Updates calendar data according to provider API.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_integration_id_calendars_update_post()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_integration_id_delete(api):
@@ -113,7 +135,9 @@ def test_CalendarApi_integrations_calendar_integration_id_delete(api):
 
     Delete a given integration.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_integration_id_delete()
+
+    assert response
 
 
 def test_CalendarApi_integrations_calendar_setup_get(api):
@@ -121,4 +145,6 @@ def test_CalendarApi_integrations_calendar_setup_get(api):
 
     Get URL for setting up a calendar integration with given provider.  # noqa: E501
     """
-    pass
+    response = api.integrations_calendar_setup_get()
+
+    assert response

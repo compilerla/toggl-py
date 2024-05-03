@@ -25,4 +25,6 @@ def test_WorkspacestimeEntryConstraintsApi_post_workspace_time_entry_constraints
 
     Post workspace time entry constraints  # noqa: E501
     """
-    pass
+    response = api.post_workspace_time_entry_constraints()
+
+    assert response

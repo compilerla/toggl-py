@@ -25,7 +25,9 @@ def test_ReportsApi_delete_saved_report_resource(api):
 
     models.SavedReport  # noqa: E501
     """
-    pass
+    response = api.delete_saved_report_resource()
+
+    assert response
 
 
 def test_ReportsApi_delete_workspace_scheduled_reports(api):
@@ -33,7 +35,9 @@ def test_ReportsApi_delete_workspace_scheduled_reports(api):
 
     ScheduledReport  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_scheduled_reports()
+
+    assert response
 
 
 def test_ReportsApi_get_saved_report_resource(api):
@@ -41,7 +45,9 @@ def test_ReportsApi_get_saved_report_resource(api):
 
     models.SavedReport  # noqa: E501
     """
-    pass
+    response = api.get_saved_report_resource()
+
+    assert response
 
 
 def test_ReportsApi_get_shared_report(api):
@@ -49,7 +55,9 @@ def test_ReportsApi_get_shared_report(api):
 
     workspace.SharedReport  # noqa: E501
     """
-    pass
+    response = api.get_shared_report()
+
+    assert response
 
 
 def test_ReportsApi_get_workspace_scheduled_reports(api):
@@ -57,7 +65,9 @@ def test_ReportsApi_get_workspace_scheduled_reports(api):
 
     ScheduledReports  # noqa: E501
     """
-    pass
+    response = api.get_workspace_scheduled_reports()
+
+    assert response
 
 
 def test_ReportsApi_post_shared_report(api):
@@ -65,7 +75,9 @@ def test_ReportsApi_post_shared_report(api):
 
     workspace.SharedReport  # noqa: E501
     """
-    pass
+    response = api.post_shared_report()
+
+    assert response
 
 
 def test_ReportsApi_post_workspace_scheduled_reports(api):
@@ -73,7 +85,9 @@ def test_ReportsApi_post_workspace_scheduled_reports(api):
 
     ScheduledReports  # noqa: E501
     """
-    pass
+    response = api.post_workspace_scheduled_reports()
+
+    assert response
 
 
 def test_ReportsApi_put_saved_report_resource(api):
@@ -81,7 +95,9 @@ def test_ReportsApi_put_saved_report_resource(api):
 
     models.SavedReport  # noqa: E501
     """
-    pass
+    response = api.put_saved_report_resource()
+
+    assert response
 
 
 def test_ReportsApi_put_shared_report(api):
@@ -89,4 +105,6 @@ def test_ReportsApi_put_shared_report(api):
 
     workspace.SharedReport  # noqa: E501
     """
-    pass
+    response = api.put_shared_report()
+
+    assert response

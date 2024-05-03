@@ -25,7 +25,9 @@ def test_ApprovalsApi_delete_timesheet_setups(api):
 
     Delete a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.delete_timesheet_setups()
+
+    assert response
 
 
 def test_ApprovalsApi_get_timesheet_setups(api):
@@ -33,7 +35,9 @@ def test_ApprovalsApi_get_timesheet_setups(api):
 
     Get timesheet setups  # noqa: E501
     """
-    pass
+    response = api.get_timesheet_setups()
+
+    assert response
 
 
 def test_ApprovalsApi_get_workspace_timesheet_hours_handler(api):
@@ -41,7 +45,9 @@ def test_ApprovalsApi_get_workspace_timesheet_hours_handler(api):
 
     Get timesheets hours  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheet_hours_handler()
+
+    assert response
 
 
 def test_ApprovalsApi_get_workspace_timesheet_time_entries_handler(api):
@@ -49,7 +55,9 @@ def test_ApprovalsApi_get_workspace_timesheet_time_entries_handler(api):
 
     Get timesheet time entries  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheet_time_entries_handler()
+
+    assert response
 
 
 def test_ApprovalsApi_get_workspace_timesheets_handler(api):
@@ -57,7 +65,9 @@ def test_ApprovalsApi_get_workspace_timesheets_handler(api):
 
     Get timesheets  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheets_handler()
+
+    assert response
 
 
 def test_ApprovalsApi_post_timesheet_setups(api):
@@ -65,7 +75,9 @@ def test_ApprovalsApi_post_timesheet_setups(api):
 
     Create a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.post_timesheet_setups()
+
+    assert response
 
 
 def test_ApprovalsApi_put_timesheet_setups(api):
@@ -73,7 +85,9 @@ def test_ApprovalsApi_put_timesheet_setups(api):
 
     Update a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.put_timesheet_setups()
+
+    assert response
 
 
 def test_ApprovalsApi_put_workspace_timesheets_handler(api):
@@ -81,4 +95,6 @@ def test_ApprovalsApi_put_workspace_timesheets_handler(api):
 
     Update timesheets  # noqa: E501
     """
-    pass
+    response = api.put_workspace_timesheets_handler()
+
+    assert response

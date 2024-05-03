@@ -25,7 +25,9 @@ def test_AlertsApi_delete_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.delete_alerts()
+
+    assert response
 
 
 def test_AlertsApi_get_alerts(api):
@@ -33,7 +35,9 @@ def test_AlertsApi_get_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.get_alerts()
+
+    assert response
 
 
 def test_AlertsApi_post_alerts(api):
@@ -41,7 +45,9 @@ def test_AlertsApi_post_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.post_alerts()
+
+    assert response
 
 
 def test_AlertsApi_put_alerts(api):
@@ -49,4 +55,6 @@ def test_AlertsApi_put_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.put_alerts()
+
+    assert response

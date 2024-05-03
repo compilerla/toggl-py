@@ -25,4 +25,6 @@ def test_TimeEntryConstraintsApi_get_workspace_time_entry_constraints(api):
 
     Get workspace time entry constraints  # noqa: E501
     """
-    pass
+    response = api.get_workspace_time_entry_constraints()
+
+    assert response

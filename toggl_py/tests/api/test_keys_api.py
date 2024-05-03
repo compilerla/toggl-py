@@ -25,4 +25,6 @@ def test_KeysApi_get_keys(api):
 
     get keys  # noqa: E501
     """
-    pass
+    response = api.get_keys()
+
+    assert response

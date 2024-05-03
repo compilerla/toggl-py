@@ -25,7 +25,9 @@ def test_UserInvoicesApi_delete_workspace_invoice(api):
 
     Delete user invoice.  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_invoice()
+
+    assert response
 
 
 def test_UserInvoicesApi_get_workspace_invoices(api):
@@ -33,7 +35,9 @@ def test_UserInvoicesApi_get_workspace_invoices(api):
 
     Get workspace invoices.  # noqa: E501
     """
-    pass
+    response = api.get_workspace_invoices()
+
+    assert response
 
 
 def test_UserInvoicesApi_post_workspace_user_invoice(api):
@@ -41,4 +45,6 @@ def test_UserInvoicesApi_post_workspace_user_invoice(api):
 
     Create user invoice  # noqa: E501
     """
-    pass
+    response = api.post_workspace_user_invoice()
+
+    assert response

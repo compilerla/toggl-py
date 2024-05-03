@@ -25,7 +25,9 @@ def test_FavoritesApi_create_favorite(api):
 
     Create a favorite  # noqa: E501
     """
-    pass
+    response = api.create_favorite()
+
+    assert response
 
 
 def test_FavoritesApi_delete_favorite(api):
@@ -33,7 +35,9 @@ def test_FavoritesApi_delete_favorite(api):
 
     Deletes a given favorite  # noqa: E501
     """
-    pass
+    response = api.delete_favorite()
+
+    assert response
 
 
 def test_FavoritesApi_get_favorites(api):
@@ -41,7 +45,9 @@ def test_FavoritesApi_get_favorites(api):
 
     Get a list of favorites  # noqa: E501
     """
-    pass
+    response = api.get_favorites()
+
+    assert response
 
 
 def test_FavoritesApi_post_favorites_suggestions(api):
@@ -49,7 +55,9 @@ def test_FavoritesApi_post_favorites_suggestions(api):
 
     Generates and returns a list of suggested favorites.  # noqa: E501
     """
-    pass
+    response = api.post_favorites_suggestions()
+
+    assert response
 
 
 def test_FavoritesApi_update_favorite(api):
@@ -57,4 +65,6 @@ def test_FavoritesApi_update_favorite(api):
 
     Update an array of favorites  # noqa: E501
     """
-    pass
+    response = api.update_favorite()
+
+    assert response

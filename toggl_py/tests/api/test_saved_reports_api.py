@@ -25,7 +25,9 @@ def test_SavedReportsApi_reports_api_v3_shared_report_token_csv_post(api):
 
     Export CSV for saved report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_csv_post()
+
+    assert response
 
 
 def test_SavedReportsApi_reports_api_v3_shared_report_token_pdf_post(api):
@@ -33,7 +35,9 @@ def test_SavedReportsApi_reports_api_v3_shared_report_token_pdf_post(api):
 
     Export saved report in pdf format  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_pdf_post()
+
+    assert response
 
 
 def test_SavedReportsApi_reports_api_v3_shared_report_token_post(api):
@@ -41,7 +45,9 @@ def test_SavedReportsApi_reports_api_v3_shared_report_token_post(api):
 
     Load the previously saved report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_post()
+
+    assert response
 
 
 def test_SavedReportsApi_reports_api_v3_shared_report_token_xlsx_post(api):
@@ -49,4 +55,6 @@ def test_SavedReportsApi_reports_api_v3_shared_report_token_xlsx_post(api):
 
     Export XSLX saved report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_xlsx_post()
+
+    assert response

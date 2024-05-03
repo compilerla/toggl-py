@@ -25,7 +25,9 @@ def test_UsersApi_delete_organization_users_leave(api):
 
     Leaves organization  # noqa: E501
     """
-    pass
+    response = api.delete_organization_users_leave()
+
+    assert response
 
 
 def test_UsersApi_delete_workspace_user(api):
@@ -33,7 +35,9 @@ def test_UsersApi_delete_workspace_user(api):
 
     Delete workspace user  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_user()
+
+    assert response
 
 
 def test_UsersApi_get_organization_users(api):
@@ -41,7 +45,9 @@ def test_UsersApi_get_organization_users(api):
 
     List of users in organization  # noqa: E501
     """
-    pass
+    response = api.get_organization_users()
+
+    assert response
 
 
 def test_UsersApi_get_organization_users_detailed(api):
@@ -49,7 +55,9 @@ def test_UsersApi_get_organization_users_detailed(api):
 
     List of users in organization with details  # noqa: E501
     """
-    pass
+    response = api.get_organization_users_detailed()
+
+    assert response
 
 
 def test_UsersApi_get_organization_workspaces_workspaceusers(api):
@@ -57,7 +65,9 @@ def test_UsersApi_get_organization_workspaces_workspaceusers(api):
 
     List of users who belong to the given workspace.  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_workspaceusers()
+
+    assert response
 
 
 def test_UsersApi_get_workspace_users(api):
@@ -65,7 +75,9 @@ def test_UsersApi_get_workspace_users(api):
 
     Get workspace users  # noqa: E501
     """
-    pass
+    response = api.get_workspace_users()
+
+    assert response
 
 
 def test_UsersApi_get_workspace_workspace_users(api):
@@ -73,7 +85,9 @@ def test_UsersApi_get_workspace_workspace_users(api):
 
     Get workspace workspace-users  # noqa: E501
     """
-    pass
+    response = api.get_workspace_workspace_users()
+
+    assert response
 
 
 def test_UsersApi_patch_organization_users(api):
@@ -81,7 +95,9 @@ def test_UsersApi_patch_organization_users(api):
 
     Apply changes in bulk to users in an organization  # noqa: E501
     """
-    pass
+    response = api.patch_organization_users()
+
+    assert response
 
 
 def test_UsersApi_patch_organization_workspace_users(api):
@@ -89,7 +105,9 @@ def test_UsersApi_patch_organization_workspace_users(api):
 
     Changes the users in a workspace.  # noqa: E501
     """
-    pass
+    response = api.patch_organization_workspace_users()
+
+    assert response
 
 
 def test_UsersApi_post_workspace_users_lost_password(api):
@@ -97,7 +115,9 @@ def test_UsersApi_post_workspace_users_lost_password(api):
 
     Change a lost password  # noqa: E501
     """
-    pass
+    response = api.post_workspace_users_lost_password()
+
+    assert response
 
 
 def test_UsersApi_put_organization_users(api):
@@ -105,7 +125,9 @@ def test_UsersApi_put_organization_users(api):
 
     Changes a single organization-user  # noqa: E501
     """
-    pass
+    response = api.put_organization_users()
+
+    assert response
 
 
 def test_UsersApi_put_organization_workspaces_assignments(api):
@@ -113,7 +135,9 @@ def test_UsersApi_put_organization_workspaces_assignments(api):
 
     Change assignments of users within a workspace.  # noqa: E501
     """
-    pass
+    response = api.put_organization_workspaces_assignments()
+
+    assert response
 
 
 def test_UsersApi_put_workspace_users(api):
@@ -121,7 +145,9 @@ def test_UsersApi_put_workspace_users(api):
 
     Update workspace user  # noqa: E501
     """
-    pass
+    response = api.put_workspace_users()
+
+    assert response
 
 
 def test_UsersApi_put_workspace_workspace_users(api):
@@ -129,4 +155,6 @@ def test_UsersApi_put_workspace_workspace_users(api):
 
     Update workspace-user  # noqa: E501
     """
-    pass
+    response = api.put_workspace_workspace_users()
+
+    assert response

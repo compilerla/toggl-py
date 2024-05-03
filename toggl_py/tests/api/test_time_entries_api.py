@@ -25,7 +25,9 @@ def test_TimeEntriesApi_delete_workspace_time_entries(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_time_entries()
+
+    assert response
 
 
 def test_TimeEntriesApi_get_current_time_entry(api):
@@ -33,7 +35,9 @@ def test_TimeEntriesApi_get_current_time_entry(api):
 
     Get current time entry  # noqa: E501
     """
-    pass
+    response = api.get_current_time_entry()
+
+    assert response
 
 
 def test_TimeEntriesApi_get_time_entries(api):
@@ -41,7 +45,9 @@ def test_TimeEntriesApi_get_time_entries(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.get_time_entries()
+
+    assert response
 
 
 def test_TimeEntriesApi_get_time_entry_by_id(api):
@@ -49,7 +55,9 @@ def test_TimeEntriesApi_get_time_entry_by_id(api):
 
     Get a time entry by ID.  # noqa: E501
     """
-    pass
+    response = api.get_time_entry_by_id()
+
+    assert response
 
 
 def test_TimeEntriesApi_get_time_notes_entry_notes_by_id(api):
@@ -57,7 +65,9 @@ def test_TimeEntriesApi_get_time_notes_entry_notes_by_id(api):
 
     Get a time entries' notes by ID.  # noqa: E501
     """
-    pass
+    response = api.get_time_notes_entry_notes_by_id()
+
+    assert response
 
 
 def test_TimeEntriesApi_get_workspace_time_entry_invitations(api):
@@ -65,7 +75,9 @@ def test_TimeEntriesApi_get_workspace_time_entry_invitations(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.get_workspace_time_entry_invitations()
+
+    assert response
 
 
 def test_TimeEntriesApi_patch_time_entries(api):
@@ -73,7 +85,9 @@ def test_TimeEntriesApi_patch_time_entries(api):
 
     Bulk editing time entries  # noqa: E501
     """
-    pass
+    response = api.patch_time_entries()
+
+    assert response
 
 
 def test_TimeEntriesApi_patch_workspace_stop_time_entry_handler(api):
@@ -81,7 +95,9 @@ def test_TimeEntriesApi_patch_workspace_stop_time_entry_handler(api):
 
     Stop TimeEntry  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_stop_time_entry_handler()
+
+    assert response
 
 
 def test_TimeEntriesApi_post_workspace_time_entries(api):
@@ -89,7 +105,9 @@ def test_TimeEntriesApi_post_workspace_time_entries(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.post_workspace_time_entries()
+
+    assert response
 
 
 def test_TimeEntriesApi_post_workspace_time_entry_invitation_action(api):
@@ -97,7 +115,9 @@ def test_TimeEntriesApi_post_workspace_time_entry_invitation_action(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.post_workspace_time_entry_invitation_action()
+
+    assert response
 
 
 def test_TimeEntriesApi_put_time_entry_notes_by_id(api):
@@ -105,7 +125,9 @@ def test_TimeEntriesApi_put_time_entry_notes_by_id(api):
 
     Put a time entry notes by ID.  # noqa: E501
     """
-    pass
+    response = api.put_time_entry_notes_by_id()
+
+    assert response
 
 
 def test_TimeEntriesApi_put_workspace_time_entry_handler(api):
@@ -113,4 +135,6 @@ def test_TimeEntriesApi_put_workspace_time_entry_handler(api):
 
     TimeEntries  # noqa: E501
     """
-    pass
+    response = api.put_workspace_time_entry_handler()
+
+    assert response

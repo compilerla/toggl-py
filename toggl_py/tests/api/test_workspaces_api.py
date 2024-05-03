@@ -25,7 +25,9 @@ def test_WorkspacesApi_delete_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.delete_alerts()
+
+    assert response
 
 
 def test_WorkspacesApi_delete_timesheet_setups(api):
@@ -33,7 +35,9 @@ def test_WorkspacesApi_delete_timesheet_setups(api):
 
     Delete a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.delete_timesheet_setups()
+
+    assert response
 
 
 def test_WorkspacesApi_delete_workspace_track_reminder(api):
@@ -41,7 +45,9 @@ def test_WorkspacesApi_delete_workspace_track_reminder(api):
 
     TrackReminder  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_track_reminder()
+
+    assert response
 
 
 def test_WorkspacesApi_delete_workspace_user(api):
@@ -49,7 +55,9 @@ def test_WorkspacesApi_delete_workspace_user(api):
 
     Delete workspace user  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_user()
+
+    assert response
 
 
 def test_WorkspacesApi_get_organization_workspaces_groups(api):
@@ -57,7 +65,9 @@ def test_WorkspacesApi_get_organization_workspaces_groups(api):
 
     List of groups in a workspace within an organization with user assignments.  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_groups()
+
+    assert response
 
 
 def test_WorkspacesApi_get_organization_workspaces_statistics(api):
@@ -65,7 +75,9 @@ def test_WorkspacesApi_get_organization_workspaces_statistics(api):
 
     Statistics for all workspaces in the organization  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_statistics()
+
+    assert response
 
 
 def test_WorkspacesApi_get_organization_workspaces_workspaceusers(api):
@@ -73,7 +85,9 @@ def test_WorkspacesApi_get_organization_workspaces_workspaceusers(api):
 
     List of users who belong to the given workspace.  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_workspaceusers()
+
+    assert response
 
 
 def test_WorkspacesApi_get_timesheet_setups(api):
@@ -81,7 +95,9 @@ def test_WorkspacesApi_get_timesheet_setups(api):
 
     Get timesheet setups  # noqa: E501
     """
-    pass
+    response = api.get_timesheet_setups()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace(api):
@@ -89,7 +105,9 @@ def test_WorkspacesApi_get_workspace(api):
 
     Get single workspace  # noqa: E501
     """
-    pass
+    response = api.get_workspace()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_statistics(api):
@@ -97,7 +115,9 @@ def test_WorkspacesApi_get_workspace_statistics(api):
 
     Workspace statistics  # noqa: E501
     """
-    pass
+    response = api.get_workspace_statistics()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_time_entry_constraints(api):
@@ -105,7 +125,9 @@ def test_WorkspacesApi_get_workspace_time_entry_constraints(api):
 
     Get workspace time entry constraints  # noqa: E501
     """
-    pass
+    response = api.get_workspace_time_entry_constraints()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_timesheet_hours_handler(api):
@@ -113,7 +135,9 @@ def test_WorkspacesApi_get_workspace_timesheet_hours_handler(api):
 
     Get timesheets hours  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheet_hours_handler()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_timesheet_time_entries_handler(api):
@@ -121,7 +145,9 @@ def test_WorkspacesApi_get_workspace_timesheet_time_entries_handler(api):
 
     Get timesheet time entries  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheet_time_entries_handler()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_timesheets_handler(api):
@@ -129,7 +155,9 @@ def test_WorkspacesApi_get_workspace_timesheets_handler(api):
 
     Get timesheets  # noqa: E501
     """
-    pass
+    response = api.get_workspace_timesheets_handler()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_track_reminders(api):
@@ -137,7 +165,9 @@ def test_WorkspacesApi_get_workspace_track_reminders(api):
 
     TrackReminders  # noqa: E501
     """
-    pass
+    response = api.get_workspace_track_reminders()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspace_users(api):
@@ -145,7 +175,9 @@ def test_WorkspacesApi_get_workspace_users(api):
 
     Get workspace users  # noqa: E501
     """
-    pass
+    response = api.get_workspace_users()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspaces(api):
@@ -153,7 +185,9 @@ def test_WorkspacesApi_get_workspaces(api):
 
     Workspaces  # noqa: E501
     """
-    pass
+    response = api.get_workspaces()
+
+    assert response
 
 
 def test_WorkspacesApi_get_workspaces_0(api):
@@ -161,7 +195,9 @@ def test_WorkspacesApi_get_workspaces_0(api):
 
     Workspaces  # noqa: E501
     """
-    pass
+    response = api.get_workspaces_0()
+
+    assert response
 
 
 def test_WorkspacesApi_patch_organization_workspace_users(api):
@@ -169,7 +205,9 @@ def test_WorkspacesApi_patch_organization_workspace_users(api):
 
     Changes the users in a workspace.  # noqa: E501
     """
-    pass
+    response = api.patch_organization_workspace_users()
+
+    assert response
 
 
 def test_WorkspacesApi_post_alerts(api):
@@ -177,7 +215,9 @@ def test_WorkspacesApi_post_alerts(api):
 
     Alerts  # noqa: E501
     """
-    pass
+    response = api.post_alerts()
+
+    assert response
 
 
 def test_WorkspacesApi_post_organization_workspaces(api):
@@ -185,7 +225,9 @@ def test_WorkspacesApi_post_organization_workspaces(api):
 
     Create a new workspace.  # noqa: E501
     """
-    pass
+    response = api.post_organization_workspaces()
+
+    assert response
 
 
 def test_WorkspacesApi_post_timesheet_setups(api):
@@ -193,7 +235,9 @@ def test_WorkspacesApi_post_timesheet_setups(api):
 
     Create a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.post_timesheet_setups()
+
+    assert response
 
 
 def test_WorkspacesApi_post_workspace_track_reminders(api):
@@ -201,7 +245,9 @@ def test_WorkspacesApi_post_workspace_track_reminders(api):
 
     TrackReminders  # noqa: E501
     """
-    pass
+    response = api.post_workspace_track_reminders()
+
+    assert response
 
 
 def test_WorkspacesApi_post_workspace_users_lost_password(api):
@@ -209,7 +255,9 @@ def test_WorkspacesApi_post_workspace_users_lost_password(api):
 
     Change a lost password  # noqa: E501
     """
-    pass
+    response = api.post_workspace_users_lost_password()
+
+    assert response
 
 
 def test_WorkspacesApi_post_workspaces(api):
@@ -217,7 +265,9 @@ def test_WorkspacesApi_post_workspaces(api):
 
     Workspaces  # noqa: E501
     """
-    pass
+    response = api.post_workspaces()
+
+    assert response
 
 
 def test_WorkspacesApi_put_organization_workspaces_assignments(api):
@@ -225,7 +275,9 @@ def test_WorkspacesApi_put_organization_workspaces_assignments(api):
 
     Change assignments of users within a workspace.  # noqa: E501
     """
-    pass
+    response = api.put_organization_workspaces_assignments()
+
+    assert response
 
 
 def test_WorkspacesApi_put_timesheet_setups(api):
@@ -233,7 +285,9 @@ def test_WorkspacesApi_put_timesheet_setups(api):
 
     Update a timesheet setup  # noqa: E501
     """
-    pass
+    response = api.put_timesheet_setups()
+
+    assert response
 
 
 def test_WorkspacesApi_put_workspace_timesheets_handler(api):
@@ -241,7 +295,9 @@ def test_WorkspacesApi_put_workspace_timesheets_handler(api):
 
     Update timesheets  # noqa: E501
     """
-    pass
+    response = api.put_workspace_timesheets_handler()
+
+    assert response
 
 
 def test_WorkspacesApi_put_workspace_track_reminder(api):
@@ -249,7 +305,9 @@ def test_WorkspacesApi_put_workspace_track_reminder(api):
 
     TrackReminder  # noqa: E501
     """
-    pass
+    response = api.put_workspace_track_reminder()
+
+    assert response
 
 
 def test_WorkspacesApi_put_workspace_users(api):
@@ -257,7 +315,9 @@ def test_WorkspacesApi_put_workspace_users(api):
 
     Update workspace user  # noqa: E501
     """
-    pass
+    response = api.put_workspace_users()
+
+    assert response
 
 
 def test_WorkspacesApi_put_workspace_workspace_users(api):
@@ -265,7 +325,9 @@ def test_WorkspacesApi_put_workspace_workspace_users(api):
 
     Update workspace-user  # noqa: E501
     """
-    pass
+    response = api.put_workspace_workspace_users()
+
+    assert response
 
 
 def test_WorkspacesApi_put_workspaces(api):
@@ -273,4 +335,6 @@ def test_WorkspacesApi_put_workspaces(api):
 
     Update workspace  # noqa: E501
     """
-    pass
+    response = api.put_workspaces()
+
+    assert response

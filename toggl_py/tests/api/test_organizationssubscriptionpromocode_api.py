@@ -25,7 +25,9 @@ def test_OrganizationssubscriptionpromocodeApi_delete_promotion_code(api):
 
     Removes any discount (promotion code) applied to the organization's customer  # noqa: E501
     """
-    pass
+    response = api.delete_promotion_code()
+
+    assert response
 
 
 def test_OrganizationssubscriptionpromocodeApi_post_promotion_code(api):
@@ -33,4 +35,6 @@ def test_OrganizationssubscriptionpromocodeApi_post_promotion_code(api):
 
     Applies the given promotion code to organization's customer  # noqa: E501
     """
-    pass
+    response = api.post_promotion_code()
+
+    assert response

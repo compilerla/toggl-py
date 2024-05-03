@@ -25,7 +25,9 @@ def test_FeedbackApi_post_feedback_web(api):
 
     FeedbackWeb  # noqa: E501
     """
-    pass
+    response = api.post_feedback_web()
+
+    assert response
 
 
 def test_FeedbackApi_post_unified_feedback(api):
@@ -33,4 +35,6 @@ def test_FeedbackApi_post_unified_feedback(api):
 
     Feedback  # noqa: E501
     """
-    pass
+    response = api.post_unified_feedback()
+
+    assert response

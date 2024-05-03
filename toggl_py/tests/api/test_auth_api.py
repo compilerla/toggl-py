@@ -25,7 +25,9 @@ def test_AuthApi_desktop_login_get(api):
 
     Get desktop login token  # noqa: E501
     """
-    pass
+    response = api.desktop_login_get()
+
+    assert response
 
 
 def test_AuthApi_desktop_login_tokens_post(api):
@@ -33,4 +35,6 @@ def test_AuthApi_desktop_login_tokens_post(api):
 
     Post desktop login token  # noqa: E501
     """
-    pass
+    response = api.desktop_login_tokens_post()
+
+    assert response

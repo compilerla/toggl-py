@@ -25,7 +25,9 @@ def test_WorkspaceslogoApi_get_workspace_logo(api):
 
     Get workspace logo  # noqa: E501
     """
-    pass
+    response = api.get_workspace_logo()
+
+    assert response
 
 
 def test_WorkspaceslogoApi_get_workspace_logo_0(api):
@@ -33,7 +35,9 @@ def test_WorkspaceslogoApi_get_workspace_logo_0(api):
 
     Delete workspace logo  # noqa: E501
     """
-    pass
+    response = api.get_workspace_logo_0()
+
+    assert response
 
 
 def test_WorkspaceslogoApi_post_workspace_logo(api):
@@ -41,4 +45,6 @@ def test_WorkspaceslogoApi_post_workspace_logo(api):
 
     Post workspace logo  # noqa: E501
     """
-    pass
+    response = api.post_workspace_logo()
+
+    assert response

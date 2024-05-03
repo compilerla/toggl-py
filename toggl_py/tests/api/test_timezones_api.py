@@ -25,7 +25,9 @@ def test_TimezonesApi_get_offsets(api):
 
     Offsets  # noqa: E501
     """
-    pass
+    response = api.get_offsets()
+
+    assert response
 
 
 def test_TimezonesApi_get_timezones(api):
@@ -33,4 +35,6 @@ def test_TimezonesApi_get_timezones(api):
 
     Timezones  # noqa: E501
     """
-    pass
+    response = api.get_timezones()
+
+    assert response

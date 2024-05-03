@@ -25,4 +25,6 @@ def test_OrganizationsSubscriptionApi_get_organization_purchase_order_pdf(api):
 
     PurchaseOrderPdf  # noqa: E501
     """
-    pass
+    response = api.get_organization_purchase_order_pdf()
+
+    assert response

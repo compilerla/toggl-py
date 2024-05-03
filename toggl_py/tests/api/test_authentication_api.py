@@ -25,7 +25,9 @@ def test_AuthenticationApi_delete_workspace_sso(api):
 
     Erase a workspace SSO configuration  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_sso()
+
+    assert response
 
 
 def test_AuthenticationApi_get_saml2_login_url(api):
@@ -33,7 +35,9 @@ def test_AuthenticationApi_get_saml2_login_url(api):
 
     SAML2 Identity Provider URL  # noqa: E501
     """
-    pass
+    response = api.get_saml2_login_url()
+
+    assert response
 
 
 def test_AuthenticationApi_get_workspace_sso(api):
@@ -41,7 +45,9 @@ def test_AuthenticationApi_get_workspace_sso(api):
 
     Workspace SSO configuration  # noqa: E501
     """
-    pass
+    response = api.get_workspace_sso()
+
+    assert response
 
 
 def test_AuthenticationApi_me_sessions_delete(api):
@@ -49,7 +55,9 @@ def test_AuthenticationApi_me_sessions_delete(api):
 
     Delete session  # noqa: E501
     """
-    pass
+    response = api.me_sessions_delete()
+
+    assert response
 
 
 def test_AuthenticationApi_me_sessions_post(api):
@@ -57,7 +65,9 @@ def test_AuthenticationApi_me_sessions_post(api):
 
     Create session  # noqa: E501
     """
-    pass
+    response = api.me_sessions_post()
+
+    assert response
 
 
 def test_AuthenticationApi_patch_workspace_sso(api):
@@ -65,7 +75,9 @@ def test_AuthenticationApi_patch_workspace_sso(api):
 
     Enable/disable the Workspace SSO configuration  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_sso()
+
+    assert response
 
 
 def test_AuthenticationApi_post_enable_sso(api):
@@ -73,7 +85,9 @@ def test_AuthenticationApi_post_enable_sso(api):
 
     Confirm SSO enabling for user account  # noqa: E501
     """
-    pass
+    response = api.post_enable_sso()
+
+    assert response
 
 
 def test_AuthenticationApi_post_reset_token(api):
@@ -81,7 +95,9 @@ def test_AuthenticationApi_post_reset_token(api):
 
     ResetToken  # noqa: E501
     """
-    pass
+    response = api.post_reset_token()
+
+    assert response
 
 
 def test_AuthenticationApi_post_saml2_callback(api):
@@ -89,7 +105,9 @@ def test_AuthenticationApi_post_saml2_callback(api):
 
     SAML2 Identity Provider Callback  # noqa: E501
     """
-    pass
+    response = api.post_saml2_callback()
+
+    assert response
 
 
 def test_AuthenticationApi_post_signup(api):
@@ -97,7 +115,9 @@ def test_AuthenticationApi_post_signup(api):
 
     Signup  # noqa: E501
     """
-    pass
+    response = api.post_signup()
+
+    assert response
 
 
 def test_AuthenticationApi_post_workspace_sso(api):
@@ -105,4 +125,6 @@ def test_AuthenticationApi_post_workspace_sso(api):
 
     Workspace SSO configuration  # noqa: E501
     """
-    pass
+    response = api.post_workspace_sso()
+
+    assert response

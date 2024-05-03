@@ -25,7 +25,9 @@ def test_OrganizationsOwnerApi_get_ownership_transfer(api):
 
     Returns single organization transfer in the organization  # noqa: E501
     """
-    pass
+    response = api.get_ownership_transfer()
+
+    assert response
 
 
 def test_OrganizationsOwnerApi_get_ownership_transfers(api):
@@ -33,7 +35,9 @@ def test_OrganizationsOwnerApi_get_ownership_transfers(api):
 
     Returns list of organization transfers made in the organization  # noqa: E501
     """
-    pass
+    response = api.get_ownership_transfers()
+
+    assert response
 
 
 def test_OrganizationsOwnerApi_post_ownership_transfer(api):
@@ -41,7 +45,9 @@ def test_OrganizationsOwnerApi_post_ownership_transfer(api):
 
     Creates new ownership transfer process  # noqa: E501
     """
-    pass
+    response = api.post_ownership_transfer()
+
+    assert response
 
 
 def test_OrganizationsOwnerApi_post_ownership_transfer_actions(api):
@@ -49,4 +55,6 @@ def test_OrganizationsOwnerApi_post_ownership_transfer_actions(api):
 
     Updates transfer process and emails stakeholders  # noqa: E501
     """
-    pass
+    response = api.post_ownership_transfer_actions()
+
+    assert response

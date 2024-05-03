@@ -25,7 +25,9 @@ def test_IcalApi_get_ical(api):
 
     Ical file  # noqa: E501
     """
-    pass
+    response = api.get_ical()
+
+    assert response
 
 
 def test_IcalApi_post_workspace_ical_reset(api):
@@ -33,7 +35,9 @@ def test_IcalApi_post_workspace_ical_reset(api):
 
     Reset iCal token  # noqa: E501
     """
-    pass
+    response = api.post_workspace_ical_reset()
+
+    assert response
 
 
 def test_IcalApi_post_workspace_ical_toggle(api):
@@ -41,4 +45,6 @@ def test_IcalApi_post_workspace_ical_toggle(api):
 
     Toggle the iCal token  # noqa: E501
     """
-    pass
+    response = api.post_workspace_ical_toggle()
+
+    assert response

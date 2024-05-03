@@ -25,7 +25,9 @@ def test_MeApi_delete_push_services(api):
 
     PushServices  # noqa: E501
     """
-    pass
+    response = api.delete_push_services()
+
+    assert response
 
 
 def test_MeApi_get_clients(api):
@@ -33,7 +35,9 @@ def test_MeApi_get_clients(api):
 
     Clients  # noqa: E501
     """
-    pass
+    response = api.get_clients()
+
+    assert response
 
 
 def test_MeApi_get_lost_password(api):
@@ -41,7 +45,9 @@ def test_MeApi_get_lost_password(api):
 
     LostPassword  # noqa: E501
     """
-    pass
+    response = api.get_lost_password()
+
+    assert response
 
 
 def test_MeApi_get_me(api):
@@ -49,7 +55,9 @@ def test_MeApi_get_me(api):
 
     Me  # noqa: E501
     """
-    pass
+    response = api.get_me()
+
+    assert response
 
 
 def test_MeApi_get_me_features(api):
@@ -57,7 +65,9 @@ def test_MeApi_get_me_features(api):
 
     Features  # noqa: E501
     """
-    pass
+    response = api.get_me_features()
+
+    assert response
 
 
 def test_MeApi_get_me_flags(api):
@@ -65,7 +75,9 @@ def test_MeApi_get_me_flags(api):
 
     Flags  # noqa: E501
     """
-    pass
+    response = api.get_me_flags()
+
+    assert response
 
 
 def test_MeApi_get_me_location(api):
@@ -73,7 +85,9 @@ def test_MeApi_get_me_location(api):
 
     User's last known location  # noqa: E501
     """
-    pass
+    response = api.get_me_location()
+
+    assert response
 
 
 def test_MeApi_get_me_notifications(api):
@@ -81,7 +95,9 @@ def test_MeApi_get_me_notifications(api):
 
     Notifications  # noqa: E501
     """
-    pass
+    response = api.get_me_notifications()
+
+    assert response
 
 
 def test_MeApi_get_me_projects(api):
@@ -89,7 +105,9 @@ def test_MeApi_get_me_projects(api):
 
     Projects  # noqa: E501
     """
-    pass
+    response = api.get_me_projects()
+
+    assert response
 
 
 def test_MeApi_get_me_projects_paginated(api):
@@ -97,7 +115,9 @@ def test_MeApi_get_me_projects_paginated(api):
 
     ProjectsPaginated  # noqa: E501
     """
-    pass
+    response = api.get_me_projects_paginated()
+
+    assert response
 
 
 def test_MeApi_get_me_timesheets(api):
@@ -105,7 +125,9 @@ def test_MeApi_get_me_timesheets(api):
 
     User's Timesheets  # noqa: E501
     """
-    pass
+    response = api.get_me_timesheets()
+
+    assert response
 
 
 def test_MeApi_get_me_track_reminders(api):
@@ -113,7 +135,9 @@ def test_MeApi_get_me_track_reminders(api):
 
     TrackReminders  # noqa: E501
     """
-    pass
+    response = api.get_me_track_reminders()
+
+    assert response
 
 
 def test_MeApi_get_organizations(api):
@@ -121,7 +145,9 @@ def test_MeApi_get_organizations(api):
 
     Organizations that a user is part of  # noqa: E501
     """
-    pass
+    response = api.get_organizations()
+
+    assert response
 
 
 def test_MeApi_get_push_services(api):
@@ -129,7 +155,9 @@ def test_MeApi_get_push_services(api):
 
     PushServices  # noqa: E501
     """
-    pass
+    response = api.get_push_services()
+
+    assert response
 
 
 def test_MeApi_get_tags(api):
@@ -137,7 +165,9 @@ def test_MeApi_get_tags(api):
 
     Tags  # noqa: E501
     """
-    pass
+    response = api.get_tags()
+
+    assert response
 
 
 def test_MeApi_get_tasks(api):
@@ -145,7 +175,9 @@ def test_MeApi_get_tasks(api):
 
     Tasks  # noqa: E501
     """
-    pass
+    response = api.get_tasks()
+
+    assert response
 
 
 def test_MeApi_get_web_timer(api):
@@ -153,7 +185,9 @@ def test_MeApi_get_web_timer(api):
 
     WebTimer  # noqa: E501
     """
-    pass
+    response = api.get_web_timer()
+
+    assert response
 
 
 def test_MeApi_get_workspaces(api):
@@ -161,7 +195,9 @@ def test_MeApi_get_workspaces(api):
 
     Workspaces  # noqa: E501
     """
-    pass
+    response = api.get_workspaces()
+
+    assert response
 
 
 def test_MeApi_me_logged_get(api):
@@ -169,7 +205,9 @@ def test_MeApi_me_logged_get(api):
 
     Logged  # noqa: E501
     """
-    pass
+    response = api.me_logged_get()
+
+    assert response
 
 
 def test_MeApi_post_close_account(api):
@@ -177,7 +215,9 @@ def test_MeApi_post_close_account(api):
 
     CloseAccount  # noqa: E501
     """
-    pass
+    response = api.post_close_account()
+
+    assert response
 
 
 def test_MeApi_post_lost_password(api):
@@ -185,7 +225,9 @@ def test_MeApi_post_lost_password(api):
 
     LostPassword  # noqa: E501
     """
-    pass
+    response = api.post_lost_password()
+
+    assert response
 
 
 def test_MeApi_post_lost_password_confirm(api):
@@ -193,7 +235,9 @@ def test_MeApi_post_lost_password_confirm(api):
 
     LostPassword conformation  # noqa: E501
     """
-    pass
+    response = api.post_lost_password_confirm()
+
+    assert response
 
 
 def test_MeApi_post_me_accept_tos(api):
@@ -201,7 +245,9 @@ def test_MeApi_post_me_accept_tos(api):
 
     AcceptTOS  # noqa: E501
     """
-    pass
+    response = api.post_me_accept_tos()
+
+    assert response
 
 
 def test_MeApi_post_me_disable_product_emails(api):
@@ -209,7 +255,9 @@ def test_MeApi_post_me_disable_product_emails(api):
 
     Disable product emails  # noqa: E501
     """
-    pass
+    response = api.post_me_disable_product_emails()
+
+    assert response
 
 
 def test_MeApi_post_me_disable_weekly_report(api):
@@ -217,7 +265,9 @@ def test_MeApi_post_me_disable_weekly_report(api):
 
     Disable weekly report  # noqa: E501
     """
-    pass
+    response = api.post_me_disable_weekly_report()
+
+    assert response
 
 
 def test_MeApi_post_me_flags(api):
@@ -225,7 +275,9 @@ def test_MeApi_post_me_flags(api):
 
     Flags  # noqa: E501
     """
-    pass
+    response = api.post_me_flags()
+
+    assert response
 
 
 def test_MeApi_post_push_services(api):
@@ -233,7 +285,9 @@ def test_MeApi_post_push_services(api):
 
     PushServices  # noqa: E501
     """
-    pass
+    response = api.post_push_services()
+
+    assert response
 
 
 def test_MeApi_put_me(api):
@@ -241,7 +295,9 @@ def test_MeApi_put_me(api):
 
     Me  # noqa: E501
     """
-    pass
+    response = api.put_me()
+
+    assert response
 
 
 def test_MeApi_put_notifications(api):
@@ -249,4 +305,6 @@ def test_MeApi_put_notifications(api):
 
     Notifications  # noqa: E501
     """
-    pass
+    response = api.put_notifications()
+
+    assert response

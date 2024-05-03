@@ -25,7 +25,9 @@ def test_AvatarsApi_delete_avatars(api):
 
     Avatars  # noqa: E501
     """
-    pass
+    response = api.delete_avatars()
+
+    assert response
 
 
 def test_AvatarsApi_post_avatars(api):
@@ -33,7 +35,9 @@ def test_AvatarsApi_post_avatars(api):
 
     Avatars  # noqa: E501
     """
-    pass
+    response = api.post_avatars()
+
+    assert response
 
 
 def test_AvatarsApi_post_use_gravatar(api):
@@ -41,4 +45,6 @@ def test_AvatarsApi_post_use_gravatar(api):
 
     UseGravatar  # noqa: E501
     """
-    pass
+    response = api.post_use_gravatar()
+
+    assert response

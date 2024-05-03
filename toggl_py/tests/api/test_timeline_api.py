@@ -25,7 +25,9 @@ def test_TimelineApi_timeline_delete(api):
 
     Delete all timeline data  # noqa: E501
     """
-    pass
+    response = api.timeline_delete()
+
+    assert response
 
 
 def test_TimelineApi_timeline_get(api):
@@ -33,7 +35,9 @@ def test_TimelineApi_timeline_get(api):
 
     Get timeline events  # noqa: E501
     """
-    pass
+    response = api.timeline_get()
+
+    assert response
 
 
 def test_TimelineApi_timeline_post(api):
@@ -41,4 +45,6 @@ def test_TimelineApi_timeline_post(api):
 
     Save timeline events  # noqa: E501
     """
-    pass
+    response = api.timeline_post()
+
+    assert response

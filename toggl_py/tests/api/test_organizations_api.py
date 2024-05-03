@@ -25,7 +25,9 @@ def test_OrganizationsApi_delete_organization_group(api):
 
     Deletes group  # noqa: E501
     """
-    pass
+    response = api.delete_organization_group()
+
+    assert response
 
 
 def test_OrganizationsApi_delete_organization_users_leave(api):
@@ -33,7 +35,9 @@ def test_OrganizationsApi_delete_organization_users_leave(api):
 
     Leaves organization  # noqa: E501
     """
-    pass
+    response = api.delete_organization_users_leave()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization(api):
@@ -41,7 +45,9 @@ def test_OrganizationsApi_get_organization(api):
 
     Organization data  # noqa: E501
     """
-    pass
+    response = api.get_organization()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_groups(api):
@@ -49,7 +55,9 @@ def test_OrganizationsApi_get_organization_groups(api):
 
     List of groups in organization with user and workspace assignments  # noqa: E501
     """
-    pass
+    response = api.get_organization_groups()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_owner(api):
@@ -57,7 +65,9 @@ def test_OrganizationsApi_get_organization_owner(api):
 
     Get owner of the organization  # noqa: E501
     """
-    pass
+    response = api.get_organization_owner()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_segmentation(api):
@@ -65,7 +75,9 @@ def test_OrganizationsApi_get_organization_segmentation(api):
 
     Organization segmentation data  # noqa: E501
     """
-    pass
+    response = api.get_organization_segmentation()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_users(api):
@@ -73,7 +85,9 @@ def test_OrganizationsApi_get_organization_users(api):
 
     List of users in organization  # noqa: E501
     """
-    pass
+    response = api.get_organization_users()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_users_detailed(api):
@@ -81,7 +95,9 @@ def test_OrganizationsApi_get_organization_users_detailed(api):
 
     List of users in organization with details  # noqa: E501
     """
-    pass
+    response = api.get_organization_users_detailed()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_workspaces_groups(api):
@@ -89,7 +105,9 @@ def test_OrganizationsApi_get_organization_workspaces_groups(api):
 
     List of groups in a workspace within an organization with user assignments.  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_groups()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organization_workspaces_statistics(api):
@@ -97,7 +115,9 @@ def test_OrganizationsApi_get_organization_workspaces_statistics(api):
 
     Statistics for all workspaces in the organization  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_statistics()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organizations_payments_records(api):
@@ -105,7 +125,9 @@ def test_OrganizationsApi_get_organizations_payments_records(api):
 
     OrganizationsPaymentRecords  # noqa: E501
     """
-    pass
+    response = api.get_organizations_payments_records()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organizations_plans(api):
@@ -113,7 +135,9 @@ def test_OrganizationsApi_get_organizations_plans(api):
 
     OrganizationsPlans  # noqa: E501
     """
-    pass
+    response = api.get_organizations_plans()
+
+    assert response
 
 
 def test_OrganizationsApi_get_organizations_plans_0(api):
@@ -121,7 +145,9 @@ def test_OrganizationsApi_get_organizations_plans_0(api):
 
     OrganizationsPlan  # noqa: E501
     """
-    pass
+    response = api.get_organizations_plans_0()
+
+    assert response
 
 
 def test_OrganizationsApi_patch_organization_group(api):
@@ -129,7 +155,9 @@ def test_OrganizationsApi_patch_organization_group(api):
 
     Patch group  # noqa: E501
     """
-    pass
+    response = api.patch_organization_group()
+
+    assert response
 
 
 def test_OrganizationsApi_patch_organization_users(api):
@@ -137,7 +165,9 @@ def test_OrganizationsApi_patch_organization_users(api):
 
     Apply changes in bulk to users in an organization  # noqa: E501
     """
-    pass
+    response = api.patch_organization_users()
+
+    assert response
 
 
 def test_OrganizationsApi_post_organization(api):
@@ -145,7 +175,9 @@ def test_OrganizationsApi_post_organization(api):
 
     Creates a new organization  # noqa: E501
     """
-    pass
+    response = api.post_organization()
+
+    assert response
 
 
 def test_OrganizationsApi_post_organization_accept_invitation(api):
@@ -153,7 +185,9 @@ def test_OrganizationsApi_post_organization_accept_invitation(api):
 
     Accepts invitation  # noqa: E501
     """
-    pass
+    response = api.post_organization_accept_invitation()
+
+    assert response
 
 
 def test_OrganizationsApi_post_organization_group(api):
@@ -161,7 +195,9 @@ def test_OrganizationsApi_post_organization_group(api):
 
     Create group  # noqa: E501
     """
-    pass
+    response = api.post_organization_group()
+
+    assert response
 
 
 def test_OrganizationsApi_post_organization_invitation(api):
@@ -169,7 +205,9 @@ def test_OrganizationsApi_post_organization_invitation(api):
 
     Creates a new invitation for the user  # noqa: E501
     """
-    pass
+    response = api.post_organization_invitation()
+
+    assert response
 
 
 def test_OrganizationsApi_post_organization_workspaces(api):
@@ -177,7 +215,9 @@ def test_OrganizationsApi_post_organization_workspaces(api):
 
     Create a new workspace.  # noqa: E501
     """
-    pass
+    response = api.post_organization_workspaces()
+
+    assert response
 
 
 def test_OrganizationsApi_put_organization(api):
@@ -185,7 +225,9 @@ def test_OrganizationsApi_put_organization(api):
 
     Updates an existing organization  # noqa: E501
     """
-    pass
+    response = api.put_organization()
+
+    assert response
 
 
 def test_OrganizationsApi_put_organization_group(api):
@@ -193,7 +235,9 @@ def test_OrganizationsApi_put_organization_group(api):
 
     Edit group  # noqa: E501
     """
-    pass
+    response = api.put_organization_group()
+
+    assert response
 
 
 def test_OrganizationsApi_put_organization_segmentation(api):
@@ -201,7 +245,9 @@ def test_OrganizationsApi_put_organization_segmentation(api):
 
     Organization segmentation data  # noqa: E501
     """
-    pass
+    response = api.put_organization_segmentation()
+
+    assert response
 
 
 def test_OrganizationsApi_put_organization_users(api):
@@ -209,7 +255,9 @@ def test_OrganizationsApi_put_organization_users(api):
 
     Changes a single organization-user  # noqa: E501
     """
-    pass
+    response = api.put_organization_users()
+
+    assert response
 
 
 def test_OrganizationsApi_put_organization_workspaces_assignments(api):
@@ -217,4 +265,6 @@ def test_OrganizationsApi_put_organization_workspaces_assignments(api):
 
     Change assignments of users within a workspace.  # noqa: E501
     """
-    pass
+    response = api.put_organization_workspaces_assignments()
+
+    assert response

@@ -25,7 +25,9 @@ def test_TasksApi_delete_workspace_project_task(api):
 
     WorkspaceProjectTask  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_project_task()
+
+    assert response
 
 
 def test_TasksApi_get_workspace_project_task(api):
@@ -33,7 +35,9 @@ def test_TasksApi_get_workspace_project_task(api):
 
     WorkspaceProjectTask  # noqa: E501
     """
-    pass
+    response = api.get_workspace_project_task()
+
+    assert response
 
 
 def test_TasksApi_get_workspace_project_tasks(api):
@@ -41,7 +45,9 @@ def test_TasksApi_get_workspace_project_tasks(api):
 
     WorkspaceProjectTasks  # noqa: E501
     """
-    pass
+    response = api.get_workspace_project_tasks()
+
+    assert response
 
 
 def test_TasksApi_get_workspace_tasks(api):
@@ -49,7 +55,9 @@ def test_TasksApi_get_workspace_tasks(api):
 
     Tasks  # noqa: E501
     """
-    pass
+    response = api.get_workspace_tasks()
+
+    assert response
 
 
 def test_TasksApi_patch_workspace_project_tasks(api):
@@ -57,7 +65,9 @@ def test_TasksApi_patch_workspace_project_tasks(api):
 
     WorkspaceProjectTasks  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_project_tasks()
+
+    assert response
 
 
 def test_TasksApi_post_workspace_project_tasks(api):
@@ -65,7 +75,9 @@ def test_TasksApi_post_workspace_project_tasks(api):
 
     WorkspaceProjectTasks  # noqa: E501
     """
-    pass
+    response = api.post_workspace_project_tasks()
+
+    assert response
 
 
 def test_TasksApi_put_workspace_project_task(api):
@@ -73,4 +85,6 @@ def test_TasksApi_put_workspace_project_task(api):
 
     WorkspaceProjectTask  # noqa: E501
     """
-    pass
+    response = api.put_workspace_project_task()
+
+    assert response

@@ -25,7 +25,9 @@ def test_InvitationsApi_get_invitations(api):
 
     Get an invitation  # noqa: E501
     """
-    pass
+    response = api.get_invitations()
+
+    assert response
 
 
 def test_InvitationsApi_post_organization_accept_invitation(api):
@@ -33,7 +35,9 @@ def test_InvitationsApi_post_organization_accept_invitation(api):
 
     Accepts invitation  # noqa: E501
     """
-    pass
+    response = api.post_organization_accept_invitation()
+
+    assert response
 
 
 def test_InvitationsApi_post_organization_invitation(api):
@@ -41,7 +45,9 @@ def test_InvitationsApi_post_organization_invitation(api):
 
     Creates a new invitation for the user  # noqa: E501
     """
-    pass
+    response = api.post_organization_invitation()
+
+    assert response
 
 
 def test_InvitationsApi_post_reject_invitation(api):
@@ -49,7 +55,9 @@ def test_InvitationsApi_post_reject_invitation(api):
 
     Rejects invitation  # noqa: E501
     """
-    pass
+    response = api.post_reject_invitation()
+
+    assert response
 
 
 def test_InvitationsApi_put_invitation(api):
@@ -57,4 +65,6 @@ def test_InvitationsApi_put_invitation(api):
 
     Resends user their invitation  # noqa: E501
     """
-    pass
+    response = api.put_invitation()
+
+    assert response

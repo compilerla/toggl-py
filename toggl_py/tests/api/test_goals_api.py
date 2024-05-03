@@ -25,7 +25,9 @@ def test_GoalsApi_goals_cadences_get(api):
 
     Get a list of goal cadences  # noqa: E501
     """
-    pass
+    response = api.goals_cadences_get()
+
+    assert response
 
 
 def test_GoalsApi_goals_get(api):
@@ -33,7 +35,9 @@ def test_GoalsApi_goals_get(api):
 
     Get a list of goals  # noqa: E501
     """
-    pass
+    response = api.goals_get()
+
+    assert response
 
 
 def test_GoalsApi_goals_goal_id_delete(api):
@@ -41,7 +45,9 @@ def test_GoalsApi_goals_goal_id_delete(api):
 
     Delete one goal  # noqa: E501
     """
-    pass
+    response = api.goals_goal_id_delete()
+
+    assert response
 
 
 def test_GoalsApi_goals_goal_id_get(api):
@@ -49,7 +55,9 @@ def test_GoalsApi_goals_goal_id_get(api):
 
     Get one goal  # noqa: E501
     """
-    pass
+    response = api.goals_goal_id_get()
+
+    assert response
 
 
 def test_GoalsApi_goals_goal_id_patch(api):
@@ -57,7 +65,9 @@ def test_GoalsApi_goals_goal_id_patch(api):
 
     Update a Goal  # noqa: E501
     """
-    pass
+    response = api.goals_goal_id_patch()
+
+    assert response
 
 
 def test_GoalsApi_goals_goal_id_stats_get(api):
@@ -65,7 +75,9 @@ def test_GoalsApi_goals_goal_id_stats_get(api):
 
     Get stats for a goal  # noqa: E501
     """
-    pass
+    response = api.goals_goal_id_stats_get()
+
+    assert response
 
 
 def test_GoalsApi_goals_insight_post(api):
@@ -73,7 +85,9 @@ def test_GoalsApi_goals_insight_post(api):
 
     Get a insight  # noqa: E501
     """
-    pass
+    response = api.goals_insight_post()
+
+    assert response
 
 
 def test_GoalsApi_goals_post(api):
@@ -81,4 +95,6 @@ def test_GoalsApi_goals_post(api):
 
     Create a Goal  # noqa: E501
     """
-    pass
+    response = api.goals_post()
+
+    assert response

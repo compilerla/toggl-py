@@ -25,7 +25,9 @@ def test_SmailApi_post_smail_contact(api):
 
     Send an email to a contact  # noqa: E501
     """
-    pass
+    response = api.post_smail_contact()
+
+    assert response
 
 
 def test_SmailApi_post_smail_demo(api):
@@ -33,7 +35,9 @@ def test_SmailApi_post_smail_demo(api):
 
     Send an email for a demo  # noqa: E501
     """
-    pass
+    response = api.post_smail_demo()
+
+    assert response
 
 
 def test_SmailApi_post_smail_meet(api):
@@ -41,4 +45,6 @@ def test_SmailApi_post_smail_meet(api):
 
     Send an email for meet  # noqa: E501
     """
-    pass
+    response = api.post_smail_meet()
+
+    assert response

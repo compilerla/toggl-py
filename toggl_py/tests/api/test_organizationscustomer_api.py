@@ -25,7 +25,9 @@ def test_OrganizationscustomerApi_get_organization_customer(api):
 
     Customer  # noqa: E501
     """
-    pass
+    response = api.get_organization_customer()
+
+    assert response
 
 
 def test_OrganizationscustomerApi_get_unified_customer(api):
@@ -33,7 +35,9 @@ def test_OrganizationscustomerApi_get_unified_customer(api):
 
     Retrieve unified customer  # noqa: E501
     """
-    pass
+    response = api.get_unified_customer()
+
+    assert response
 
 
 def test_OrganizationscustomerApi_post_organization_customer(api):
@@ -41,7 +45,9 @@ def test_OrganizationscustomerApi_post_organization_customer(api):
 
     ContactDetails  # noqa: E501
     """
-    pass
+    response = api.post_organization_customer()
+
+    assert response
 
 
 def test_OrganizationscustomerApi_post_unified_customer(api):
@@ -49,7 +55,9 @@ def test_OrganizationscustomerApi_post_unified_customer(api):
 
     Create unified customer  # noqa: E501
     """
-    pass
+    response = api.post_unified_customer()
+
+    assert response
 
 
 def test_OrganizationscustomerApi_put_unified_customer(api):
@@ -57,4 +65,6 @@ def test_OrganizationscustomerApi_put_unified_customer(api):
 
     Update unified customer  # noqa: E501
     """
-    pass
+    response = api.put_unified_customer()
+
+    assert response

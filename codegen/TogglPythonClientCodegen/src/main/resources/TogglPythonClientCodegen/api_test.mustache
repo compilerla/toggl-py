@@ -19,7 +19,9 @@ def test_{{classname}}_{{{operationId}}}(api):
         {{{summary}}}  # noqa: E501
 {{/summary}}
     """
-    pass
+    response = api.{{{operationId}}}()
+
+    assert response
 
    {{/operation}}
 {{/operations}}

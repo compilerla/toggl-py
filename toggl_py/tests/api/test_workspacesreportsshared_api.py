@@ -25,4 +25,6 @@ def test_WorkspacesreportssharedApi_bulk_delete_saved_report_resource(api):
 
     SavedReport  # noqa: E501
     """
-    pass
+    response = api.bulk_delete_saved_report_resource()
+
+    assert response

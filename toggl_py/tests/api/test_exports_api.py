@@ -25,7 +25,9 @@ def test_ExportsApi_get_me_export(api):
 
     Get a list of objects to be downloaded  # noqa: E501
     """
-    pass
+    response = api.get_me_export()
+
+    assert response
 
 
 def test_ExportsApi_get_me_export_data_uuid_zip(api):
@@ -33,7 +35,9 @@ def test_ExportsApi_get_me_export_data_uuid_zip(api):
 
     Get the zip file with download requests  # noqa: E501
     """
-    pass
+    response = api.get_me_export_data_uuid_zip()
+
+    assert response
 
 
 def test_ExportsApi_get_workspace_exports(api):
@@ -41,7 +45,9 @@ def test_ExportsApi_get_workspace_exports(api):
 
     Get a list with the workspace download requests  # noqa: E501
     """
-    pass
+    response = api.get_workspace_exports()
+
+    assert response
 
 
 def test_ExportsApi_get_workspace_exports_data_uuid_zip(api):
@@ -49,7 +55,9 @@ def test_ExportsApi_get_workspace_exports_data_uuid_zip(api):
 
     Get the zip file with workspace download requests  # noqa: E501
     """
-    pass
+    response = api.get_workspace_exports_data_uuid_zip()
+
+    assert response
 
 
 def test_ExportsApi_insights_api_v1_workspace_workspace_id_profitability_employees_extension_post(api):
@@ -57,7 +65,9 @@ def test_ExportsApi_insights_api_v1_workspace_workspace_id_profitability_employe
 
     Export employee profitability insights  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_profitability_employees_extension_post()
+
+    assert response
 
 
 def test_ExportsApi_insights_api_v1_workspace_workspace_id_profitability_projects_extension_post(api):
@@ -65,7 +75,9 @@ def test_ExportsApi_insights_api_v1_workspace_workspace_id_profitability_project
 
     Export profitability project insights  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_profitability_projects_extension_post()
+
+    assert response
 
 
 def test_ExportsApi_insights_api_v1_workspace_workspace_id_trends_projects_extension_post(api):
@@ -73,7 +85,9 @@ def test_ExportsApi_insights_api_v1_workspace_workspace_id_trends_projects_exten
 
     Export projects data trends  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_trends_projects_extension_post()
+
+    assert response
 
 
 def test_ExportsApi_post_me_export(api):
@@ -81,7 +95,9 @@ def test_ExportsApi_post_me_export(api):
 
     Post an object which data to be downloaded  # noqa: E501
     """
-    pass
+    response = api.post_me_export()
+
+    assert response
 
 
 def test_ExportsApi_post_workspace_exports(api):
@@ -89,7 +105,9 @@ def test_ExportsApi_post_workspace_exports(api):
 
     Post a list with the workspace to be downloaded  # noqa: E501
     """
-    pass
+    response = api.post_workspace_exports()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_shared_report_token_csv_post(api):
@@ -97,7 +115,9 @@ def test_ExportsApi_reports_api_v3_shared_report_token_csv_post(api):
 
     Export CSV for saved report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_csv_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_shared_report_token_pdf_post(api):
@@ -105,7 +125,9 @@ def test_ExportsApi_reports_api_v3_shared_report_token_pdf_post(api):
 
     Export saved report in pdf format  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_pdf_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_shared_report_token_xlsx_post(api):
@@ -113,7 +135,9 @@ def test_ExportsApi_reports_api_v3_shared_report_token_xlsx_post(api):
 
     Export XSLX saved report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_shared_report_token_xlsx_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_extension_post(api):
@@ -121,7 +145,9 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_ex
 
     Export detailed report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_extension_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post(api):
@@ -129,7 +155,9 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_pd
 
     Export detailed report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post(api):
@@ -137,7 +165,9 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_e
 
     Export summary report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_summary_time_entries_extension_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post(api):
@@ -145,7 +175,9 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_summary_time_entries_p
 
     Export summary report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_summary_time_entries_pdf_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post(api):
@@ -153,7 +185,9 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_cs
 
     Export weekly report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post()
+
+    assert response
 
 
 def test_ExportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post(api):
@@ -161,4 +195,6 @@ def test_ExportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_pd
 
     Export weekly report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post()
+
+    assert response

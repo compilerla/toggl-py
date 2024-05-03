@@ -25,4 +25,6 @@ def test_OrganizationssubscriptioncheckoutApi_create_subscription_checkout_sessi
 
     Create a subscription checkout session in the unified subscription system  # noqa: E501
     """
-    pass
+    response = api.create_subscription_checkout_session()
+
+    assert response

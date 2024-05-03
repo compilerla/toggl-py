@@ -25,7 +25,9 @@ def test_SubscriptionApi_delete_organization_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.delete_organization_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_delete_workspace_subscription(api):
@@ -33,7 +35,9 @@ def test_SubscriptionApi_delete_workspace_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_get_currencies(api):
@@ -41,7 +45,9 @@ def test_SubscriptionApi_get_currencies(api):
 
     Currencies  # noqa: E501
     """
-    pass
+    response = api.get_currencies()
+
+    assert response
 
 
 def test_SubscriptionApi_get_organization_invoice(api):
@@ -49,7 +55,9 @@ def test_SubscriptionApi_get_organization_invoice(api):
 
     InvoicePdf  # noqa: E501
     """
-    pass
+    response = api.get_organization_invoice()
+
+    assert response
 
 
 def test_SubscriptionApi_get_organization_invoice_summary(api):
@@ -57,7 +65,9 @@ def test_SubscriptionApi_get_organization_invoice_summary(api):
 
     Invoice Summary  # noqa: E501
     """
-    pass
+    response = api.get_organization_invoice_summary()
+
+    assert response
 
 
 def test_SubscriptionApi_get_organization_subscription(api):
@@ -65,7 +75,9 @@ def test_SubscriptionApi_get_organization_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.get_organization_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_get_public_subscription_plans(api):
@@ -73,7 +85,9 @@ def test_SubscriptionApi_get_public_subscription_plans(api):
 
     Public Subscription Plans  # noqa: E501
     """
-    pass
+    response = api.get_public_subscription_plans()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_currencies(api):
@@ -81,7 +95,9 @@ def test_SubscriptionApi_get_workspace_currencies(api):
 
     Get workspace currencies  # noqa: E501
     """
-    pass
+    response = api.get_workspace_currencies()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_customer(api):
@@ -89,7 +105,9 @@ def test_SubscriptionApi_get_workspace_customer(api):
 
     Customer  # noqa: E501
     """
-    pass
+    response = api.get_workspace_customer()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_features(api):
@@ -97,7 +115,9 @@ def test_SubscriptionApi_get_workspace_features(api):
 
     Features  # noqa: E501
     """
-    pass
+    response = api.get_workspace_features()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_features_selected(api):
@@ -105,7 +125,9 @@ def test_SubscriptionApi_get_workspace_features_selected(api):
 
     SelectedFeatures  # noqa: E501
     """
-    pass
+    response = api.get_workspace_features_selected()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_invoices(api):
@@ -113,7 +135,9 @@ def test_SubscriptionApi_get_workspace_invoices(api):
 
     InvoicePdf  # noqa: E501
     """
-    pass
+    response = api.get_workspace_invoices()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_payment_receipts(api):
@@ -121,7 +145,9 @@ def test_SubscriptionApi_get_workspace_payment_receipts(api):
 
     PaymentReceipts  # noqa: E501
     """
-    pass
+    response = api.get_workspace_payment_receipts()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_payment_records(api):
@@ -129,7 +155,9 @@ def test_SubscriptionApi_get_workspace_payment_records(api):
 
     PaymentRecords  # noqa: E501
     """
-    pass
+    response = api.get_workspace_payment_records()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_plans(api):
@@ -137,7 +165,9 @@ def test_SubscriptionApi_get_workspace_plans(api):
 
     WorkspacePlans  # noqa: E501
     """
-    pass
+    response = api.get_workspace_plans()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_plans_pricing(api):
@@ -145,7 +175,9 @@ def test_SubscriptionApi_get_workspace_plans_pricing(api):
 
     WorkspacePlan  # noqa: E501
     """
-    pass
+    response = api.get_workspace_plans_pricing()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_purchase_order_pdf(api):
@@ -153,7 +185,9 @@ def test_SubscriptionApi_get_workspace_purchase_order_pdf(api):
 
     PurchaseOrderPdf  # noqa: E501
     """
-    pass
+    response = api.get_workspace_purchase_order_pdf()
+
+    assert response
 
 
 def test_SubscriptionApi_get_workspace_subscription(api):
@@ -161,7 +195,9 @@ def test_SubscriptionApi_get_workspace_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.get_workspace_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_post_organization_plans_pricing_feedback(api):
@@ -169,7 +205,9 @@ def test_SubscriptionApi_post_organization_plans_pricing_feedback(api):
 
     Feedback  # noqa: E501
     """
-    pass
+    response = api.post_organization_plans_pricing_feedback()
+
+    assert response
 
 
 def test_SubscriptionApi_post_organization_purchase_order(api):
@@ -177,7 +215,9 @@ def test_SubscriptionApi_post_organization_purchase_order(api):
 
     PurchaseOrders  # noqa: E501
     """
-    pass
+    response = api.post_organization_purchase_order()
+
+    assert response
 
 
 def test_SubscriptionApi_post_organization_subscription(api):
@@ -185,7 +225,9 @@ def test_SubscriptionApi_post_organization_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.post_organization_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_post_organization_subscription_0(api):
@@ -193,7 +235,9 @@ def test_SubscriptionApi_post_organization_subscription_0(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.post_organization_subscription_0()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_customer(api):
@@ -201,7 +245,9 @@ def test_SubscriptionApi_post_workspace_customer(api):
 
     ContactDetails  # noqa: E501
     """
-    pass
+    response = api.post_workspace_customer()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_plans_pricing_feedback(api):
@@ -209,7 +255,9 @@ def test_SubscriptionApi_post_workspace_plans_pricing_feedback(api):
 
     Feedback  # noqa: E501
     """
-    pass
+    response = api.post_workspace_plans_pricing_feedback()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_purchase_order(api):
@@ -217,7 +265,9 @@ def test_SubscriptionApi_post_workspace_purchase_order(api):
 
     PurchaseOrders  # noqa: E501
     """
-    pass
+    response = api.post_workspace_purchase_order()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_subscription(api):
@@ -225,7 +275,9 @@ def test_SubscriptionApi_post_workspace_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.post_workspace_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_subscription_calculate(api):
@@ -233,7 +285,9 @@ def test_SubscriptionApi_post_workspace_subscription_calculate(api):
 
     SubscriptionCalculation  # noqa: E501
     """
-    pass
+    response = api.post_workspace_subscription_calculate()
+
+    assert response
 
 
 def test_SubscriptionApi_post_workspace_subscription_inc_accept(api):
@@ -241,7 +295,9 @@ def test_SubscriptionApi_post_workspace_subscription_inc_accept(api):
 
     IncAccept  # noqa: E501
     """
-    pass
+    response = api.post_workspace_subscription_inc_accept()
+
+    assert response
 
 
 def test_SubscriptionApi_put_organization_subscription(api):
@@ -249,7 +305,9 @@ def test_SubscriptionApi_put_organization_subscription(api):
 
     Subscription  # noqa: E501
     """
-    pass
+    response = api.put_organization_subscription()
+
+    assert response
 
 
 def test_SubscriptionApi_put_workspace_profile(api):
@@ -257,4 +315,6 @@ def test_SubscriptionApi_put_workspace_profile(api):
 
     Profile  # noqa: E501
     """
-    pass
+    response = api.put_workspace_profile()
+
+    assert response

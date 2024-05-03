@@ -25,7 +25,9 @@ def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_en
 
     Export detailed report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_extension_post()
+
+    assert response
 
 
 def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post(api):
@@ -33,7 +35,9 @@ def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_en
 
     Export detailed report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_pdf_post()
+
+    assert response
 
 
 def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_post(api):
@@ -41,7 +45,9 @@ def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_en
 
     Search time entries  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_post()
+
+    assert response
 
 
 def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_entries_totals_post(api):
@@ -49,4 +55,6 @@ def test_DetailedReportsApi_reports_api_v3_workspace_workspace_id_search_time_en
 
     Load totals detailed report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_search_time_entries_totals_post()
+
+    assert response

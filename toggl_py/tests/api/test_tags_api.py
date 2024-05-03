@@ -25,7 +25,9 @@ def test_TagsApi_delete_workspace_tag(api):
 
     Delete tag  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_tag()
+
+    assert response
 
 
 def test_TagsApi_get_workspace_tag(api):
@@ -33,7 +35,9 @@ def test_TagsApi_get_workspace_tag(api):
 
     Tags  # noqa: E501
     """
-    pass
+    response = api.get_workspace_tag()
+
+    assert response
 
 
 def test_TagsApi_patch_workspace_tags(api):
@@ -41,7 +45,9 @@ def test_TagsApi_patch_workspace_tags(api):
 
     Bulk delete tags  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_tags()
+
+    assert response
 
 
 def test_TagsApi_post_workspace_tag(api):
@@ -49,7 +55,9 @@ def test_TagsApi_post_workspace_tag(api):
 
     Create tag  # noqa: E501
     """
-    pass
+    response = api.post_workspace_tag()
+
+    assert response
 
 
 def test_TagsApi_put_workspace_tag(api):
@@ -57,4 +65,6 @@ def test_TagsApi_put_workspace_tag(api):
 
     Update tag  # noqa: E501
     """
-    pass
+    response = api.put_workspace_tag()
+
+    assert response

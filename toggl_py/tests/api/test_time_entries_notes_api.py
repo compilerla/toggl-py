@@ -25,4 +25,6 @@ def test_TimeEntriesNotesApi_delete_time_entry_notes_by_id(api):
 
     delete a time entry note by ID.  # noqa: E501
     """
-    pass
+    response = api.delete_time_entry_notes_by_id()
+
+    assert response

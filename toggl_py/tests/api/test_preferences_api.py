@@ -25,7 +25,9 @@ def test_PreferencesApi_get_preferences(api):
 
     Preferences for the current user  # noqa: E501
     """
-    pass
+    response = api.get_preferences()
+
+    assert response
 
 
 def test_PreferencesApi_get_preferences_client(api):
@@ -33,7 +35,9 @@ def test_PreferencesApi_get_preferences_client(api):
 
     Preferences for an specific client of the current user  # noqa: E501
     """
-    pass
+    response = api.get_preferences_client()
+
+    assert response
 
 
 def test_PreferencesApi_get_workspace_preferences(api):
@@ -41,7 +45,9 @@ def test_PreferencesApi_get_workspace_preferences(api):
 
     Get workspace preferences  # noqa: E501
     """
-    pass
+    response = api.get_workspace_preferences()
+
+    assert response
 
 
 def test_PreferencesApi_post_preferences(api):
@@ -49,7 +55,9 @@ def test_PreferencesApi_post_preferences(api):
 
     Update the preferences for the current user  # noqa: E501
     """
-    pass
+    response = api.post_preferences()
+
+    assert response
 
 
 def test_PreferencesApi_post_preferences_client(api):
@@ -57,7 +65,9 @@ def test_PreferencesApi_post_preferences_client(api):
 
     Update the preferences for an specific client of the current user  # noqa: E501
     """
-    pass
+    response = api.post_preferences_client()
+
+    assert response
 
 
 def test_PreferencesApi_post_workspace_preferences(api):
@@ -65,4 +75,6 @@ def test_PreferencesApi_post_workspace_preferences(api):
 
     Get workspace preferences  # noqa: E501
     """
-    pass
+    response = api.post_workspace_preferences()
+
+    assert response

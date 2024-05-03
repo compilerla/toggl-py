@@ -25,4 +25,6 @@ def test_OrganizationssubscriptionApi_post_organization_subscription_calculate(a
 
     SubscriptionCalculation  # noqa: E501
     """
-    pass
+    response = api.post_organization_subscription_calculate()
+
+    assert response

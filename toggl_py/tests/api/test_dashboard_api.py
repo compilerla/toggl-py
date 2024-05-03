@@ -25,7 +25,9 @@ def test_DashboardApi_get_workspace_all_activities(api):
 
     Get last activity for every workspace user  # noqa: E501
     """
-    pass
+    response = api.get_workspace_all_activities()
+
+    assert response
 
 
 def test_DashboardApi_get_workspace_most_active(api):
@@ -33,7 +35,9 @@ def test_DashboardApi_get_workspace_most_active(api):
 
     Get most active users  # noqa: E501
     """
-    pass
+    response = api.get_workspace_most_active()
+
+    assert response
 
 
 def test_DashboardApi_get_workspace_top_activity(api):
@@ -41,4 +45,6 @@ def test_DashboardApi_get_workspace_top_activity(api):
 
     Get top activities  # noqa: E501
     """
-    pass
+    response = api.get_workspace_top_activity()
+
+    assert response

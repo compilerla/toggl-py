@@ -25,4 +25,6 @@ def test_MobileApi_post_mobile_feedback(api):
 
     MobileFeedback  # noqa: E501
     """
-    pass
+    response = api.post_mobile_feedback()
+
+    assert response

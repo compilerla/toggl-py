@@ -25,7 +25,9 @@ def test_CountriesApi_get_countries(api):
 
     Countries  # noqa: E501
     """
-    pass
+    response = api.get_countries()
+
+    assert response
 
 
 def test_CountriesApi_get_countries_country_id_subdivisions(api):
@@ -33,4 +35,6 @@ def test_CountriesApi_get_countries_country_id_subdivisions(api):
 
     CountrySubdivisions  # noqa: E501
     """
-    pass
+    response = api.get_countries_country_id_subdivisions()
+
+    assert response

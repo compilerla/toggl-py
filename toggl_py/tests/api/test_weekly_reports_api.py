@@ -25,7 +25,9 @@ def test_WeeklyReportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entr
 
     Export weekly report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_weekly_time_entries_csv_post()
+
+    assert response
 
 
 def test_WeeklyReportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post(api):
@@ -33,7 +35,9 @@ def test_WeeklyReportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entr
 
     Export weekly report  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_weekly_time_entries_pdf_post()
+
+    assert response
 
 
 def test_WeeklyReportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entries_post(api):
@@ -41,4 +45,6 @@ def test_WeeklyReportsApi_reports_api_v3_workspace_workspace_id_weekly_time_entr
 
     Search time entries  # noqa: E501
     """
-    pass
+    response = api.reports_api_v3_workspace_workspace_id_weekly_time_entries_post()
+
+    assert response

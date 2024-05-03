@@ -25,4 +25,6 @@ def test_OrganizationssubscriptionsetupIntentApi_create_setup_intent(api):
 
     Create a setup intent for collecting customer's payment method  # noqa: E501
     """
-    pass
+    response = api.create_setup_intent()
+
+    assert response

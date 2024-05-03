@@ -25,7 +25,9 @@ def test_ClientsApi_archive_client(api):
 
     Archives client  # noqa: E501
     """
-    pass
+    response = api.archive_client()
+
+    assert response
 
 
 def test_ClientsApi_delete_workspace_clients(api):
@@ -33,7 +35,9 @@ def test_ClientsApi_delete_workspace_clients(api):
 
     Delete client  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_clients()
+
+    assert response
 
 
 def test_ClientsApi_get_workspace_client(api):
@@ -41,7 +45,9 @@ def test_ClientsApi_get_workspace_client(api):
 
     Load client from ID  # noqa: E501
     """
-    pass
+    response = api.get_workspace_client()
+
+    assert response
 
 
 def test_ClientsApi_get_workspace_clients(api):
@@ -49,7 +55,9 @@ def test_ClientsApi_get_workspace_clients(api):
 
     List clients  # noqa: E501
     """
-    pass
+    response = api.get_workspace_clients()
+
+    assert response
 
 
 def test_ClientsApi_post_workspace_clients(api):
@@ -57,7 +65,9 @@ def test_ClientsApi_post_workspace_clients(api):
 
     Create client  # noqa: E501
     """
-    pass
+    response = api.post_workspace_clients()
+
+    assert response
 
 
 def test_ClientsApi_put_workspace_clients(api):
@@ -65,7 +75,9 @@ def test_ClientsApi_put_workspace_clients(api):
 
     Change client  # noqa: E501
     """
-    pass
+    response = api.put_workspace_clients()
+
+    assert response
 
 
 def test_ClientsApi_restore_client(api):
@@ -73,4 +85,6 @@ def test_ClientsApi_restore_client(api):
 
     Restores client and related projects.  # noqa: E501
     """
-    pass
+    response = api.restore_client()
+
+    assert response

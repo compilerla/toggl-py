@@ -25,7 +25,9 @@ def test_GroupsApi_delete_organization_group(api):
 
     Deletes group  # noqa: E501
     """
-    pass
+    response = api.delete_organization_group()
+
+    assert response
 
 
 def test_GroupsApi_delete_project_group(api):
@@ -33,7 +35,9 @@ def test_GroupsApi_delete_project_group(api):
 
     Remove project group.  # noqa: E501
     """
-    pass
+    response = api.delete_project_group()
+
+    assert response
 
 
 def test_GroupsApi_delete_workspace_group(api):
@@ -41,7 +45,9 @@ def test_GroupsApi_delete_workspace_group(api):
 
     Delete group  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_group()
+
+    assert response
 
 
 def test_GroupsApi_get_organization_groups(api):
@@ -49,7 +55,9 @@ def test_GroupsApi_get_organization_groups(api):
 
     List of groups in organization with user and workspace assignments  # noqa: E501
     """
-    pass
+    response = api.get_organization_groups()
+
+    assert response
 
 
 def test_GroupsApi_get_organization_workspaces_groups(api):
@@ -57,7 +65,9 @@ def test_GroupsApi_get_organization_workspaces_groups(api):
 
     List of groups in a workspace within an organization with user assignments.  # noqa: E501
     """
-    pass
+    response = api.get_organization_workspaces_groups()
+
+    assert response
 
 
 def test_GroupsApi_get_project_groups(api):
@@ -65,7 +75,9 @@ def test_GroupsApi_get_project_groups(api):
 
     Get workspace project groups.  # noqa: E501
     """
-    pass
+    response = api.get_project_groups()
+
+    assert response
 
 
 def test_GroupsApi_get_workspace_groups(api):
@@ -73,7 +85,9 @@ def test_GroupsApi_get_workspace_groups(api):
 
     Get workspace groups  # noqa: E501
     """
-    pass
+    response = api.get_workspace_groups()
+
+    assert response
 
 
 def test_GroupsApi_patch_organization_group(api):
@@ -81,7 +95,9 @@ def test_GroupsApi_patch_organization_group(api):
 
     Patch group  # noqa: E501
     """
-    pass
+    response = api.patch_organization_group()
+
+    assert response
 
 
 def test_GroupsApi_post_organization_group(api):
@@ -89,7 +105,9 @@ def test_GroupsApi_post_organization_group(api):
 
     Create group  # noqa: E501
     """
-    pass
+    response = api.post_organization_group()
+
+    assert response
 
 
 def test_GroupsApi_post_project_group(api):
@@ -97,7 +115,9 @@ def test_GroupsApi_post_project_group(api):
 
     Adds group to project.  # noqa: E501
     """
-    pass
+    response = api.post_project_group()
+
+    assert response
 
 
 def test_GroupsApi_post_workspace_group(api):
@@ -105,7 +125,9 @@ def test_GroupsApi_post_workspace_group(api):
 
     Create group  # noqa: E501
     """
-    pass
+    response = api.post_workspace_group()
+
+    assert response
 
 
 def test_GroupsApi_put_organization_group(api):
@@ -113,7 +135,9 @@ def test_GroupsApi_put_organization_group(api):
 
     Edit group  # noqa: E501
     """
-    pass
+    response = api.put_organization_group()
+
+    assert response
 
 
 def test_GroupsApi_put_organization_workspaces_assignments(api):
@@ -121,7 +145,9 @@ def test_GroupsApi_put_organization_workspaces_assignments(api):
 
     Change assignments of users within a workspace.  # noqa: E501
     """
-    pass
+    response = api.put_organization_workspaces_assignments()
+
+    assert response
 
 
 def test_GroupsApi_put_workspace_group(api):
@@ -129,4 +155,6 @@ def test_GroupsApi_put_workspace_group(api):
 
     Update group  # noqa: E501
     """
-    pass
+    response = api.put_workspace_group()
+
+    assert response

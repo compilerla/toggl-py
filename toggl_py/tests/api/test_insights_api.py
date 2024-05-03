@@ -25,7 +25,9 @@ def test_InsightsApi_insights_api_v1_workspace_workspace_id_data_trends_projects
 
     Load projects' data trends  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_data_trends_projects_post()
+
+    assert response
 
 
 def test_InsightsApi_insights_api_v1_workspace_workspace_id_profitability_employees_extension_post(api):
@@ -33,7 +35,9 @@ def test_InsightsApi_insights_api_v1_workspace_workspace_id_profitability_employ
 
     Export employee profitability insights  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_profitability_employees_extension_post()
+
+    assert response
 
 
 def test_InsightsApi_insights_api_v1_workspace_workspace_id_profitability_projects_extension_post(api):
@@ -41,7 +45,9 @@ def test_InsightsApi_insights_api_v1_workspace_workspace_id_profitability_projec
 
     Export profitability project insights  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_profitability_projects_extension_post()
+
+    assert response
 
 
 def test_InsightsApi_insights_api_v1_workspace_workspace_id_trends_projects_extension_post(api):
@@ -49,4 +55,6 @@ def test_InsightsApi_insights_api_v1_workspace_workspace_id_trends_projects_exte
 
     Export projects data trends  # noqa: E501
     """
-    pass
+    response = api.insights_api_v1_workspace_workspace_id_trends_projects_extension_post()
+
+    assert response

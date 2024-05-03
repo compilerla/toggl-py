@@ -25,4 +25,6 @@ def test_OrganizationssubscriptionbillingApi_create_billing_portal_session(api):
 
     Create a billing portal session in the unified subscription system  # noqa: E501
     """
-    pass
+    response = api.create_billing_portal_session()
+
+    assert response

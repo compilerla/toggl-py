@@ -25,7 +25,9 @@ def test_ProjectsApi_delete_workspace_project(api):
 
     WorkspaceProject  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_project()
+
+    assert response
 
 
 def test_ProjectsApi_delete_workspace_project_users(api):
@@ -33,7 +35,9 @@ def test_ProjectsApi_delete_workspace_project_users(api):
 
     Delete a project user from workspace projects users  # noqa: E501
     """
-    pass
+    response = api.delete_workspace_project_users()
+
+    assert response
 
 
 def test_ProjectsApi_get_projects(api):
@@ -41,7 +45,9 @@ def test_ProjectsApi_get_projects(api):
 
     WorkspaceProjects  # noqa: E501
     """
-    pass
+    response = api.get_projects()
+
+    assert response
 
 
 def test_ProjectsApi_get_projects_templates(api):
@@ -49,7 +55,9 @@ def test_ProjectsApi_get_projects_templates(api):
 
     WorkspaceProjectsTemplates  # noqa: E501
     """
-    pass
+    response = api.get_projects_templates()
+
+    assert response
 
 
 def test_ProjectsApi_get_workspace_project_periods(api):
@@ -57,7 +65,9 @@ def test_ProjectsApi_get_workspace_project_periods(api):
 
     Get Recurring Project Periods  # noqa: E501
     """
-    pass
+    response = api.get_workspace_project_periods()
+
+    assert response
 
 
 def test_ProjectsApi_get_workspace_project_users(api):
@@ -65,7 +75,9 @@ def test_ProjectsApi_get_workspace_project_users(api):
 
     Get workspace projects users  # noqa: E501
     """
-    pass
+    response = api.get_workspace_project_users()
+
+    assert response
 
 
 def test_ProjectsApi_patch_workspace_project_users_ids(api):
@@ -73,7 +85,9 @@ def test_ProjectsApi_patch_workspace_project_users_ids(api):
 
     Patch project users from workspace  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_project_users_ids()
+
+    assert response
 
 
 def test_ProjectsApi_patch_workspace_projects(api):
@@ -81,7 +95,9 @@ def test_ProjectsApi_patch_workspace_projects(api):
 
     WorkspaceProjects  # noqa: E501
     """
-    pass
+    response = api.patch_workspace_projects()
+
+    assert response
 
 
 def test_ProjectsApi_post_workspace_project_create(api):
@@ -89,7 +105,9 @@ def test_ProjectsApi_post_workspace_project_create(api):
 
     WorkspaceProjects  # noqa: E501
     """
-    pass
+    response = api.post_workspace_project_create()
+
+    assert response
 
 
 def test_ProjectsApi_post_workspace_project_users(api):
@@ -97,7 +115,9 @@ def test_ProjectsApi_post_workspace_project_users(api):
 
     Add an user into workspace projects users  # noqa: E501
     """
-    pass
+    response = api.post_workspace_project_users()
+
+    assert response
 
 
 def test_ProjectsApi_put_workspace_project(api):
@@ -105,7 +125,9 @@ def test_ProjectsApi_put_workspace_project(api):
 
     WorkspaceProject  # noqa: E501
     """
-    pass
+    response = api.put_workspace_project()
+
+    assert response
 
 
 def test_ProjectsApi_put_workspace_project_users(api):
@@ -113,7 +135,9 @@ def test_ProjectsApi_put_workspace_project_users(api):
 
     Update an user into workspace projects users  # noqa: E501
     """
-    pass
+    response = api.put_workspace_project_users()
+
+    assert response
 
 
 def test_ProjectsApi_workspaces_workspace_id_projects_billable_amounts_post(api):
@@ -121,7 +145,9 @@ def test_ProjectsApi_workspaces_workspace_id_projects_billable_amounts_post(api)
 
     Projects  # noqa: E501
     """
-    pass
+    response = api.workspaces_workspace_id_projects_billable_amounts_post()
+
+    assert response
 
 
 def test_ProjectsApi_workspaces_workspace_id_projects_project_id_get(api):
@@ -129,7 +155,9 @@ def test_ProjectsApi_workspaces_workspace_id_projects_project_id_get(api):
 
     WorkspaceProject  # noqa: E501
     """
-    pass
+    response = api.workspaces_workspace_id_projects_project_id_get()
+
+    assert response
 
 
 def test_ProjectsApi_workspaces_workspace_id_projects_project_id_statistics_get(api):
@@ -137,4 +165,6 @@ def test_ProjectsApi_workspaces_workspace_id_projects_project_id_statistics_get(
 
     WorkspaceProject  # noqa: E501
     """
-    pass
+    response = api.workspaces_workspace_id_projects_project_id_statistics_get()
+
+    assert response

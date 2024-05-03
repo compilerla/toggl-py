@@ -25,4 +25,6 @@ def test_StatusApi_get_status(api):
 
     Status  # noqa: E501
     """
-    pass
+    response = api.get_status()
+
+    assert response

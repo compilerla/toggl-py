@@ -20,6 +20,22 @@ def api():
     return ReportsApiv3()
 
 
+def test_ReportsApiv3_action_tasks_auth_post(api):
+    """Test case for action_tasks_auth_post
+
+    List tasks  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_action_tasks_post(api):
+    """Test case for action_tasks_post
+
+    List tasks  # noqa: E501
+    """
+    pass
+
+
 def test_ReportsApiv3_comparative_post(api):
     """Test case for comparative_post
 
@@ -52,9 +68,97 @@ def test_ReportsApiv3_data_trends_users_post(api):
     pass
 
 
+def test_ReportsApiv3_filters_clients_post(api):
+    """Test case for filters_clients_post
+
+    List clients  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_project_groups_post(api):
+    """Test case for filters_project_groups_post
+
+    List project groups filter  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_project_users_post(api):
+    """Test case for filters_project_users_post
+
+    List project users  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_projects_post(api):
+    """Test case for filters_projects_post
+
+    List projects  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_projects_status_post(api):
+    """Test case for filters_projects_status_post
+
+    List projects statuses  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_tasks_auth_status_post(api):
+    """Test case for filters_tasks_auth_status_post
+
+    List tasks statuses  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_tasks_status_post(api):
+    """Test case for filters_tasks_status_post
+
+    List tasks statuses  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_filters_users_post(api):
+    """Test case for filters_users_post
+
+    List users  # noqa: E501
+    """
+    pass
+
+
 def test_ReportsApiv3_profitability_projects_post(api):
     """Test case for profitability_projects_post
 
     Load profitability projects report  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_search_clients_post(api):
+    """Test case for search_clients_post
+
+    Search clients  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_search_projects_post(api):
+    """Test case for search_projects_post
+
+    List projects  # noqa: E501
+    """
+    pass
+
+
+def test_ReportsApiv3_search_users_post(api):
+    """Test case for search_users_post
+
+    List users  # noqa: E501
     """
     pass

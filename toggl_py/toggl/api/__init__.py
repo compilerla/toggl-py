@@ -56,7 +56,6 @@ from toggl.api.timeline_api import TimelineApi  # noqa: F401
 from toggl.api.timezones_api import TimezonesApi  # noqa: F401
 from toggl.api.user_invoices_api import UserInvoicesApi  # noqa: F401
 from toggl.api.users_api import UsersApi  # noqa: F401
-from toggl.api.utils_api import UtilsApi  # noqa: F401
 from toggl.api.weekly_reports_api import WeeklyReportsApi  # noqa: F401
 from toggl.api.workspaces_api import WorkspacesApi  # noqa: F401
 from toggl.api.workspaceslogo_api import WorkspaceslogoApi  # noqa: F401

@@ -21,3 +21,7 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+toggl/api/reports_api_v3.py
+toggl/api/utils_api.py
+tests/api/test_reports_api_v3.py
+tests/api/test_utils_api.py

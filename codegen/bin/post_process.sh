@@ -18,20 +18,13 @@ find $CODEGEN_PKG/**/*.py -type f -exec \
 # the first one is named api/_api.py and contains OrganizationApi endpoints, it can be removed
 rm $CODEGEN_PKG/api/_api.py
 
-# select all lines except those that match and write back to the file
-sed -i "/from toggl.api.default_api import DefaultApi/d" $CODEGEN_PKG/__init__.py
-sed -i "/from toggl.api.default_api import DefaultApi/d" $CODEGEN_PKG/api/__init__.py
+# remove lines that import either api
+sed -i "/from toggl.api.default_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
+sed -i "/from toggl.api.utils_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
 
 # the second one is named api/default_api.py and contains reports_api_v3 endpoints
-mv $CODEGEN_PKG/api/default_api.py $CODEGEN_PKG/api/reports_api_v3.py
-mv $CODEGEN_TESTS/api/test_default_api.py $CODEGEN_TESTS/api/test_reports_api_v3.py
-
-# replace the old class and package name
-sed -i "s/DefaultApi/ReportsApiv3/g" $CODEGEN_PKG/api/reports_api_v3.py
-sed -i "s/reports_api_v3_workspace_workspace_id_//g" $CODEGEN_PKG/api/reports_api_v3.py
-sed -i "s/DefaultApi/ReportsApiv3/g" $CODEGEN_TESTS/api/test_reports_api_v3.py
-sed -i "s/default_api/reports_api_v3/g" $CODEGEN_TESTS/api/test_reports_api_v3.py
-sed -i "s/reports_api_v3_workspace_workspace_id_//g" $CODEGEN_TESTS/api/test_reports_api_v3.py
+# this file was generated and then updated manually
+rm $CODEGEN_PKG/api/default_api.py
 
 # add the new import line back
 IMPORT_LINE="from toggl.api.reports_api_v3 import ReportsApiv3  # noqa: F401"

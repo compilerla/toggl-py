@@ -47,6 +47,14 @@ echo "UtilsInt64Slice = list[int]" > $CODEGEN_PKG/models/utils_int64_slice.py
 echo "from typing import Any" > $CODEGEN_PKG/models/summary_group_data.py
 echo "SummaryGroupData = Any" >> $CODEGEN_PKG/models/summary_group_data.py
 
+# remove the rates API
+# at this time this is undocumented on https://engineering.toggl.com/docs/
+# and the definition contains a circular reference causing an import error
+rm $CODEGEN_PKG/api/rates_api.py
+
+# remove lines importing rates API
+sed -i "/from toggl.api.rates_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
+
 # reformat all python files
 black $CODEGEN_TARGET
 

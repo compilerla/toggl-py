@@ -41,7 +41,6 @@ from toggl.api.organizationssubscriptionpromocode_api import Organizationssubscr
 from toggl.api.organizationssubscriptionsetup_intent_api import OrganizationssubscriptionsetupIntentApi  # noqa: F401
 from toggl.api.preferences_api import PreferencesApi  # noqa: F401
 from toggl.api.projects_api import ProjectsApi  # noqa: F401
-from toggl.api.rates_api import RatesApi  # noqa: F401
 from toggl.api.reports_api import ReportsApi  # noqa: F401
 from toggl.api.saved_reports_api import SavedReportsApi  # noqa: F401
 from toggl.api.smail_api import SmailApi  # noqa: F401

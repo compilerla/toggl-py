@@ -48,6 +48,33 @@ rm $CODEGEN_PKG/api/rates_api.py
 # remove lines importing rates API
 sed -i "/from toggl.api.rates_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
 
+# remove unused and circular DTO objects
+declare -a dto_classes=(
+    "dto_agg_filter_request"
+    "dto_aggregation_request"
+    "dto_attribute_request"
+    "dto_creation_request"
+    "dto_filter_request"
+    "dto_get_response"
+    "dto_grouping_request"
+    "dto_ordination_request"
+    "dto_period_request"
+    "dto_project_filter_param_request"
+    "dto_project_filter_response"
+    "dto_project_group_params_request"
+    "dto_project_group_response"
+    "dto_project_user_params_request"
+    "dto_project_user_response"
+    "dto_query_request"
+    "dto_transformation_request"
+)
+
+for cls in "${dto_classes[@]}"
+do
+    rm "$CODEGEN_PKG/models/$cls.py"
+    sed -i "/from toggl.models.$cls/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/models/__init__.py
+done
+
 # reformat all python files
 black $CODEGEN_TARGET
 

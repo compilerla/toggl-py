@@ -51,9 +51,9 @@ class RequestsProjectProfitability:
 
     def __init__(
         self,
+        currency: str,
         billable: bool = None,
         client_ids: list[int] = None,
-        currency: str = None,
         end_date: str = None,
         project_ids: list[int] = None,
         resolution: str = None,
@@ -66,9 +66,9 @@ class RequestsProjectProfitability:
         RequestsProjectProfitability - a model defined in Swagger
 
         Parameters:
+          currency (str): Required
           billable (bool): Optional
           client_ids (list[int]): Optional
-          currency (str): Required
           end_date (str): Optional
           project_ids (list[int]): Optional
           resolution (str): Optional

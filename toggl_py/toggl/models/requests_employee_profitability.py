@@ -50,7 +50,7 @@ class RequestsEmployeeProfitability:
 
     def __init__(
         self,
-        currency: str = None,
+        currency: str,
         end_date: str = None,
         group_ids: UtilsInt64Slice = None,
         resolution: str = None,

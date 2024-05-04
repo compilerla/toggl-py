@@ -29,7 +29,7 @@ class PurchaseordersPayload:
 
     attribute_map = {"user_count": "user_count"}
 
-    def __init__(self, user_count: int = None, _configuration: Configuration = None):  # noqa: E501
+    def __init__(self, user_count: int, _configuration: Configuration = None):  # noqa: E501
         """
         PurchaseordersPayload - a model defined in Swagger
 

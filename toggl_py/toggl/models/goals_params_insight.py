@@ -37,10 +37,10 @@ class GoalsParamsInsight:
 
     def __init__(
         self,
-        cadence_period: str = None,
-        goal_type: ModelsGoalType = None,
-        user_id: int = None,
-        workspace_id: int = None,
+        cadence_period: str,
+        goal_type: ModelsGoalType,
+        user_id: int,
+        workspace_id: int,
         _configuration: Configuration = None,  # noqa: E501
     ):
         """

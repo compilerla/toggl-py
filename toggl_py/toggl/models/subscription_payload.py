@@ -42,20 +42,20 @@ class SubscriptionPayload:
 
     def __init__(
         self,
+        pricing_plan_id: int,
         contact_details: SubscriptionContactDetailRequest = None,
         inc_terms_accepted: bool = None,
         master_signup: bool = None,
-        pricing_plan_id: int = None,
         _configuration: Configuration = None,  # noqa: E501
     ):
         """
         SubscriptionPayload - a model defined in Swagger
 
         Parameters:
+          pricing_plan_id (int): Required
           contact_details (SubscriptionContactDetailRequest): Optional
           inc_terms_accepted (bool): Optional
           master_signup (bool): Optional
-          pricing_plan_id (int): Required
         """
         if _configuration is None:
             _configuration = Configuration()

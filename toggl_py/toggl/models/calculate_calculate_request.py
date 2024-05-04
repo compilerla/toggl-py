@@ -29,13 +29,7 @@ class CalculateCalculateRequest:
 
     attribute_map = {"period": "period", "pricing_plan_id": "pricing_plan_id", "user_count": "user_count"}
 
-    def __init__(
-        self,
-        period: int = None,
-        pricing_plan_id: int = None,
-        user_count: int = None,
-        _configuration: Configuration = None,  # noqa: E501
-    ):
+    def __init__(self, period: int, pricing_plan_id: int, user_count: int, _configuration: Configuration = None):  # noqa: E501
         """
         CalculateCalculateRequest - a model defined in Swagger
 

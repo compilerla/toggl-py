@@ -56,17 +56,17 @@ class GoalsParamsCreate:
 
     def __init__(
         self,
-        cadence_period: str = None,
-        comparing: str = None,
+        cadence_period: str,
+        comparing: str,
+        goal_type: ModelsGoalType,
+        name: str,
+        start: str,
+        target_value: int,
+        workspace_id: int,
         description: str = None,
         end: str = None,
-        goal_type: ModelsGoalType = None,
         icon: int = None,
         icon_color: str = None,
-        name: str = None,
-        start: str = None,
-        target_value: int = None,
-        workspace_id: int = None,
         _configuration: Configuration = None,  # noqa: E501
     ):
         """
@@ -75,15 +75,15 @@ class GoalsParamsCreate:
         Parameters:
           cadence_period (str): Required
           comparing (str): Required
-          description (str): Optional
-          end (str): Optional
           goal_type (ModelsGoalType): Required
-          icon (int): Optional
-          icon_color (str): Optional
           name (str): Required
           start (str): Required
           target_value (int): Required
           workspace_id (int): Required
+          description (str): Optional
+          end (str): Optional
+          icon (int): Optional
+          icon_color (str): Optional
         """
         if _configuration is None:
             _configuration = Configuration()

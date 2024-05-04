@@ -54,12 +54,12 @@ class SubscriptionContactDetailRequest:
 
     def __init__(
         self,
-        company_address: str = None,
+        company_address: str,
+        company_name: str,
+        contact_email: str,
+        country_id: int,
         company_city: str = None,
-        company_name: str = None,
-        contact_email: str = None,
         contact_person: str = None,
-        country_id: int = None,
         country_subdivision_id: int = None,
         sub_division: ModelsSubdivision = None,
         tax_number: str = None,
@@ -71,11 +71,11 @@ class SubscriptionContactDetailRequest:
 
         Parameters:
           company_address (str): Required
-          company_city (str): Optional
           company_name (str): Required
           contact_email (str): Required
-          contact_person (str): Optional
           country_id (int): Required
+          company_city (str): Optional
+          contact_person (str): Optional
           country_subdivision_id (int): Optional
           sub_division (ModelsSubdivision): Optional
           tax_number (str): Optional

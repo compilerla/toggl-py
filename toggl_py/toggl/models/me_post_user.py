@@ -52,14 +52,14 @@ class MePostUser:
 
     def __init__(
         self,
+        email: str,
+        password: str,
+        tos_accepted: bool,
         country_id: int = None,
         created_with: str = None,
-        email: str = None,
         full_name: str = None,
         invitation_code: str = None,
-        password: str = None,
         timezone: str = None,
-        tos_accepted: bool = None,
         workspace: MePostInitialWorkspace = None,
         _configuration: Configuration = None,  # noqa: E501
     ):
@@ -67,14 +67,14 @@ class MePostUser:
         MePostUser - a model defined in Swagger
 
         Parameters:
+          email (str): Required
+          password (str): Required
+          tos_accepted (bool): Required
           country_id (int): Optional
           created_with (str): Optional
-          email (str): Required
           full_name (str): Optional
           invitation_code (str): Optional
-          password (str): Required
           timezone (str): Optional
-          tos_accepted (bool): Required
           workspace (MePostInitialWorkspace): Optional
         """
         if _configuration is None:

@@ -33,8 +33,6 @@ class ProjectsGraphArray:
     def __init__(self, _configuration: Configuration = None):  # noqa: E501
         """
         ProjectsGraphArray - a model defined in Swagger
-
-        Parameters:
         """
         if _configuration is None:
             _configuration = Configuration()

@@ -1,10 +1,12 @@
 {{>partial_header}}
 # import apis into sdk package
-{{#apiInfo}}{{#apis}}from {{apiPackage}}.{{classVarName}} import {{classname}}  # noqa: F401
+from . import api  # noqa: F401
+{{#apiInfo}}{{#apis}}from {{apiPackage}}.{{classVarName}} import {{classname}}  # noqa: E501,F401
 {{/apis}}{{/apiInfo}}
 # import ApiClient
 from {{packageName}}.api_client import ApiClient  # noqa: F401
 from {{packageName}}.configuration import Configuration  # noqa: F401
 # import models into sdk package
-{{#models}}{{#model}}from {{modelPackage}}.{{classFilename}} import {{classname}}  # noqa: F401
+from . import models  # noqa: F401
+{{#models}}{{#model}}from {{modelPackage}}.{{classFilename}} import ({{classname}})  # noqa: E501,F401
 {{/model}}{{/models}}

@@ -16,20 +16,22 @@ find $CODEGEN_PKG/**/*.py -type f -exec \
 # generation produces 2 api files, both defining a DefaultApi class, with endpoints represented elsewhere
 
 # the first one is named api/_api.py and contains OrganizationApi endpoints, it can be removed
-rm $CODEGEN_PKG/api/_api.py
+rm -f $CODEGEN_PKG/api/_api.py
 
 # remove lines that import either api
 sed -i "/from toggl.api.default_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
+sed -i "/from . import default_api/d" $CODEGEN_PKG/api/__init__.py
 sed -i "/from toggl.api.utils_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
+sed -i "/from . import utils_api/d" $CODEGEN_PKG/api/__init__.py
 
 # the second one is named api/default_api.py and contains reports_api_v3 endpoints
 # this file was generated and then updated manually
-rm $CODEGEN_PKG/api/default_api.py
+rm -f $CODEGEN_PKG/api/default_api.py
 
 # add the new import line back
-IMPORT_LINE="from toggl.api.reports_api_v3 import ReportsApiv3  # noqa: F401"
-echo $IMPORT_LINE >> $CODEGEN_PKG/__init__.py
-echo $IMPORT_LINE >> $CODEGEN_PKG/api/__init__.py
+echo "from toggl.api.reports_api_v3 import ReportsApiv3  # noqa: F401" >> $CODEGEN_PKG/__init__.py
+echo "from toggl.api.reports_api_v3 import ReportsApiv3  # noqa: F401" >> $CODEGEN_PKG/api/__init__.py
+echo "from . import reports_api_v3  # noqa: F401" >> $CODEGEN_PKG/api/__init__.py
 
 # generation produces a class for the JSON Schema type utils.Int64Slice
 # which is just an alias for list[int], so overwrite it
@@ -43,10 +45,11 @@ echo "SummaryGroupData = Any" >> $CODEGEN_PKG/models/summary_group_data.py
 # remove the rates API
 # at this time this is undocumented on https://engineering.toggl.com/docs/
 # and the definition contains a circular reference causing an import error
-rm $CODEGEN_PKG/api/rates_api.py
+rm -f $CODEGEN_PKG/api/rates_api.py
 
 # remove lines importing rates API
 sed -i "/from toggl.api.rates_api/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/api/__init__.py
+sed -i "/from . import rates_api/d" $CODEGEN_PKG/api/__init__.py
 
 # remove unused and circular DTO objects
 declare -a dto_classes=(
@@ -71,8 +74,9 @@ declare -a dto_classes=(
 
 for cls in "${dto_classes[@]}"
 do
-    rm "$CODEGEN_PKG/models/$cls.py"
+    rm -f "$CODEGEN_PKG/models/$cls.py"
     sed -i "/from toggl.models.$cls/d" $CODEGEN_PKG/__init__.py $CODEGEN_PKG/models/__init__.py
+    sed -i "/from . import $cls/d" $CODEGEN_PKG/models/__init__.py
 done
 
 # reformat all python files

@@ -1,10 +1,14 @@
-{{>partial_header}}import pprint
+{{>partial_header}}from __future__ import annotations  # noqa: F401
+import pprint
 import re  # noqa: F401
 from datetime import datetime  # noqa: F401
 from typing import Any
 
-from {{packageName}}.configuration import Configuration{{#imports}}{{#import}}
-{{import}}  # noqa: F401{{/import}}{{/imports}}
+from {{packageName}}.configuration import Configuration{{#imports}}
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    {{#import}}{{import}}  # noqa: F401{{/import}}{{/imports}}
 
 
 {{#models}}

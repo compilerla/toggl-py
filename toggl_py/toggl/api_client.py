@@ -18,8 +18,24 @@ import tempfile
 from urllib.parse import quote
 
 from toggl.configuration import Configuration
-import toggl.models
+from toggl import models
 from toggl import rest
+
+MODELS = {}
+
+
+def recursive_get_attr(object, name):
+    key = (object, name)
+    if key in MODELS:
+        return MODELS[key]
+    value = getattr(object, name)
+    if not value:
+        for module in [o for o in object.__dict__.values() if type(o) is type(models)]:
+            value = recursive_get_attr(module, name)
+            if value:
+                MODELS[key] = value
+                break
+    return value
 
 
 class ApiClient:
@@ -261,7 +277,7 @@ class ApiClient:
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(toggl.models, klass)
+                klass = recursive_get_attr(models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

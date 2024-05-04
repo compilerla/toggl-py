@@ -1,7 +1,18 @@
-{{>partial_header}}import re  # noqa: F401
+{{>partial_header}}
+{{#hasImport}}
+from __future__ import annotations  # noqa: F401
+{{/hasImport}}
+import re  # noqa: F401
+{{#hasImport}}
+from typing import TYPE_CHECKING
+{{/hasImport}}
 
-from {{packageName}}.api_client import ApiClient{{#imports}}{{#import}}
-{{import}}  # noqa: F401{{/import}}{{/imports}}
+from {{packageName}}.api_client import ApiClient
+
+{{#hasImport}}
+if TYPE_CHECKING:{{#imports}}{{#import}}
+    {{import}}  # noqa: F401{{/import}}{{/imports}}
+{{/hasImport}}
 
 
 {{#operations}}

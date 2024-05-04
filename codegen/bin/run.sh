@@ -13,3 +13,5 @@ java -cp $CODEGEN_JAR:$CODEGEN_DIR/$CODEGEN_LANG/target/* \
     --template-dir $CODEGEN_DIR/$CODEGEN_LANG/src/main/resources/$CODEGEN_LANG
 
 ./$CODEGEN_DIR/bin/post_process.sh
+
+rm -rf toggl_py/test
